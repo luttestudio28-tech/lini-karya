@@ -16,17 +16,18 @@ const Hero = () => {
     },
   };
 
-  const charVars: any = {
+  const charVars = {
     initial: { y: "100%", opacity: 0 },
     animate: {
       y: 0,
       opacity: 1,
       transition: {
         duration: 1.2,
-        ease: [0.2, 0.65, 0.3, 0.9] as any,
+        ease: [0.2, 0.65, 0.3, 0.9],
       },
     },
   };
+
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-container overflow-hidden bg-background">
@@ -34,37 +35,35 @@ const Hero = () => {
         variants={containerVars}
         initial="initial"
         animate="animate"
-        className="max-w-6xl w-full flex flex-col gap-12 text-center items-center"
+        className="w-full max-w-[95vw] flex flex-col gap-12 text-center items-center"
       >
-        <h1 className="font-display text-5xl md:text-7xl lg:text-9xl leading-[1.05] tracking-tight">
+        <h1 className="font-display text-[15vw] md:text-[12vw] lg:text-[11vw] leading-[0.85] tracking-[-0.05em] font-medium flex flex-wrap justify-center gap-x-[0.2em] gap-y-0">
           <span className="sr-only">{headline}</span>
-          <span className="flex flex-wrap justify-center overflow-hidden py-2" aria-hidden="true">
-            {headline.split(" ").map((word, wordIndex) => (
-              <span key={wordIndex} className="inline-flex mr-[0.3em] overflow-hidden">
-                {word.split("").map((char, charIndex) => (
-                  <motion.span
-                    key={charIndex}
-                    variants={charVars}
-                    className={`inline-block ${
-                      word.includes("Indonesia") ? "italic font-normal" : ""
-                    }`}
-                  >
-                    {char}
-                  </motion.span>
-                ))}
-              </span>
-            ))}
-          </span>
+          {headline.split(" ").map((word, wordIndex) => (
+            <span key={wordIndex} className="inline-block overflow-hidden py-2 whitespace-nowrap">
+              {word.split("").map((char, charIndex) => (
+                <motion.span
+                  key={charIndex}
+                  variants={charVars}
+                  className={`inline-block ${
+                    word.includes("Indonesia") ? "italic font-light opacity-80" : ""
+                  }`}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </span>
+          ))}
         </h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 1.8, ease: [0.2, 0.65, 0.3, 0.9] as any }}
-          className="font-body text-lg md:text-xl lg:text-2xl text-foreground/70 max-w-3xl leading-relaxed font-light"
+          className="font-body text-base md:text-lg lg:text-xl text-foreground/50 max-w-2xl leading-relaxed font-light tracking-tight"
         >
-          Kami mengkurasi identitas digital yang berkelas untuk bisnis yang siap bertumbuh. 
-          <span className="block mt-2 font-normal text-foreground">Bukan sekadar website, tapi sebuah pernyataan brand.</span>
+          Kami mentransformasi UMKM lokal menjadi brand digital yang prestisius. 
+          <span className="block mt-2 font-normal text-foreground/70">Ubah kerumitan operasional manual menjadi sistem web yang mandiri dan berkelas.</span>
         </motion.p>
 
         <motion.div

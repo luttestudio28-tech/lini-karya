@@ -41,13 +41,16 @@ const Portfolio = () => {
           transition={{ duration: 1, ease: [0.2, 0.65, 0.3, 0.9] as any }}
           className="mb-24"
         >
-          <span className="font-body text-xs md:text-sm uppercase tracking-[0.4em] text-foreground/40 block mb-6">
-            Karya Terpilih
+          <span className="font-body text-xs md:text-sm uppercase tracking-[0.4em] text-accent block mb-6">
+            Hasil Nyata — 03
           </span>
           <h2 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none">
-            Selected <br />
-            <span className="italic text-foreground/60">Works</span>
+            Evolusi <br />
+            <span className="italic text-foreground/60">Digital.</span>
           </h2>
+          <p className="mt-8 font-body text-lg text-foreground/50 max-w-xl">
+            Lihat bagaimana kami membantu partner kami bertransformasi dari bisnis konvensional menjadi entitas digital yang prestisius.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 lg:gap-16">

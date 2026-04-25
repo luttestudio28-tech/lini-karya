@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
-import { Italiana, Archivo } from "next/font/google";
+import { Instrument_Serif, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
+import WhatsAppCTA from "@/components/ui/WhatsAppCTA";
 
-const fontDisplay = Italiana({
+const fontDisplay = Instrument_Serif({
   variable: "--font-display",
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const fontBody = Archivo({
+const fontBody = Hanken_Grotesk({
   variable: "--font-body",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,12 +29,14 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="id"
       className={`${fontDisplay.variable} ${fontBody.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <Navbar />
         <main className="flex-grow">{children}</main>
+        <WhatsAppCTA />
       </body>
     </html>
   );

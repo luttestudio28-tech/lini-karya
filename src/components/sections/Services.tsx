@@ -7,17 +7,17 @@ const services = [
   {
     id: "01",
     title: "Digital Identity",
-    description: "Kami mengonstruksi fondasi visual yang kuat, memastikan brand Anda berbicara dengan lantang dan konsisten di setiap platform digital.",
+    description: "Membangun kepercayaan instan. Kami memastikan tampilan brand Anda terlihat 'mahal' dan profesional di mata pelanggan sejak detik pertama.",
   },
   {
     id: "02",
-    title: "Web Development",
-    description: "Pembangunan platform digital yang mengutamakan performa dan estetika, menghidupkan visi Anda dalam setiap baris kode.",
+    title: "Web Ecosystem",
+    description: "Hentikan ketergantungan pada chat manual. Kami membangun sistem web yang menangani pesanan, reservasi, dan informasi secara otomatis.",
   },
   {
     id: "03",
-    title: "Performance Strategy",
-    description: "Mengakselerasi pertumbuhan bisnis melalui strategi digital yang terukur, fokus pada konversi dan skalabilitas jangka panjang.",
+    title: "Scale Strategy",
+    description: "Strategi digital yang dirancang untuk ekspansi. Kami membantu UMKM naik kelas dari skala lingkungan menuju jangkauan nasional.",
   },
 ];
 
