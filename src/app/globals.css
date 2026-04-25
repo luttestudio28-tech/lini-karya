@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@config "../../tailwind.config.ts";
+
+@theme {
+  --color-background: oklch(98% 0.01 250);
+  --color-foreground: oklch(20% 0.01 250);
+  --color-accent: oklch(70% 0.1 250);
+  --color-muted: oklch(90% 0.01 250);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  --spacing-section: 8rem;
+  --spacing-container: 2rem;
+}
+
+:root {
+  --background: oklch(98% 0.01 250);
+  --foreground: oklch(20% 0.01 250);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
