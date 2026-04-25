@@ -10,72 +10,82 @@ const Hero = () => {
     animate: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.03,
-        delayChildren: 0.5,
+        staggerChildren: 0.05,
+        delayChildren: 0.2,
       },
     },
   };
 
-  const charVars = {
-    initial: { y: "100%", opacity: 0 },
+  const charVars: any = {
+    initial: { y: "100%" },
     animate: {
       y: 0,
-      opacity: 1,
       transition: {
-        duration: 1.2,
-        ease: [0.2, 0.65, 0.3, 0.9],
+        duration: 0.8,
+        ease: [0.16, 1, 0.3, 1] as any,
       },
     },
   };
 
-
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-container overflow-hidden bg-background">
+    <section className="relative min-h-screen flex flex-col justify-center px-container overflow-hidden bg-background selection:bg-foreground selection:text-background">
+      {/* Top Metadata */}
+      <div className="absolute top-12 left-container right-container flex justify-between font-mono text-[10px] uppercase tracking-[0.3em] opacity-50">
+        <motion.span
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          Lini Karya — Manifesto
+        </motion.span>
+        <motion.span
+          initial={{ opacity: 0, x: 10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          Form & Function
+        </motion.span>
+      </div>
+
       <motion.div
         variants={containerVars}
         initial="initial"
         animate="animate"
-        className="w-full max-w-[95vw] flex flex-col gap-12 text-center items-center"
+        className="w-full pt-20"
       >
-        <h1 className="font-display text-[15vw] md:text-[12vw] lg:text-[11vw] leading-[0.85] tracking-[-0.05em] font-medium flex flex-wrap justify-center gap-x-[0.2em] gap-y-0">
+        <h1 className="font-display text-mega leading-[0.85] tracking-[-0.04em] uppercase text-left break-words">
           <span className="sr-only">{headline}</span>
-          {headline.split(" ").map((word, wordIndex) => (
-            <span key={wordIndex} className="inline-block overflow-hidden py-2 whitespace-nowrap">
-              {word.split("").map((char, charIndex) => (
-                <motion.span
-                  key={charIndex}
-                  variants={charVars}
-                  className={`inline-block ${
-                    word.includes("Indonesia") ? "italic font-light opacity-80" : ""
-                  }`}
-                >
-                  {char}
-                </motion.span>
-              ))}
-            </span>
-          ))}
+          <span className="flex flex-wrap overflow-hidden" aria-hidden="true">
+            {headline.split(" ").map((word, wordIndex) => (
+              <span key={wordIndex} className="inline-flex mr-[0.15em] overflow-hidden">
+                {word.split("").map((char, charIndex) => (
+                  <motion.span
+                    key={charIndex}
+                    variants={charVars}
+                    className="inline-block"
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </span>
+            ))}
+          </span>
         </h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5, delay: 1.8, ease: [0.2, 0.65, 0.3, 0.9] as any }}
-          className="font-body text-base md:text-lg lg:text-xl text-foreground/50 max-w-2xl leading-relaxed font-light tracking-tight"
-        >
-          Kami mentransformasi UMKM lokal menjadi brand digital yang prestisius. 
-          <span className="block mt-2 font-normal text-foreground/70">Ubah kerumitan operasional manual menjadi sistem web yang mandiri dan berkelas.</span>
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 3 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
-        >
-          <span className="text-[10px] uppercase tracking-[0.4em] text-foreground/30">Scroll</span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-foreground/20 to-transparent" />
-        </motion.div>
       </motion.div>
+
+      {/* Bottom Right Utility Text */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.4 }}
+        transition={{ duration: 1.5, delay: 1.2 }}
+        className="absolute bottom-12 right-container flex flex-col items-end gap-1 font-mono text-[10px] uppercase tracking-[0.2em]"
+      >
+        <span>UMKM EVOLUTION © 2026</span>
+        <span className="text-[8px] opacity-60 italic">High Performance / Minimal Form</span>
+      </motion.div>
+
+      {/* Left Vertical Line - Structural Element */}
+      <div className="absolute left-container top-1/2 -translate-y-1/2 w-[1px] h-32 bg-foreground/10 hidden md:block" />
     </section>
   );
 };

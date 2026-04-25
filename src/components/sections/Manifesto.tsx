@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Manifesto = () => {
   return (
-    <section className="relative py-section px-container bg-background overflow-hidden">
+    <section className="relative pt-32 pb-16 px-container bg-background overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
         {/* Main Headline - Asymmetric Placement */}
         <div className="md:col-span-8 lg:col-span-7">
@@ -30,12 +30,13 @@ const Manifesto = () => {
             transition={{ duration: 1, delay: 0.3, ease: [0.2, 0.65, 0.3, 0.9] as any }}
             className="space-y-6"
           >
-            <p className="font-body text-base md:text-lg lg:text-xl text-foreground/50 leading-relaxed font-light">
-              Website Anda seharusnya bekerja untuk Anda, bukan sebaliknya. Kami mengeliminasi kekacauan pengelolaan manual dengan sistem yang presisi.
+            <p className="font-body text-lg md:text-xl text-foreground/80 leading-relaxed font-light">
+              Kami percaya bahwa detail bukan sekadar pelengkap, melainkan fondasi dari setiap karya yang bermakna. 
+              Kesempurnaan visual bertemu dengan strategi yang terukur.
             </p>
             <div className="h-px w-12 bg-accent/40" />
-            <p className="font-body text-sm uppercase tracking-[0.2em] text-foreground/50 leading-loose">
-              Ubah interaksi pelanggan menjadi terstruktur, profesional, dan mencerminkan kualitas produk yang Anda buat sepenuh hati.
+            <p className="font-body text-sm uppercase tracking-[0.2em] text-foreground/50">
+              Filosofi Kami
             </p>
           </motion.div>
         </div>

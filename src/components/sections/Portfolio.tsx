@@ -32,91 +32,113 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section className="py-section px-container bg-background">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-background pt-16 pb-0 overflow-hidden">
+      {/* Header - Still contained but minimal */}
+      <div className="px-container mb-32 md:mb-64">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, ease: [0.2, 0.65, 0.3, 0.9] as any }}
-          className="mb-24"
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as any }}
         >
-          <span className="font-body text-xs md:text-sm uppercase tracking-[0.4em] text-accent block mb-6">
-            Hasil Nyata — 03
+          <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-foreground/40 block mb-8">
+            03 — Selected Portfolio
           </span>
-          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none">
-            Evolusi <br />
-            <span className="italic text-foreground/60">Digital.</span>
+          <h2 className="font-display text-7xl md:text-9xl lg:text-[14vw] leading-[0.8] uppercase tracking-tighter">
+            Archive <br />
+            <span className="italic text-foreground/10">Works</span>
           </h2>
-          <p className="mt-8 font-body text-lg text-foreground/50 max-w-xl">
-            Lihat bagaimana kami membantu partner kami bertransformasi dari bisnis konvensional menjadi entitas digital yang prestisius.
-          </p>
         </motion.div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 lg:gap-16">
-          {/* Project 1 - Large */}
-          <div className="md:col-span-8">
-            <ProjectCard project={projects[0]} />
-          </div>
-
-          {/* Project 2 - Small, shifted */}
-          <div className="md:col-span-4 md:mt-24">
-            <ProjectCard project={projects[1]} />
-          </div>
-
-          {/* Project 3 - Medium */}
-          <div className="md:col-span-5">
-            <ProjectCard project={projects[2]} />
-          </div>
-
-          {/* Project 4 - Medium, shifted up on desktop */}
-          <div className="md:col-span-7 md:-mt-32">
-            <ProjectCard project={projects[3]} />
-          </div>
-        </div>
+      {/* Rhythmic Full-Width List */}
+      <div className="flex flex-col w-full">
+        {projects.map((project, index) => (
+          <ProjectRow key={project.id} project={project} index={index} />
+        ))}
       </div>
     </section>
   );
 };
 
-const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
+const ProjectRow = ({ project, index }: { project: typeof projects[0]; index: number }) => {
+  // Rhythmic positioning: 100%, 85% right, 80% left, 90% center
+  const widthClasses = [
+    "w-full",
+    "w-full md:w-[85%] self-end",
+    "w-full md:w-[80%] self-start",
+    "w-full md:w-[90%] self-center"
+  ];
+  
+  const widthClass = widthClasses[index % widthClasses.length];
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 1.2, ease: [0.2, 0.65, 0.3, 0.9] as any }}
-      className="group"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, margin: "-10%" }}
+      transition={{ duration: 1.2 }}
+      className={`relative mb-32 md:mb-64 last:mb-0 group ${widthClass} border-t border-foreground/5 pt-0`}
     >
-      <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden bg-muted">
+      <div className="relative aspect-[4/3] md:aspect-[21/9] overflow-hidden bg-muted">
         <motion.div
           whileHover={{ scale: 1.05 }}
-          transition={{ duration: 1, ease: [0.2, 0.65, 0.3, 0.9] as any }}
+          transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] as any }}
           className="w-full h-full relative"
         >
           <Image
             src={project.image}
             alt={project.title}
             fill
-            className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-in-out"
+            sizes="100vw"
           />
+          {/* Mike Kus raw style overlay - darkens slightly for type contrast */}
+          <div className="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors duration-1000" />
         </motion.div>
-        
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-foreground/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
       </div>
 
-      <div className="mt-8 flex flex-col gap-2">
-        <div className="flex items-center gap-4">
-          <span className="font-display text-sm text-accent">{project.id}</span>
-          <h3 className="font-display text-2xl md:text-3xl lg:text-4xl text-foreground">
+      {/* Massive Typography Overlay */}
+      <div className="absolute inset-0 flex flex-col justify-center p-container md:p-12 lg:p-24 pointer-events-none">
+        <div className="overflow-hidden">
+          <motion.h3 
+            initial={{ y: "100%" }}
+            whileInView={{ y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] as any }}
+            className="font-display text-5xl md:text-8xl lg:text-[12vw] text-white leading-[0.85] uppercase mix-blend-difference"
+          >
             {project.title}
-          </h3>
+          </motion.h3>
         </div>
-        <p className="font-body text-sm md:text-base text-foreground/50 tracking-wide">
-          {project.category}
-        </p>
+        
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.4 }}
+          className="flex flex-col md:flex-row md:justify-between md:items-end mt-6 md:mt-12"
+        >
+          <div className="flex items-center gap-4 mix-blend-difference">
+            <span className="font-mono text-[10px] md:text-xs text-white uppercase tracking-[0.3em]">
+              {project.id}
+            </span>
+            <div className="w-8 h-[1px] bg-white/30" />
+            <span className="font-mono text-[10px] md:text-xs text-white uppercase tracking-[0.3em]">
+              {project.category}
+            </span>
+          </div>
+          <span className="font-mono text-[10px] md:text-xs text-white/50 uppercase tracking-[0.2em] mix-blend-difference mt-4 md:mt-0">
+            Case Study ↗
+          </span>
+        </motion.div>
+      </div>
+
+      {/* Structural numbering on the side (Desktop only) */}
+      <div className="absolute top-0 right-0 p-8 hidden lg:block opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+        <span className="font-mono text-[120px] leading-none text-white/10 mix-blend-difference select-none">
+          {project.id}
+        </span>
       </div>
     </motion.div>
   );
