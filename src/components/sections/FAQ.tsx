@@ -84,7 +84,7 @@ const FAQ = () => {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] as any }}
                 className="max-w-4xl"
               >
                 <h3 className="font-display text-4xl md:text-6xl lg:text-7xl uppercase tracking-tighter leading-none mb-12 text-accent italic">

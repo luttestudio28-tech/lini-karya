@@ -12,7 +12,7 @@ const WhatsAppCTA = () => {
     <motion.button
       whileHover={{ 
         scale: 1.05,
-        transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] }
+        transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] as any }
       }}
       whileTap={{ scale: 0.98 }}
       onClick={handleClick}
