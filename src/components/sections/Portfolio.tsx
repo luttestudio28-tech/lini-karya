@@ -6,141 +6,118 @@ import Image from "next/image";
 const projects = [
   {
     id: "01",
-    title: "Aluna Studio",
-    category: "Branding & Web Design",
-    image: "https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Sentinel",
+    category: "SISTEM KEAMANAN DIGITAL",
+    tech: "NEXT.JS / TAILWIND / MOTION",
+    image: "/sentinel.png?v=1",
+    size: "md:col-span-8",
+    link: "https://sentinel.imanabdul929.workers.dev/",
+    alt: "Sentinel Fraud Prevention SaaS Dashboard Preview"
   },
   {
     id: "02",
-    title: "Grosir Beras",
-    category: "E-commerce Experience",
-    image: "https://images.pexels.com/photos/2361102/pexels-photo-2361102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "FOLIO",
+    category: "WEBSITE PORTFOLIO PREMIUM",
+    tech: "NEXT.JS / TAILWIND / MOTION",
+    image: "/folio.png?v=1",
+    size: "md:col-span-4",
+    link: "https://personal-portfolio-xi-one-59.vercel.app/",
+    alt: "FOLIO Personal Portfolio Template Design"
   },
   {
     id: "03",
-    title: "Sentinel Dashboard",
-    category: "Product Design",
-    image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "Aluna",
+    category: "E-COMMERCE PRODUK MEWAH",
+    tech: "NEXT.JS / TAILWIND / MOTION",
+    image: "/aluna.png?v=1",
+    size: "md:col-span-5",
+    link: "https://lumina-creative-hub-eins.vercel.app/",
+    alt: "Aluna Luxury E-commerce Website for Candles"
   },
   {
     id: "04",
-    title: "NovaFlow",
-    category: "Brand Identity",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    title: "STUDIO",
+    category: "PREMIUM DIGITAL AGENCY",
+    tech: "NEXT.JS / TAILWIND / MOTION",
+    image: "/studio.png?v=1",
+    size: "md:col-span-7",
+    link: "https://lumina-creative-hub.vercel.app/",
+    alt: "Studio Business Automation Landing Page"
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="bg-background pt-16 pb-0 overflow-hidden">
-      {/* Header - Still contained but minimal */}
-      <div className="px-container mb-32 md:mb-64">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as any }}
-        >
-          <span className="font-mono text-[10px] md:text-xs uppercase tracking-[0.4em] text-foreground/40 block mb-8">
-            03 — Selected Portfolio
+    <section id="karya" className="bg-background py-24 md:py-32 px-container border-t border-foreground/10 overflow-hidden relative">
+      <div className="max-w-[1400px] mx-auto">
+        {/* Section Header - Massive & Centered */}
+        <div className="mb-24 md:mb-40 w-full text-center border-b border-foreground/10 pb-20">
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
+            [ 03 // HASIL KARYA ]
           </span>
-          <h2 className="font-display text-7xl md:text-9xl lg:text-[14vw] leading-[0.8] uppercase tracking-tighter">
-            Archive <br />
-            <span className="italic text-foreground/10">Works</span>
+          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.65] uppercase tracking-tighter mx-auto max-w-4xl">
+            Proyek <br /> <span className="italic opacity-20">Terpilih</span>
           </h2>
-        </motion.div>
-      </div>
+          <p className="mt-12 font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed max-w-sm mx-auto">
+            KUMPULAN PROYEK DIGITAL YANG KAMI BANGUN UNTUK MEMBANTU UMKM INDONESIA NAIK KELAS KE PASAR NASIONAL.
+          </p>
+        </div>
 
-      {/* Rhythmic Full-Width List */}
-      <div className="flex flex-col w-full">
-        {projects.map((project, index) => (
-          <ProjectRow key={project.id} project={project} index={index} />
-        ))}
+        {/* Showcase Matrix Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
+          {projects.map((project, index) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              className={`flex flex-col group ${project.size}`}
+            >
+              {/* Technical Container */}
+              <a 
+                href={project.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="relative aspect-[16/10] overflow-hidden bg-muted border border-foreground/10 block cursor-pointer"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.alt}
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div className="absolute top-4 left-4 font-mono text-[8px] uppercase tracking-widest bg-background/90 px-3 py-1 border border-foreground/5 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                  ID {project.id} // 2026
+                </div>
+              </a>
+
+              {/* Info Block */}
+              <div className="mt-8 flex flex-col gap-4">
+                <div className="flex justify-between items-end border-b border-foreground/10 pb-4">
+                  <h3 className="font-display text-4xl md:text-5xl lg:text-6xl uppercase tracking-tighter leading-none group-hover:text-accent transition-colors">
+                    {project.title}
+                  </h3>
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="font-mono text-[10px] uppercase tracking-widest opacity-30 hover:opacity-100 hover:text-accent transition-all cursor-pointer"
+                  >
+                    [ LIHAT DETAIL ] ↗
+                  </a>
+                </div>
+                <div className="flex justify-between items-center font-mono text-[9px] md:text-[10px] uppercase tracking-widest opacity-50">
+                  <span>{project.category}</span>
+                  <span className="hidden md:inline">{project.tech}</span>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
-  );
-};
-
-const ProjectRow = ({ project, index }: { project: typeof projects[0]; index: number }) => {
-  // Rhythmic positioning: 100%, 85% right, 80% left, 90% center
-  const widthClasses = [
-    "w-full",
-    "w-full md:w-[85%] self-end",
-    "w-full md:w-[80%] self-start",
-    "w-full md:w-[90%] self-center"
-  ];
-  
-  const widthClass = widthClasses[index % widthClasses.length];
-
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true, margin: "-10%" }}
-      transition={{ duration: 1.2 }}
-      className={`relative mb-32 md:mb-64 last:mb-0 group ${widthClass} border-t border-foreground/5 pt-0`}
-    >
-      <div className="relative aspect-[4/3] md:aspect-[21/9] overflow-hidden bg-muted">
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] as any }}
-          className="w-full h-full relative"
-        >
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ease-in-out"
-            sizes="100vw"
-          />
-          {/* Mike Kus raw style overlay - darkens slightly for type contrast */}
-          <div className="absolute inset-0 bg-black/30 group-hover:bg-transparent transition-colors duration-1000" />
-        </motion.div>
-      </div>
-
-      {/* Massive Typography Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-center p-container md:p-12 lg:p-24 pointer-events-none">
-        <div className="overflow-hidden">
-          <motion.h3 
-            initial={{ y: "100%" }}
-            whileInView={{ y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.1, ease: [0.16, 1, 0.3, 1] as any }}
-            className="font-display text-5xl md:text-8xl lg:text-[12vw] text-white leading-[0.85] uppercase mix-blend-difference"
-          >
-            {project.title}
-          </motion.h3>
-        </div>
-        
-        <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="flex flex-col md:flex-row md:justify-between md:items-end mt-6 md:mt-12"
-        >
-          <div className="flex items-center gap-4 mix-blend-difference">
-            <span className="font-mono text-[10px] md:text-xs text-white uppercase tracking-[0.3em]">
-              {project.id}
-            </span>
-            <div className="w-8 h-[1px] bg-white/30" />
-            <span className="font-mono text-[10px] md:text-xs text-white uppercase tracking-[0.3em]">
-              {project.category}
-            </span>
-          </div>
-          <span className="font-mono text-[10px] md:text-xs text-white/50 uppercase tracking-[0.2em] mix-blend-difference mt-4 md:mt-0">
-            Case Study ↗
-          </span>
-        </motion.div>
-      </div>
-
-      {/* Structural numbering on the side (Desktop only) */}
-      <div className="absolute top-0 right-0 p-8 hidden lg:block opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-        <span className="font-mono text-[120px] leading-none text-white/10 mix-blend-difference select-none">
-          {project.id}
-        </span>
-      </div>
-    </motion.div>
   );
 };
 

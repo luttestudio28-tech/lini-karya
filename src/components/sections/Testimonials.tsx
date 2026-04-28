@@ -4,71 +4,81 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "Lini Karya tidak hanya membangun website, mereka membangun identitas digital yang selama ini kami cari namun sulit kami bahasakan.",
+    id: "LOG_01",
+    quote: "Lini Karya tidak hanya membangun website, mereka membangun identitas digital yang selama ini kami cari namun sulit kami bahasakan. Presisi di setiap piksel.",
     author: "Budi Santoso",
     role: "Pemilik Aluna Studio",
+    status: "SISTEM STABIL",
   },
   {
-    quote: "Efisiensi operasional kami meningkat tajam setelah transisi ke platform baru. Estetika dan fungsionalitas berjalan beriringan.",
+    id: "LOG_02",
+    quote: "Efisiensi operasional kami meningkat tajam setelah transisi ke platform baru. Estetika minimalis premium benar-benar berdampak pada konversi penjualan.",
     author: "Siti Aminah",
     role: "Founder Grosir Beras",
+    status: "SKALA MAKSIMAL",
   },
   {
-    quote: "Visi kami yang kompleks diterjemahkan dengan sangat elegan. Sebuah investasi yang sangat berharga untuk masa depan brand kami.",
+    id: "LOG_03",
+    quote: "Visi teknis kami yang kompleks diterjemahkan dengan sangat elegan. Sebuah investasi arsitektur digital yang sangat berharga untuk masa depan brand.",
     author: "Irwan Hakim",
     role: "CEO NovaFlow",
+    status: "TERINTEGRASI",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="py-section px-container bg-background overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, ease: [0.2, 0.65, 0.3, 0.9] }}
-          className="mb-24"
-        >
-          <span className="font-body text-xs md:text-sm uppercase tracking-[0.4em] text-accent block mb-6">
-            Suara Partner — 04
+    <section className="bg-background py-24 md:py-32 px-container border-t border-foreground/10 overflow-hidden relative">
+      <div className="max-w-[1400px] mx-auto flex flex-col items-center">
+        {/* Section Header */}
+        <div className="mb-24 md:mb-40 w-full text-center border-b border-foreground/10 pb-20">
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
+            [ 05 // VERIFIKASI KLIEN ]
           </span>
-          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none">
-            Kata <br />
-            <span className="italic text-foreground/60">Mereka.</span>
+          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.65] uppercase tracking-tighter mx-auto max-w-4xl">
+            Suara <br /> <span className="italic opacity-20">Partner.</span>
           </h2>
-        </motion.div>
+          <p className="mt-12 font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed max-w-sm mx-auto">
+            BUKTI NYATA DARI SISTEM YANG TELAH KAMI DEPLOY UNTUK MENDUKUNG SKALA BISNIS MEREKA.
+          </p>
+        </div>
 
-        <div className="flex flex-col gap-24 md:gap-32">
+        {/* Testimonial Matrix */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-px bg-foreground/10 border-y border-foreground/10 w-full">
           {testimonials.map((item, index) => (
             <motion.div
-              key={item.author}
-              initial={{ opacity: 0, y: 40 }}
+              key={item.id}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 1.2, delay: index * 0.1, ease: [0.2, 0.65, 0.3, 0.9] }}
-              className={`flex flex-col ${
-                index % 2 === 1 ? "md:items-end md:text-right" : "md:items-start"
-              }`}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              className="bg-background group relative p-10 md:p-16 flex flex-col justify-between min-h-[500px] hover:bg-foreground hover:text-background transition-colors duration-700"
             >
-              <div className="max-w-4xl">
-                <blockquote className="font-display text-4xl md:text-6xl lg:text-7xl leading-tight text-foreground/90 italic relative">
-                  <span className="absolute -left-8 md:-left-12 top-0 opacity-10 text-8xl md:text-9xl not-italic font-serif leading-none">
-                    &ldquo;
-                  </span>
-                  {item.quote}
-                </blockquote>
-                <div className={`mt-8 md:mt-12 flex flex-col ${
-                  index % 2 === 1 ? "md:items-end" : "md:items-start"
-                }`}>
-                  <p className="font-body text-lg md:text-xl font-medium text-foreground tracking-wide">
-                    {item.author}
-                  </p>
-                  <p className="font-body text-sm md:text-base text-accent uppercase tracking-widest mt-1">
-                    {item.role}
-                  </p>
-                </div>
+              {/* Top Meta */}
+              <div className="flex justify-between items-start">
+                <span className="font-mono text-[9px] opacity-30 group-hover:opacity-100 transition-opacity uppercase tracking-widest">
+                  {item.id}
+                </span>
+                <span className="font-mono text-[9px] text-accent font-bold group-hover:text-background transition-colors uppercase tracking-[0.2em]">
+                  [ {item.status} ]
+                </span>
+              </div>
+
+              {/* Quote */}
+              <div className="my-16">
+                <p className="font-display text-3xl md:text-4xl uppercase tracking-tighter leading-[0.9] group-hover:text-accent transition-colors">
+                  "{item.quote}"
+                </p>
+              </div>
+
+              {/* Author Info */}
+              <div className="pt-8 border-t border-foreground/5 group-hover:border-background/20 transition-colors">
+                <p className="font-display text-xl uppercase tracking-tighter group-hover:italic-accent transition-all">
+                  {item.author}
+                </p>
+                <p className="font-mono text-[10px] uppercase tracking-widest opacity-40 mt-2 group-hover:opacity-60">
+                  {item.role}
+                </p>
               </div>
             </motion.div>
           ))}

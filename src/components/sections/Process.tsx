@@ -1,98 +1,102 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 const steps = [
   {
     id: "01",
-    title: "Konsultasi",
-    description: "Kami mulai dengan mendengarkan visi Anda. Sesi brainstorming mendalam untuk memetakan DNA brand dan kebutuhan unik bisnis Anda.",
+    title: "Diagnosis",
+    phase: "IDENTIFIKASI DNA",
+    description: "KAMI MENDENGARKAN VISI ANDA DAN MEMETAKAN KEBUTUHAN UNIK BISNIS ANDA MELALUI SESI KONSULTASI MENDALAM.",
   },
   {
     id: "02",
-    title: "Kreasi",
-    description: "Proses desain artisan. Kami meramu estetika minimalist dengan teknologi modern untuk menciptakan ekosistem digital yang fungsional.",
+    title: "Arsitektur",
+    phase: "KONSTRUKSI SISTEM",
+    description: "KAMI MERANCANG DESAIN VISUAL YANG PREMIUM DAN MEMBANGUN SISTEM WEBSITE YANG MUDAH DIGUNAKAN OLEH PELANGGAN ANDA.",
   },
   {
     id: "03",
-    title: "Elevasi",
-    description: "Peluncuran dan pengawasan. Kami memastikan transisi brand Anda ke dunia digital berjalan mulus dengan standar kualitas premium.",
+    title: "Peluncuran",
+    phase: "AKTIVASI ASET",
+    description: "MEMASTIKAN TRANSISI BRAND ANDA KE DUNIA DIGITAL BERJALAN MULUS DAN WEBSITE ANDA SIAP MENERIMA PELANGGAN PERTAMA.",
   },
 ];
 
 const Process = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start center", "end center"],
-  });
-
-  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-
   return (
-    <section ref={containerRef} className="py-section px-container bg-background relative overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, ease: [0.2, 0.65, 0.3, 0.9] as any }}
-          className="mb-32 flex flex-col items-start"
-        >
-          <span className="font-body text-xs md:text-sm uppercase tracking-[0.4em] text-foreground/40 block mb-6">
-            Metodologi
-          </span>
-          <h2 className="font-display text-5xl md:text-7xl lg:text-8xl leading-none">
-            Proses <span className="italic text-foreground/60">Kerja</span>
-          </h2>
-        </motion.div>
+    <section className="bg-background py-24 md:py-32 px-container border-t border-foreground/10 overflow-hidden relative">
+      {/* Background Structural Line */}
+      <div className="absolute left-[33.33%] top-0 h-full w-px bg-foreground/[0.03] hidden lg:block" />
 
-        <div className="relative flex flex-col gap-12 md:gap-40">
-          {/* Vertical Connecting Line */}
-          <div className="absolute top-0 left-4 md:left-1/2 -translate-x-1/2 w-px h-full bg-foreground/5">
-            <motion.div
-              style={{ height: lineHeight }}
-              className="w-full bg-accent origin-top"
-            />
-          </div>
-
-          {steps.map((step, index) => (
-            <div key={step.id} className={`relative flex flex-col md:flex-row items-start md:items-start gap-4 md:gap-24 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}>
-              {/* Number */}
-              <div className="flex-1 flex justify-start md:justify-end items-center pl-12 md:pl-0">
-                <motion.span
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  transition={{ duration: 1.2, delay: index * 0.1, ease: [0.2, 0.65, 0.3, 0.9] as any }}
-                  className="font-display text-[6rem] md:text-[14rem] lg:text-[18rem] leading-none text-foreground/5 select-none"
-                >
-                  {step.id}
-                </motion.span>
-              </div>
-
-              {/* Point on the line */}
-              <div className="absolute left-4 md:left-1/2 top-12 md:top-1/2 -translate-y-1/2 -translate-x-1/2 w-2 h-2 md:w-3 md:h-3 rounded-full bg-background border border-accent z-20" />
-
-              {/* Content */}
-              <div className="flex-1 flex flex-col items-start text-left pl-12 md:pl-0 md:pt-24 lg:pt-32">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.8, delay: index * 0.2 + 0.3, ease: [0.2, 0.65, 0.3, 0.9] as any }}
-                >
-                  <h3 className="font-display text-3xl md:text-5xl lg:text-6xl text-foreground mb-4 md:mb-6">
-                    {step.title}
-                  </h3>
-                  <p className="font-body text-base md:text-xl text-foreground/60 max-w-md leading-relaxed font-light">
-                    {step.description}
-                  </p>
-                </motion.div>
-              </div>
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start relative z-10">
+        
+        {/* Left Sidebar - High Impact Sticky Header */}
+        <div className="lg:col-span-4 lg:sticky lg:top-32">
+          <div className="flex flex-col gap-10">
+            <div>
+              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
+                [ 04 // INTEGRASI SISTEM ]
+              </span>
+              <h2 className="font-display text-7xl md:text-8xl lg:text-[7vw] leading-[0.8] uppercase tracking-tighter">
+                Alur <br />
+                <span className="italic opacity-20">Kerja.</span>
+              </h2>
             </div>
+            <div className="space-y-6 max-w-xs">
+              <p className="font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed">
+                METODOLOGI SISTEMATIS DALAM MENGUBAH VISI MENJADI ASET DIGITAL AKTIF YANG MENGUNTUNGKAN.
+              </p>
+              <div className="h-px w-12 bg-accent/40" />
+            </div>
+          </div>
+        </div>
+
+        {/* Right Content - Technical Dossier List */}
+        <div className="lg:col-span-8 flex flex-col border-t border-foreground/10">
+          {steps.map((step, index) => (
+            <motion.div
+              key={step.id}
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              className="group relative border-b border-foreground/10 py-12 md:py-20 flex flex-col md:grid md:grid-cols-12 gap-8 items-start md:items-center hover:bg-foreground hover:text-background transition-colors duration-700 px-4 md:px-12"
+            >
+              {/* Step Index */}
+              <div className="md:col-span-2">
+                <span className="font-mono text-[10px] opacity-30 group-hover:opacity-100 transition-opacity uppercase tracking-widest">
+                  TAHAP {step.id}
+                </span>
+              </div>
+
+              {/* Title & Phase */}
+              <div className="md:col-span-5 flex flex-col gap-2">
+                <h3 className="font-display text-4xl md:text-5xl lg:text-6xl uppercase tracking-tighter group-hover:italic-accent transition-all duration-500 leading-none">
+                  {step.title}
+                </h3>
+                <span className="font-mono text-[9px] uppercase tracking-widest text-accent font-bold group-hover:text-background transition-colors">
+                  [ {step.phase} ]
+                </span>
+              </div>
+
+              {/* Description */}
+              <div className="md:col-span-5 md:text-right">
+                <p className="font-mono text-[10px] md:text-xs uppercase tracking-widest leading-relaxed opacity-50 group-hover:opacity-100 transition-opacity max-w-sm md:ml-auto">
+                  {step.description}
+                </p>
+              </div>
+
+              {/* Technical Indicator Node */}
+              <div className="absolute right-4 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full border border-foreground/20 group-hover:bg-accent group-hover:border-accent opacity-0 group-hover:opacity-100 transition-all" />
+            </motion.div>
           ))}
+
+          {/* Support Node */}
+          <div className="py-12 flex justify-between items-center font-mono text-[9px] uppercase tracking-[0.3em] opacity-20 px-4">
+            <span>LINI KARYA // PROCESS ENGINE V.04</span>
+            <span>SYSTEM STABLE FOR LAUNCH</span>
+          </div>
         </div>
       </div>
     </section>

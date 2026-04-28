@@ -22,13 +22,22 @@
   --background: #ffffff;
   --foreground: #000000;
   --accent: #ff4d00;
-  --text-mega: clamp(5rem, 18vw, 25rem);
-  --text-sub-mega: clamp(3rem, 10vw, 12rem);
-  --font-mono: "Space Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-body);
+  font-family: var(--font-mono);
+  position: relative;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
 }
