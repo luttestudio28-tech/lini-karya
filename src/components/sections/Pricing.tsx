@@ -46,6 +46,15 @@ const packages = [
 
 const Pricing = () => {
   const handleApply = (pkg: typeof packages[0]) => {
+    // Track Meta Pixel Lead Event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', {
+        content_name: pkg.name,
+        value: pkg.price === "Kustom" ? 0 : parseFloat(pkg.price.replace(/\./g, '')),
+        currency: 'IDR'
+      });
+    }
+
     const priceText = pkg.price !== "Kustom" ? ` senilai Rp ${pkg.price}` : "";
     const message = encodeURIComponent(`Halo Lini Karya, saya tertarik mendiskusikan pembuatan website dengan fokus ${pkg.name} (${pkg.priceLabel})${priceText}.`);
     window.open(`https://wa.me/6285166635038?text=${message}`, "_blank");

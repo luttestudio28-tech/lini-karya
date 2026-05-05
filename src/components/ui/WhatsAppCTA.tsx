@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 
 const WhatsAppCTA = () => {
   const handleClick = () => {
+    // Track Meta Pixel Contact Event
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Contact');
+    }
+    
     const message = encodeURIComponent("Halo Lini Karya, saya tertarik untuk mendiskusikan pembuatan website/identitas digital untuk bisnis saya.");
     window.open(`https://wa.me/6285166635038?text=${message}`, "_blank");
   };
