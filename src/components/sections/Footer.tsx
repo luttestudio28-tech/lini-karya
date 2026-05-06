@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="lg:col-span-3 lg:px-16 lg:border-r border-background/10">
             <span className="font-mono text-[9px] uppercase tracking-widest opacity-30 block mb-12">JARINGAN SOSIAL</span>
             <div className="flex flex-col gap-6 font-display text-2xl uppercase tracking-tighter">
-              <a href="#" className="hover:text-accent transition-colors flex justify-between items-center group">
+              <a href="https://www.instagram.com/linikaryastudio/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors flex justify-between items-center group">
                 <span>Instagram</span>
                 <span className="font-mono text-sm opacity-0 group-hover:opacity-100 transition-opacity">[ ↗ ]</span>
               </a>
