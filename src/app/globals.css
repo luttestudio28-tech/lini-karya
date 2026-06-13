@@ -58,23 +58,32 @@ h1, h2, h3 {
 
 .blog-content ul, .blog-content ol {
   margin-bottom: 2rem;
-  padding-left: 1.25rem;
-  space-y: 0.5rem;
+  padding-left: 2rem;
 }
 
 .blog-content li {
   margin-bottom: 0.75rem;
   position: relative;
+}
+
+/* Custom bullet for unordered lists */
+.blog-content ul li {
   list-style-type: none;
 }
 
 .blog-content ul li::before {
   content: "[+]";
   position: absolute;
-  left: -2rem;
+  left: -2.5rem;
   color: var(--accent);
   font-size: 0.75rem;
   font-weight: bold;
+}
+
+/* Standard decimal for ordered lists */
+.blog-content ol li {
+  list-style-type: decimal;
+  padding-left: 0.5rem;
 }
 
 .blog-content b, .blog-content strong {
