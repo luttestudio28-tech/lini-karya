@@ -35,15 +35,15 @@ export default function BlogListing() {
   return (
     <div className="w-full">
       {/* Category Filters */}
-      <div className="flex flex-wrap gap-4 mb-16">
+      <div className="flex flex-wrap items-center gap-2 mb-16 border-b border-foreground/10 pb-6">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => handleCategoryChange(category)}
-            className={`font-mono text-[10px] uppercase tracking-widest px-6 py-3 border transition-colors ${
+            className={`font-mono text-[10px] uppercase tracking-widest px-6 py-3 rounded-full transition-all duration-300 relative ${
               activeCategory === category 
-                ? "bg-accent border-accent text-background font-bold" 
-                : "border-foreground/20 text-foreground/60 hover:border-foreground/50 hover:text-foreground"
+                ? "bg-foreground text-background font-bold shadow-md" 
+                : "bg-transparent text-foreground/50 hover:bg-foreground/5 hover:text-foreground"
             }`}
           >
             {category}
@@ -111,7 +111,7 @@ export default function BlogListing() {
           <button 
             onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className="font-mono text-[10px] uppercase tracking-widest p-3 border border-foreground/20 disabled:opacity-30 hover:bg-foreground/5 transition-colors cursor-pointer"
+            className="font-mono text-[10px] uppercase tracking-widest px-5 py-3 rounded-full border border-foreground/10 disabled:opacity-30 hover:bg-foreground/5 transition-all duration-300 cursor-pointer"
           >
             ← SEBELUMNYA
           </button>
@@ -121,10 +121,10 @@ export default function BlogListing() {
               <button
                 key={i}
                 onClick={() => setCurrentPage(i + 1)}
-                className={`w-10 h-10 flex items-center justify-center border transition-colors cursor-pointer ${
+                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer ${
                   currentPage === i + 1 
-                    ? "bg-foreground text-background border-foreground" 
-                    : "border-foreground/20 hover:border-foreground/50"
+                    ? "bg-foreground text-background shadow-md" 
+                    : "bg-transparent text-foreground/50 hover:bg-foreground/5"
                 }`}
               >
                 {i + 1}
@@ -135,7 +135,7 @@ export default function BlogListing() {
           <button 
             onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
             disabled={currentPage === totalPages}
-            className="font-mono text-[10px] uppercase tracking-widest p-3 border border-foreground/20 disabled:opacity-30 hover:bg-foreground/5 transition-colors cursor-pointer"
+            className="font-mono text-[10px] uppercase tracking-widest px-5 py-3 rounded-full border border-foreground/10 disabled:opacity-30 hover:bg-foreground/5 transition-all duration-300 cursor-pointer"
           >
             SELANJUTNYA →
           </button>
