@@ -42,7 +42,7 @@ const FAQ = () => {
           <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
             Pusat Bantuan
           </span>
-          <h2 className="font-display text-[clamp(3.5rem,9vw,140px)] leading-[0.65] uppercase tracking-tighter mx-auto max-w-4xl">
+          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.65] uppercase tracking-tighter mx-auto max-w-4xl">
             Tanya <br /> & <span className="italic-accent text-accent">Jawab</span>
           </h2>
           <p className="mt-12 font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed max-w-sm mx-auto">
