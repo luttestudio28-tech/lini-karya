@@ -81,6 +81,19 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        {/* Google Analytics (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DPK3HY9CT8"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-DPK3HY9CT8');
+          `}
+        </Script>
         <noscript>
           <img
             height="1"
