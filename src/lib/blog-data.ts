@@ -1,5 +1,5 @@
 export const blogPosts = [
-  {
+{
     slug: "studi-kasus-klinik-kecantikan",
     title: "Studi Kasus: Bagaimana Klinik Kecantikan X Meningkatkan Booking 300%",
     date: "2026-06-18",
@@ -49,7 +49,7 @@ export const blogPosts = [
       <p>Studi kasus ini menjadi bukti tak terbantahkan bahwa untuk bisnis jasa bernilai tinggi (*high-ticket service*), kepercayaan dan kemudahan adalah segalanya. Calon pelanggan yang akan mengeluarkan uang jutaan rupiah untuk perawatan wajah butuh diyakinkan. Website yang terlihat mewah, membeberkan informasi secara transparan, dan sangat mudah digunakan memberikan rasa aman yang tidak bisa diberikan oleh profil media sosial biasa. Website bukanlah beban biaya, melainkan asisten manajer terbaik yang pernah Anda miliki.</p>
     `,
   },
-  {
+{
     slug: "studi-kasus-kopi-lokal",
     title: "Studi Kasus: Toko Kopi Lokal Naikkan Omzet Penjualan Online Tanpa Aplikasi Pihak Ketiga",
     date: "2026-06-16",
@@ -90,7 +90,7 @@ export const blogPosts = [
       <p>Dalam bisnis kuliner modern, aplikasi pengiriman harus dianggap sebagai biaya promosi (Customer Acquisition Cost). Gunakan aplikasi tersebut sebagai jaring untuk menangkap pelanggan baru. Namun, setelah pelanggan mencoba dan menyukai produk Anda, tugas Anda adalah "menarik mereka pulang" ke platform Anda sendiri (Website). Siapa yang menguasai data pelanggan, dialah yang akan memenangkan peperangan bisnis jangka panjang.</p>
     `,
   },
-  {
+{
     slug: "bisnis-kuliner-website",
     title: "Kenapa Bisnis Kuliner Wajib Punya Website Sendiri",
     date: "2026-06-15",
@@ -128,7 +128,7 @@ export const blogPosts = [
       <p>Kami menyarankan UMKM kuliner menggunakan strategi "Hybrid". Gunakan aplikasi pihak ketiga untuk menjangkau orang baru (Discovery), namun berikan kupon fisik atau QR Code di dalam kemasan makanan yang mengarahkan mereka untuk memesan lewat website di orderan berikutnya. Ini adalah cara tercepat memindahkan pelanggan ke jalur yang lebih menguntungkan bagi Anda.</p>
     `,
   },
-  {
+{
     slug: "seo-lokal",
     title: "Cara Agar Toko Anda Muncul di Halaman Pertama Google",
     date: "2026-06-12",
@@ -165,7 +165,7 @@ export const blogPosts = [
       <p><b>Kesimpulan:</b> SEO adalah maraton, bukan sprint. Hasilnya mungkin baru terlihat dalam 3-6 bulan, namun trafik yang datang dari SEO adalah trafik "gratis" yang memiliki tingkat kepercayaan jauh lebih tinggi dibandingkan iklan berbayar.</p>
     `,
   },
-  {
+{
     slug: "harga-website-umkm-2026",
     title: "Berapa Harga Pembuatan Website untuk UMKM di Tahun 2026?",
     date: "2026-06-10",
@@ -209,7 +209,7 @@ export const blogPosts = [
       <p><b>Filosofi Investasi:</b> Website berkualitas bukan pengeluaran, tapi aset yang bisa menghasilkan profit. Jika website seharga Rp 5 juta bisa mendatangkan 1 klien besar saja per bulan, maka dalam 2-3 bulan Anda sudah balik modal.</p>
     `,
   },
-  {
+{
     slug: "manfaat-ai-umkm",
     title: "Cara UMKM Pakai AI untuk Naikkan Omzet di Tahun 2026",
     date: "2026-06-09",
@@ -236,7 +236,7 @@ export const blogPosts = [
       <p><b>Peringatan Penting:</b> Jangan biarkan AI bekerja sendirian. Pastikan Anda tetap memberikan "sentuhan manusia" pada hasil kerja AI agar brand Anda tetap terasa hangat dan otentik di mata pelanggan.</p>
     `,
   },
-  {
+{
     slug: "keamanan-website-umkm",
     title: "5 Tanda Website Bisnis Anda Tidak Aman & Berisiko",
     date: "2026-06-08",
@@ -266,7 +266,7 @@ export const blogPosts = [
       <p><b>Kesimpulan:</b> Keamanan digital adalah fondasi bisnis. Jangan sampai penghematan beberapa ratus ribu rupiah di awal berujung pada kerugian puluhan juta karena data dicuri atau website mati total.</p>
     `,
   },
-  {
+{
     slug: "chatbot-ai-website",
     title: "Kenapa Website Anda Butuh AI Chatbot 24/7?",
     date: "2026-06-07",
@@ -288,7 +288,7 @@ export const blogPosts = [
       <p><b>Langkah Memulai:</b> Kami di Lini Karya bisa mengintegrasikan chatbot pintar yang sudah "dilatih" dengan data produk Anda, sehingga ia bisa menjawab persis seperti admin terbaik Anda.</p>
     `,
   },
-  {
+{
     slug: "landing-page-vs-website",
     title: "Landing Page vs Website Lengkap: Mana yang Menghasilkan Uang?",
     date: "2026-06-05",
@@ -345,7 +345,7 @@ export const blogPosts = [
       <p><b>Rekomendasi Lini Karya:</b> Jika budget terbatas, mulailah dengan Landing Page yang efektif untuk berjualan. Setelah profit terkumpul, kembangkan menjadi Full Website untuk dominasi pasar di Google.</p>
     `,
   },
-  {
+{
     slug: "ai-dalam-digital-marketing",
     title: "Masa Depan Digital Marketing: Kolaborasi AI & Kreativitas Manusia",
     date: "2026-06-04",
@@ -367,7 +367,7 @@ export const blogPosts = [
       <p><b>Visi Lini Karya:</b> Kami membantu bisnis Anda mengadopsi teknologi AI ini tanpa harus kehilangan identitas brand yang otentik. Masa depan adalah tentang bisnis yang didukung oleh teknologi tercanggih namun tetap terasa manusiawi.</p>
     `,
   },
-  {
+{
     slug: "desain-website-konversi",
     title: "Kenapa Desain Minimalis Lebih Efektif Tingkatkan Penjualan?",
     date: "2026-06-03",
@@ -389,7 +389,7 @@ export const blogPosts = [
       <p><b>Prinsip Kami:</b> Kami mendesain website untuk manusia, bukan untuk komputer. Setiap piksel yang kami letakkan memiliki alasan yang jelas untuk membantu pelanggan Anda merasa nyaman dan aman saat bertransaksi dengan Anda.</p>
     `,
   },
-  {
+{
     slug: "tiktok-shop-vs-website",
     title: "TikTok Shop vs Website: Kenapa Bisnis Anda Butuh Keduanya di Tahun 2026",
     date: "2026-06-02",
@@ -415,7 +415,7 @@ export const blogPosts = [
       <p><b>Lini Karya's Expert Take:</b> Jangan biarkan algoritma mendikte nasib bisnis Anda. Gunakan platform sosial untuk "menjemput" audiens, dan bawa mereka pulang ke "rumah" Anda sendiri, yaitu Website.</p>
     `,
   },
-  {
+{
     slug: "qris-payment-otomatis-website",
     title: "Selamat Tinggal Transfer Manual: Pentingnya QRIS & Payment Otomatis di Website",
     date: "2026-06-01",
@@ -440,7 +440,7 @@ export const blogPosts = [
       <p><b>Lini Karya's Expert Take:</b> Kami bisa membantu Anda mengimplementasikan sistem *checkout* kilat ini di website Anda. Ini bukan hanya tentang kecanggihan teknologi, tapi tentang mempermudah pelanggan memberikan uangnya kepada Anda.</p>
     `,
   },
-  {
+{
     slug: "website-omnichannel-hub",
     title: "Website Sebagai 'Markas Besar': Menggabungkan IG, WA, dan Marketplace dalam Satu Link",
     date: "2026-05-30",
@@ -465,7 +465,7 @@ export const blogPosts = [
       <p><b>Lini Karya's Expert Take:</b> Simplifikasi adalah kunci konversi. Buatlah ekosistem digital Anda layaknya jaring laba-laba, di mana ujung manapun yang disentuh pelanggan (IG, TikTok, Google), mereka akan selalu ditarik masuk ke pusatnya: Website profesional Anda.</p>
     `,
   },
-  {
+{
     slug: "website-pribadi-vs-marketplace",
     title: "Website Pribadi vs Marketplace (Shopee/Tokped): Mana yang Terbaik untuk UMKM?",
     date: "2026-05-28",
@@ -498,7 +498,7 @@ export const blogPosts = [
       <p><b>Lini Karya's Expert Take:</b> Bisnis yang sehat tidak bergantung pada satu keranjang. Marketplace adalah tempat berjualan, tapi Website adalah tempat Anda membangun *Brand Equity* (Nilai Brand) yang sesungguhnya.</p>
     `,
   },
-  {
+{
     slug: "kenapa-website-sepi-pengunjung",
     title: "Sudah Buat Website Tapi Sepi? Ini 3 Kesalahan Fatal yang Sering Terjadi",
     date: "2026-05-25",
@@ -531,7 +531,7 @@ export const blogPosts = [
       </div>
     `,
   },
-  {
+{
     slug: "rebranding-digital-naikkan-harga",
     title: "Cara Menjual Produk Lebih Mahal Tanpa Diprotes Pelanggan (Rahasia Rebranding Digital)",
     date: "2026-05-20",
