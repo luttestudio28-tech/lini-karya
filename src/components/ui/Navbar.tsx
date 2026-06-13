@@ -19,8 +19,8 @@ const Navbar = () => {
   const navLinks = [
     { name: "Layanan", href: "/#layanan" },
     { name: "Karya", href: "/#karya" },
-    { name: "Blog", href: "/blog" },
     { name: "Kontak", href: "/#kontak" },
+    { name: "Blog", href: "/blog" },
   ];
 
   return (
