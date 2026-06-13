@@ -8,12 +8,23 @@ const blogPosts = [
     date: "2026-06-15",
     category: "Bisnis Lokal",
     content: `
-      <p>Bandung dikenal sebagai pusat kuliner kreatif di Indonesia. Namun, banyak pemilik bisnis F&B yang masih bergantung 100% pada platform pengiriman pihak ketiga.</p>
-      <p>Padahal, memiliki website sendiri adalah langkah strategis untuk membangun identitas brand yang lebih kuat dan mengurangi ketergantungan pada potongan biaya platform yang besar.</p>
-      <h3>1. Membangun Kepercayaan Pelanggan</h3>
-      <p>Saat seseorang mendengar nama restoran Anda, hal pertama yang mereka lakukan adalah mencari di Google. Website profesional memberikan kesan bahwa bisnis Anda mapan dan terpercaya.</p>
-      <h3>2. Kontrol Penuh Atas Menu dan Promo</h3>
-      <p>Anda bisa menampilkan foto produk dengan kualitas terbaik tanpa batasan format dari platform lain.</p>
+      <p>Bandung dikenal sebagai kiblat kuliner kreatif di Indonesia. Dari kedai kopi estetik di Dago hingga rumah makan legendaris di pusat kota, persaingan bisnis F&B di Bandung sangatlah ketat. Namun, banyak pemilik bisnis yang masih terjebak pada ketergantungan 100% kepada platform pengiriman pihak ketiga (Gofood/Grabfood/ShopeeFood).</p>
+      
+      <p>Meskipun platform tersebut membantu dalam hal logistik, ada beberapa alasan krusial kenapa Anda wajib memiliki website mandiri:</p>
+      
+      <h3>1. Memangkas Biaya Potongan Platform</h3>
+      <p>Platform pengiriman biasanya memotong 20% atau lebih dari setiap transaksi Anda. Dengan website mandiri yang terintegrasi dengan WhatsApp, pelanggan bisa memesan langsung kepada Anda tanpa potongan biaya tersebut. Bayangkan berapa banyak profit yang bisa Anda hemat dalam satu bulan.</p>
+      
+      <h3>2. Kepemilikan Data Pelanggan</h3>
+      <p>Di platform pihak ketiga, Anda tidak tahu siapa pelanggan Anda sebenarnya. Dengan website sendiri, Anda bisa mengumpulkan data nomor WhatsApp atau email pelanggan (tentunya dengan izin) untuk mengirimkan info promo atau menu baru secara langsung. Ini adalah kunci dari <b>customer loyalty</b>.</p>
+      
+      <h3>3. Membangun Brand Identity yang Kuat</h3>
+      <p>Website adalah "rumah digital" Anda. Anda bebas menentukan desain, suasana, dan cerita di balik brand Anda tanpa batasan format dari platform lain. Klien di Bandung sangat menghargai estetika dan keunikan brand; website yang bagus menunjukkan bahwa Anda serius dalam mengelola bisnis.</p>
+      
+      <h3>4. Menampilkan Menu Secara Atraktif</h3>
+      <p>Anda bisa menampilkan foto produk dengan resolusi tinggi, video proses memasak, hingga testimoni pelanggan dengan cara yang jauh lebih menarik daripada sekadar daftar teks di aplikasi pengiriman.</p>
+      
+      <p><b>Kesimpulan:</b> Website bukan pengganti aplikasi pengiriman, melainkan pelengkap strategis. Gunakan aplikasi untuk menjangkau pelanggan baru, dan gunakan website untuk mempertahankan pelanggan setia dan memaksimalkan profit.</p>
     `,
   },
   {
@@ -22,11 +33,23 @@ const blogPosts = [
     date: "2026-06-12",
     category: "SEO",
     content: `
-      <p>SEO Lokal adalah kunci bagi bisnis fisik di Bandung agar ditemukan oleh warga lokal maupun wisatawan.</p>
-      <h3>Optimasi Google Business Profile</h3>
-      <p>Pastikan nama, alamat, dan nomor telepon Anda konsisten di seluruh internet.</p>
-      <h3>Gunakan Kata Kunci Berbasis Lokasi</h3>
-      <p>Sertakan kata "Bandung" atau nama wilayah spesifik seperti "Dago" atau "Lembang" di dalam konten website Anda.</p>
+      <p>Pernahkah Anda mencari "Kopi enak di dekat saya" atau "Jasa jahit di Bandung" di Google? Hasil yang muncul pertama kali biasanya adalah peta dengan daftar bisnis lokal. Itulah yang disebut dengan <b>Local SEO</b>.</p>
+      
+      <p>Bagi UMKM di Bandung, muncul di halaman pertama Google bukan sekadar gaya-gayaan, tapi soal kelangsungan bisnis. Berikut langkah praktis yang bisa Anda lakukan:</p>
+      
+      <h3>1. Optimasi Google Business Profile (Dulu Google My Business)</h3>
+      <p>Ini adalah langkah wajib. Pastikan alamat, nomor telepon, dan jam operasional toko Anda di Bandung terisi dengan benar. Upload foto toko dan produk secara rutin. Semakin lengkap profil Anda, semakin besar peluang Google menampilkannya kepada calon pelanggan.</p>
+      
+      <h3>2. Gunakan Kata Kunci Lokal (Geo-Targeting)</h3>
+      <p>Jangan hanya menargetkan kata kunci umum seperti "Toko Baju". Gunakan kata kunci spesifik seperti "Toko Baju Muslim di Antapani" atau "Grosir Kaos Polos Bandung". Masukkan kata kunci ini ke dalam judul halaman website dan deskripsi produk Anda.</p>
+      
+      <h3>3. Kumpulkan Ulasan (Reviews) Pelanggan</h3>
+      <p>Ulasan bintang 5 bukan hanya mempercantik tampilan, tapi juga memberi sinyal kepada Google bahwa bisnis Anda terpercaya. Jangan ragu meminta pelanggan setia Anda untuk memberikan ulasan di Google Maps setelah mereka berkunjung.</p>
+      
+      <h3>4. Website Harus Responsif di HP</h3>
+      <p>Lebih dari 80% pencarian lokal dilakukan melalui smartphone. Jika website bisnis Anda lambat atau berantakan saat dibuka di HP, pengunjung akan langsung keluar, dan Google akan menurunkan peringkat Anda.</p>
+      
+      <p><b>Tips Pro:</b> Pastikan nama, alamat, dan nomor telepon (NAP) Anda konsisten di seluruh internet—mulai dari website, Facebook, Instagram, hingga portal berita lokal.</p>
     `,
   },
   {
@@ -35,10 +58,28 @@ const blogPosts = [
     date: "2026-06-10",
     category: "Investasi Digital",
     content: `
-      <p>Memilih jasa pembuatan website seringkali membingungkan karena rentang harga yang sangat luas.</p>
-      <p>Di Lini Karya, kami percaya pada transparansi. Investasi website harus sebanding dengan hasil yang didapatkan.</p>
-      <h3>Kenapa Harga Bisa Berbeda?</h3>
-      <p>Faktor seperti kecepatan akses, kemudahan pengelolaan (CMS), dan optimasi SEO sangat mempengaruhi biaya produksi.</p>
+      <p>Salah satu pertanyaan yang paling sering kami terima adalah: "Berapa sih harga buat website yang standar tapi bagus?" Di tahun 2026, harga pembuatan website untuk UMKM sangat bervariasi tergantung kebutuhan.</p>
+      
+      <p>Mari kita bedah secara transparan agar Anda tidak salah memilih partner:</p>
+      
+      <h3>1. Solusi Mandiri / DIY (Rp 500rb - Rp 2jt / tahun)</h3>
+      <p>Anda menggunakan platform seperti Wix, Shopify, atau WordPress.com. Anda melakukan semuanya sendiri. Harganya murah, tapi Anda harus meluangkan waktu berjam-jam untuk belajar desain dan teknis. Biasanya kurang optimal untuk SEO dan performa jangka panjang.</p>
+      
+      <h3>2. Freelancer Pemula (Rp 1jt - Rp 3jt)</h3>
+      <p>Banyak freelancer yang menawarkan jasa pembuatan website dengan harga sangat terjangkau. Namun, berhati-hatilah dengan layanan purna jualnya. Seringkali setelah website jadi, sulit untuk menghubungi mereka jika ada error atau butuh update.</p>
+      
+      <h3>3. Agensi / Studio Web Profesional (Rp 2,5jt - Rp 15jt+)</h3>
+      <p>Seperti layanan kami di Lini Karya. Anda membayar untuk strategi, desain kustom, kecepatan server, keamanan, dan dukungan teknis jangka panjang. Untuk Landing Page sederhana, harga Rp 2,5jt adalah standar yang wajar di Bandung untuk mendapatkan kualitas premium.</p>
+      
+      <h3>Kenapa Harga Bisa Berbeda Jauh?</h3>
+      <ul>
+        <li><b>Kecepatan:</b> Website murah biasanya lambat karena menggunakan server "patungan".</li>
+        <li><b>Keamanan:</b> Apakah website Anda diproteksi dari serangan hacker?</li>
+        <li><b>Optimasi SEO:</b> Apakah website dibuat sekadar jadi, atau dirancang agar mudah ditemukan Google?</li>
+        <li><b>Maintenance:</b> Siapa yang mengurus jika website tiba-tiba mati atau butuh ganti nomor WA?</li>
+      </ul>
+      
+      <p><b>Saran Kami:</b> Jangan hanya melihat harga termurah. Lihatlah website sebagai investasi aset digital. Website yang murah tapi tidak mendatangkan pelanggan justru lebih mahal daripada website berkualitas yang menghasilkan profit setiap hari.</p>
     `,
   },
 ];
