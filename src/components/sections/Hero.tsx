@@ -52,13 +52,13 @@ const Hero = () => {
                 <motion.span variants={lineVars} className="inline-block">Website</motion.span>
               </span>
               <span className="overflow-hidden block ml-[8vw] md:ml-[12vw]">
-                <motion.span variants={lineVars} className="inline-block text-accent">Profesional.</motion.span>
+                <motion.span variants={lineVars} className="inline-block text-accent">Profesional</motion.span>
               </span>
               <span className="overflow-hidden block">
                 <motion.span variants={lineVars} className="inline-block">Bisnis Makin</motion.span>
               </span>
               <span className="overflow-hidden block ml-[4vw]">
-                <motion.span variants={lineVars} className="inline-block italic opacity-40 font-light">Dikenal.</motion.span>
+                <motion.span variants={lineVars} className="inline-block opacity-40 font-light">Dikenal</motion.span>
               </span>
             </div>
           </h1>
