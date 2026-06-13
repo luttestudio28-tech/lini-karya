@@ -49,13 +49,13 @@ const Hero = () => {
           <h1 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] tracking-[-0.04em] text-left uppercase">
             <div className="flex flex-col">
               <span className="overflow-hidden block">
-                <motion.span variants={lineVars} className="inline-block">Website Modern</motion.span>
+                <motion.span variants={lineVars} className="inline-block">Solusi Web</motion.span>
               </span>
               <span className="overflow-hidden block ml-[8vw] md:ml-[12vw]">
                 <motion.span variants={lineVars} className="inline-block text-accent">Bisnis Anda</motion.span>
               </span>
               <span className="overflow-hidden block ml-[4vw]">
-                <motion.span variants={lineVars} className="inline-block opacity-40 font-light">Tampil Berkelas</motion.span>
+                <motion.span variants={lineVars} className="inline-block opacity-40 font-light">Naik Level</motion.span>
               </span>
             </div>
           </h1>
