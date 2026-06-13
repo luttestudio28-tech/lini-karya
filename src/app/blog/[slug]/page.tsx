@@ -80,6 +80,81 @@ const blogPosts = [
       <p><b>Saran Investasi:</b> Jangan tanyakan "berapa harganya?", tapi tanyakan "berapa banyak potensi pelanggan yang bisa saya dapatkan dari website ini?". Website berkualitas adalah salesman terbaik Anda yang bekerja 24 jam sehari.</p>
     `,
   },
+  {
+    slug: "keamanan-website-umkm",
+    title: "5 Tanda Website Bisnis Anda Tidak Aman & Berisiko",
+    date: "2026-06-08",
+    category: "Keamanan",
+    image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    content: `
+      <p>Banyak pemilik bisnis merasa bahwa website mereka "biasa saja" sehingga tidak mungkin diincar hacker. Faktanya, hacker sering mengincar UMKM karena sistem keamanannya yang lemah untuk digunakan sebagai jembatan serangan yang lebih besar atau sekadar mencuri data pelanggan.</p>
+      
+      <h3>1. Tidak Memiliki Sertifikat SSL (HTTPS)</h3>
+      <p>Tanda paling jelas adalah adanya peringatan "Not Secure" di bar alamat browser. Selain membuat pengunjung takut, Google akan menurunkan peringkat website Anda secara drastis jika tidak menggunakan SSL.</p>
+      
+      <h3>2. Menggunakan Software/Plugin Bajakan (Nulled)</h3>
+      <p>Menggunakan tema atau plugin "gratisan" hasil download ilegal sangat berbahaya. Seringkali di dalamnya sudah ditanam <i>malware</i> yang bisa mencuri data kartu kredit pelanggan atau mengirim email spam atas nama bisnis Anda.</p>
+      
+      <h3>3. Tidak Ada Backup Rutin</h3>
+      <p>Website yang aman adalah website yang siap menghadapi kemungkinan terburuk. Jika website Anda mati atau terkena hack, dan Anda tidak punya file cadangan (backup), maka seluruh investasi digital Anda bisa hilang dalam sekejap.</p>
+      
+      <h3>4. Password yang Terlalu Sederhana</h3>
+      <p>Hacker menggunakan bot untuk mencoba jutaan kombinasi password setiap detiknya. Menggunakan password seperti "admin123" atau nama bisnis Anda adalah tiket gratis bagi mereka untuk masuk ke sistem Anda.</p>
+      
+      <h3>5. Performa Lambat Tanpa Alasan Jelas</h3>
+      <p>Jika website Anda tiba-tiba menjadi sangat lambat, bisa jadi sistem Anda sedang digunakan oleh hacker untuk menjalankan script ilegal di latar belakang tanpa Anda sadari.</p>
+      
+      <p><b>Rekomendasi Kami:</b> Selalu gunakan penyedia jasa yang memberikan garansi keamanan dan melakukan update sistem secara berkala. Keamanan bukan biaya, tapi proteksi aset.</p>
+    `,
+  },
+  {
+    slug: "landing-page-vs-website",
+    title: "Landing Page vs Website Lengkap: Mana yang Menghasilkan Uang?",
+    date: "2026-06-05",
+    category: "Strategi",
+    image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    content: `
+      <p>Sebelum membangun aset digital, Anda harus menentukan tujuannya. Apakah untuk promosi produk spesifik, atau untuk membangun rumah besar bagi brand Anda? Memahami perbedaan keduanya akan menghemat budget pemasaran Anda.</p>
+      
+      <h3>Apa itu Landing Page?</h3>
+      <p>Ini adalah satu halaman khusus yang dirancang dengan satu tujuan: **Konversi**. Tidak ada menu navigasi yang membingungkan. Fokusnya hanya satu, misalnya: "Daftar Sekarang", "Beli Sekarang", atau "Hubungi WhatsApp". Sangat efektif jika Anda sedang menjalankan iklan Facebook Ads atau Google Ads.</p>
+      
+      <h3>Apa itu Website Lengkap?</h3>
+      <p>Ini adalah profil perusahaan (Company Profile) yang terdiri dari banyak halaman (Home, About, Services, Blog, Contact). Tujuannya adalah membangun kredibilitas, memberikan informasi lengkap, dan sebagai investasi SEO jangka panjang agar bisnis Anda ditemukan di Google tanpa harus selalu bayar iklan.</p>
+      
+      <h3>Mana yang Harus Dipilih?</h3>
+      <ul>
+        <li><b>Pilih Landing Page jika:</b> Anda punya produk spesifik untuk dijual cepat, sedang promo diskon, atau butuh data leads (nomor WA) dalam waktu singkat.</li>
+        <li><b>Pilih Website Lengkap jika:</b> Bisnis Anda butuh kepercayaan tinggi (seperti jasa kontraktor, konsultan, atau manufaktur), atau Anda ingin membangun otoritas brand di industri tersebut.</li>
+      </ul>
+      
+      <p><b>Solusi Terbaik:</b> Mulailah dengan Landing Page untuk mendatangkan profit cepat, lalu kembangkan menjadi website lengkap seiring pertumbuhan bisnis Anda.</p>
+    `,
+  },
+  {
+    slug: "desain-website-konversi",
+    title: "Kenapa Desain Minimalis Lebih Efektif Tingkatkan Penjualan?",
+    date: "2026-06-03",
+    category: "Desain UI/UX",
+    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    content: `
+      <p>Banyak pemilik bisnis ingin websitenya penuh dengan animasi warna-warni dan elemen dekoratif yang mencolok. Namun, data menunjukkan bahwa desain yang terlalu ramai justru menurunkan tingkat penjualan (Conversion Rate).</p>
+      
+      <h3>1. Menghilangkan Beban Kognitif</h3>
+      <p>Otak manusia memiliki keterbatasan dalam memproses informasi. Jika website Anda terlalu penuh dengan teks dan gambar yang tidak perlu, pengunjung akan merasa lelah (Cognitive Load) dan akhirnya meninggalkan website Anda sebelum melakukan pembelian.</p>
+      
+      <h3>2. Fokus pada Tombol CTA (Call to Action)</h3>
+      <p>Dalam desain minimalis, elemen yang paling menonjol adalah yang paling penting. Dengan banyak ruang kosong (White Space), tombol "Beli Sekarang" atau "Konsultasi" akan terlihat sangat jelas dan menarik minat klik pengunjung secara alami.</p>
+      
+      <h3>3. Waktu Loading yang Lebih Cepat</h3>
+      <p>Elemen desain yang lebih sedikit berarti file yang harus didownload oleh browser pelanggan juga lebih kecil. Website yang cepat memberikan pengalaman pengguna (UX) yang jauh lebih baik, dan Google sangat menyukai website yang kencang.</p>
+      
+      <h3>4. Memberikan Kesan Profesional & Mewah</h3>
+      <p>Coba perhatikan brand besar seperti Apple atau Tesla. Mereka menggunakan desain minimalis untuk menunjukkan kepercayaan diri. Bisnis Anda akan terlihat lebih elegan dan terpercaya di mata pelanggan dengan estetika yang bersih.</p>
+      
+      <p><b>Filosofi Lini Karya:</b> Kami percaya bahwa "Less is More". Kami mendesain website bukan sekadar agar terlihat indah, tapi agar setiap elemen di dalamnya memiliki fungsi untuk membantu bisnis Anda tumbuh.</p>
+    `,
+  },
 ];
 
 export async function generateStaticParams() {
@@ -119,7 +194,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {post.title}
           </h1>
 
-          {/* New Image Section */}
           <div className="relative w-full aspect-video md:aspect-[21/9] overflow-hidden bg-muted border border-foreground/10 mb-12">
             <Image
               src={post.image}

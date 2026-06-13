@@ -32,6 +32,30 @@ const blogPosts = [
     category: "Investasi Digital",
     image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
+  {
+    slug: "keamanan-website-umkm",
+    title: "5 Tanda Website Bisnis Anda Tidak Aman & Berisiko",
+    excerpt: "Jangan biarkan data pelanggan Anda bocor. Kenali tanda-tanda website yang tidak aman dan cara melindunginya dari serangan hacker.",
+    date: "2026-06-08",
+    category: "Keamanan",
+    image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    slug: "landing-page-vs-website",
+    title: "Landing Page vs Website Lengkap: Mana yang Menghasilkan Uang?",
+    excerpt: "Sering bingung bedanya? Kami bedah mana yang paling cocok untuk jualan produk tunggal vs membangun kredibilitas brand perusahaan.",
+    date: "2026-06-05",
+    category: "Strategi",
+    image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    slug: "desain-website-konversi",
+    title: "Kenapa Desain Minimalis Lebih Efektif Tingkatkan Penjualan?",
+    excerpt: "Banyak hiasan justru mengalihkan fokus pembeli. Pelajari rahasia psikologi desain yang membuat pengunjung betah dan ingin segera membeli.",
+    date: "2026-06-03",
+    category: "Desain UI/UX",
+    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
 ];
 
 export default function BlogPage() {
@@ -53,7 +77,6 @@ export default function BlogPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {blogPosts.map((post) => (
             <article key={post.slug} className="group flex flex-col border border-foreground/10 hover:border-accent/30 transition-all p-0 relative overflow-hidden">
-              {/* Thumbnail Image */}
               <Link href={`/blog/${post.slug}`} className="relative w-full aspect-video overflow-hidden bg-muted block">
                 <Image
                   src={post.image}
