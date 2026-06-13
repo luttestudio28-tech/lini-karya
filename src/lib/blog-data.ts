@@ -94,7 +94,7 @@ export const blogPosts = [
     slug: "bisnis-kuliner-website",
     title: "Kenapa Bisnis Kuliner Wajib Punya Website Sendiri",
     date: "2026-06-15",
-    category: "Bisnis Lokal",
+    category: "Strategi Bisnis",
     image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Jangan hanya mengandalkan platform pihak ketiga. Pelajari bagaimana website mandiri bisa membangun brand dan menghemat biaya operasional bisnis F&B Anda.",
     content: `
@@ -132,7 +132,7 @@ export const blogPosts = [
     slug: "seo-lokal",
     title: "Cara Agar Toko Anda Muncul di Halaman Pertama Google",
     date: "2026-06-12",
-    category: "SEO",
+    category: "Digital Marketing",
     image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Panduan praktis SEO Lokal untuk membantu calon pelanggan di sekitar Anda menemukan bisnis Anda lebih mudah di mesin pencari.",
     content: `
@@ -169,7 +169,7 @@ export const blogPosts = [
     slug: "harga-website-umkm-2026",
     title: "Berapa Harga Pembuatan Website untuk UMKM di Tahun 2026?",
     date: "2026-06-10",
-    category: "Investasi Digital",
+    category: "Strategi Bisnis",
     image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Transparansi harga dan apa saja yang harus Anda perhatikan saat memilih jasa pembuatan website agar tidak salah investasi.",
     content: `
@@ -213,7 +213,7 @@ export const blogPosts = [
     slug: "manfaat-ai-umkm",
     title: "Cara UMKM Pakai AI untuk Naikkan Omzet di Tahun 2026",
     date: "2026-06-09",
-    category: "Teknologi AI",
+    category: "Teknologi & Web",
     image: "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "AI bukan cuma untuk perusahaan besar. Pelajari cara praktis menggunakan AI untuk otomatisasi konten dan layanan pelanggan bisnis kecil.",
     content: `
@@ -240,7 +240,7 @@ export const blogPosts = [
     slug: "keamanan-website-umkm",
     title: "5 Tanda Website Bisnis Anda Tidak Aman & Berisiko",
     date: "2026-06-08",
-    category: "Keamanan",
+    category: "Teknologi & Web",
     image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Jangan biarkan data pelanggan Anda bocor. Kenali tanda-tanda website yang tidak aman dan cara melindunginya dari serangan hacker.",
     content: `
@@ -270,7 +270,7 @@ export const blogPosts = [
     slug: "chatbot-ai-website",
     title: "Kenapa Website Anda Butuh AI Chatbot 24/7?",
     date: "2026-06-07",
-    category: "Inovasi",
+    category: "Teknologi & Web",
     image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Jangan biarkan pelanggan kabur karena tidak dibalas. AI Chatbot bisa membantu melayani pembeli saat Anda sedang tidur sekalipun.",
     content: `
@@ -349,7 +349,7 @@ export const blogPosts = [
     slug: "ai-dalam-digital-marketing",
     title: "Masa Depan Digital Marketing: Kolaborasi AI & Kreativitas Manusia",
     date: "2026-06-04",
-    category: "Tren Pemasaran",
+    category: "Digital Marketing",
     image: "https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Bagaimana tren pemasaran digital berubah dengan hadirnya AI? Pelajari cara agar bisnis Anda tetap relevan di tengah gempuran teknologi.",
     content: `
@@ -371,7 +371,7 @@ export const blogPosts = [
     slug: "desain-website-konversi",
     title: "Kenapa Desain Minimalis Lebih Efektif Tingkatkan Penjualan?",
     date: "2026-06-03",
-    category: "Desain UI/UX",
+    category: "Teknologi & Web",
     image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Banyak hiasan justru mengalihkan fokus pembeli. Pelajari rahasia psikologi desain yang membuat pengunjung betah dan ingin segera membeli.",
     content: `
@@ -444,7 +444,7 @@ export const blogPosts = [
     slug: "website-omnichannel-hub",
     title: "Website Sebagai 'Markas Besar': Menggabungkan IG, WA, dan Marketplace dalam Satu Link",
     date: "2026-05-30",
-    category: "Sistem Manajemen",
+    category: "Teknologi & Web",
     image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Berhenti membuat pelanggan bingung dengan puluhan link berbeda. Jadikan website Anda sebagai pusat komando yang elegan untuk seluruh ekosistem digital bisnis Anda.",
     content: `
@@ -502,7 +502,7 @@ export const blogPosts = [
     slug: "kenapa-website-sepi-pengunjung",
     title: "Sudah Buat Website Tapi Sepi? Ini 3 Kesalahan Fatal yang Sering Terjadi",
     date: "2026-05-25",
-    category: "Pemasaran Digital",
+    category: "Digital Marketing",
     image: "https://images.pexels.com/photos/4064227/pexels-photo-4064227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Membuat website bukanlah akhir dari proses digital marketing, melainkan baru langkah pertama. Pahami kenapa website Anda seperti kuburan dan cara mengatasinya.",
     content: `
@@ -535,7 +535,7 @@ export const blogPosts = [
     slug: "rebranding-digital-naikkan-harga",
     title: "Cara Menjual Produk Lebih Mahal Tanpa Diprotes Pelanggan (Rahasia Rebranding Digital)",
     date: "2026-05-20",
-    category: "Psikologi Bisnis",
+    category: "Strategi Bisnis",
     image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Lelah selalu diminta diskon oleh pelanggan? Pelajari bagaimana sebuah website premium dapat mengubah persepsi nilai brand Anda dan menjustifikasi harga tinggi.",
     content: `
