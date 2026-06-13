@@ -368,4 +368,80 @@ export const blogPosts = [
       <p><b>Prinsip Kami:</b> Kami mendesain website untuk manusia, bukan untuk komputer. Setiap piksel yang kami letakkan memiliki alasan yang jelas untuk membantu pelanggan Anda merasa nyaman dan aman saat bertransaksi dengan Anda.</p>
     `,
   },
+  {
+    slug: "tiktok-shop-vs-website",
+    title: "TikTok Shop vs Website: Kenapa Bisnis Anda Butuh Keduanya di Tahun 2026",
+    date: "2026-06-02",
+    category: "Strategi",
+    image: "https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    excerpt: "Berbahaya jika mengandalkan satu platform sosial media saja. Pelajari strategi menggabungkan traffic viral TikTok dengan konversi stabil dari website Anda.",
+    content: `
+      <p>Banyak UMKM yang merasa puas hanya dengan berjualan di TikTok Shop atau platform <i>Social Commerce</i> lainnya. Memang, potensi viralitasnya luar biasa. Tapi, pernahkah Anda memikirkan risiko "membangun istana di atas tanah sewaan"?</p>
+      
+      <h3>Bahaya Bergantung 100% pada Sosial Media</h3>
+      <p>Algoritma sosial media bisa berubah kapan saja tanpa pemberitahuan. Hari ini video Anda bisa FYP (*For You Page*) dan pesanan membludak, besok akun Anda bisa tiba-tiba di-*shadowban* atau bahkan diblokir secara permanen. Jika itu terjadi, bisnis Anda praktis "mati" dalam semalam karena Anda kehilangan satu-satunya sumber pendapatan.</p>
+
+      <h3>Website: Sertifikat Hak Milik Digital Anda</h3>
+      <p>Berbeda dengan sosial media, website adalah aset properti digital yang Anda miliki sepenuhnya. Anda tidak akan pernah diusir, tidak ada algoritma yang tiba-tiba menyembunyikan postingan Anda, dan Anda memegang 100% kendali atas data pelanggan (seperti email dan nomor WhatsApp).</p>
+      
+      <h3>Strategi "The Perfect Combo" (Kolaborasi Platform)</h3>
+      <p>Solusi terbaik bukanlah memilih salah satu, melainkan menggabungkan keduanya:</p>
+      <ul>
+        <li><b>Fase 1: Tarik Perhatian (Awareness).</b> Gunakan TikTok, Reels, atau Shorts untuk membuat konten yang menghibur dan viral. Tujuan di sini adalah mengumpulkan "mata" yang melihat brand Anda.</li>
+        <li><b>Fase 2: Bangun Kepercayaan & Konversi (Trust).</b> Di bio TikTok Anda, arahkan mereka ke Website (Landing Page). Di website, tampilkan detail produk dengan mewah, testimoni asli, dan garansi yang meyakinkan agar mereka langsung <i>checkout</i>.</li>
+      </ul>
+
+      <p><b>Lini Karya's Expert Take:</b> Jangan biarkan algoritma mendikte nasib bisnis Anda. Gunakan platform sosial untuk "menjemput" audiens, dan bawa mereka pulang ke "rumah" Anda sendiri, yaitu Website.</p>
+    `,
+  },
+  {
+    slug: "qris-payment-otomatis-website",
+    title: "Selamat Tinggal Transfer Manual: Pentingnya QRIS & Payment Otomatis di Website",
+    date: "2026-06-01",
+    category: "Teknologi",
+    image: "https://images.pexels.com/photos/6268897/pexels-photo-6268897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    excerpt: "Pembeli online malas melakukan transfer manual. Tingkatkan omzet Anda dengan mengintegrasikan sistem pembayaran otomatis (Payment Gateway) langsung di website.",
+    content: `
+      <p>Bayangkan skenario ini: Seorang calon pembeli sudah tertarik dengan produk Anda di tengah malam. Mereka ingin membeli, tapi website Anda hanya menampilkan tulisan "Silakan transfer ke nomor rekening BCA berikut, lalu kirim bukti transfer ke WhatsApp admin kami yang sedang offline".</p>
+      <p>Apa yang terjadi? Pembeli tersebut menunda pembayaran, ketiduran, dan besok paginya mereka lupa atau berubah pikiran. Fenomena ini disebut "Ghosting Buyer".</p>
+
+      <h3>Membunuh "Friction" (Hambatan) Berbelanja</h3>
+      <p>Dalam e-commerce, semakin banyak langkah yang harus dilalui pembeli, semakin tinggi rasio pembatalannya (*Cart Abandonment Rate*). Transfer manual dan konfirmasi chat adalah hambatan terbesar dalam transaksi *online* UMKM.</p>
+      
+      <h3>Keuntungan Sistem Payment Gateway Terintegrasi</h3>
+      <p>Dengan mengintegrasikan *Payment Gateway* (seperti Midtrans, Xendit, atau Doku) ke dalam website Anda, seluruh proses menjadi instan:</p>
+      <ul>
+        <li><b>Pembayaran 24/7 Tanpa Admin:</b> Pelanggan bisa membayar pakai QRIS, Virtual Account (BCA, Mandiri, dll), atau e-Wallet (Gopay, OVO, ShopeePay) jam 3 pagi, dan sistem akan langsung mengonfirmasi pembayaran secara otomatis.</li>
+        <li><b>Terlihat Profesional & Terpercaya:</b> Menerima pembayaran kartu kredit atau QRIS resmi memberikan sinyal kepada pembeli bahwa bisnis Anda dikelola secara profesional dan bukan penipuan.</li>
+        <li><b>Anti-Fraud & Bukti Palsu:</b> Anda tidak perlu lagi menyipitkan mata mengecek keaslian struk bukti transfer yang dikirim via WA. Sistem komputer mengecek mutasi secara instan dan 100% akurat.</li>
+      </ul>
+
+      <p><b>Lini Karya's Expert Take:</b> Kami bisa membantu Anda mengimplementasikan sistem *checkout* kilat ini di website Anda. Ini bukan hanya tentang kecanggihan teknologi, tapi tentang mempermudah pelanggan memberikan uangnya kepada Anda.</p>
+    `,
+  },
+  {
+    slug: "website-omnichannel-hub",
+    title: "Website Sebagai 'Markas Besar': Menggabungkan IG, WA, dan Marketplace dalam Satu Link",
+    date: "2026-05-30",
+    category: "Sistem Manajemen",
+    image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    excerpt: "Berhenti membuat pelanggan bingung dengan puluhan link berbeda. Jadikan website Anda sebagai pusat komando yang elegan untuk seluruh ekosistem digital bisnis Anda.",
+    content: `
+      <p>Pernahkah Anda melihat profil Instagram bisnis yang bio-nya berisi tautan Linktree yang isinya puluhan tombol membingungkan? Ada tombol ke Tokopedia, Shopee, WhatsApp Admin 1, Admin 2, Katalog PDF, dan lain-lain. Bukannya mempermudah, hal ini justru membuat pelanggan *overwhelmed* (bingung) dan pergi.</p>
+
+      <h3>Masalah Fragmentasi Digital</h3>
+      <p>UMKM saat ini dituntut hadir di mana-mana (Omnichannel). Namun, jika tidak dikelola dengan baik, identitas brand Anda akan terpecah-pecah. Pelanggan yang melihat produk A di Instagram Anda mungkin akan kesulitan mencarinya saat membuka toko Shopee Anda karena etalasenya berantakan.</p>
+      
+      <h3>Solusi: Website Sebagai "Hub" (Pusat Komando)</h3>
+      <p>Website yang baik bertindak seperti lobi hotel bintang lima. Ia harus menjadi satu-satunya *link* yang Anda pasang di profil media sosial manapun, yang kemudian secara cerdas dan cantik mengarahkan tamu ke kamar (layanan) yang mereka butuhkan.</p>
+      
+      <ul>
+        <li><b>Branding Premium:</b> Alih-alih menggunakan penyedia *link in bio* gratisan yang ada logo perusahaannya, Anda menggunakan domain Anda sendiri (misal: <i>link.namabisnisanda.com</i>). Ini mendongkrak gengsi brand.</li>
+        <li><b>Katalog Terpusat:</b> Pengunjung bisa melihat foto dan membaca deskripsi produk di website Anda dengan nyaman tanpa gangguan iklan. Jika mereka memutuskan untuk beli, barulah website mengarahkan mereka secara otomatis ke halaman produk spesifik di Tokopedia atau Shopee pilihan mereka.</li>
+        <li><b>Pelacakan Data Utuh:</b> Dengan semua lalu lintas masuk melalui satu "pintu" (website Anda), Anda bisa melacak secara akurat dari mana kebanyakan pelanggan Anda berasal (apakah dari Instagram, TikTok, atau pencarian organik Google).</li>
+      </ul>
+
+      <p><b>Lini Karya's Expert Take:</b> Simplifikasi adalah kunci konversi. Buatlah ekosistem digital Anda layaknya jaring laba-laba, di mana ujung manapun yang disentuh pelanggan (IG, TikTok, Google), mereka akan selalu ditarik masuk ke pusatnya: Website profesional Anda.</p>
+    `,
+  },
 ];
