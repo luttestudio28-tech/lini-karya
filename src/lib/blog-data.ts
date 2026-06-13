@@ -444,4 +444,70 @@ export const blogPosts = [
       <p><b>Lini Karya's Expert Take:</b> Simplifikasi adalah kunci konversi. Buatlah ekosistem digital Anda layaknya jaring laba-laba, di mana ujung manapun yang disentuh pelanggan (IG, TikTok, Google), mereka akan selalu ditarik masuk ke pusatnya: Website profesional Anda.</p>
     `,
   },
+  {
+    slug: "website-pribadi-vs-marketplace",
+    title: "Website Pribadi vs Marketplace (Shopee/Tokped): Mana yang Terbaik untuk UMKM?",
+    date: "2026-05-28",
+    category: "Strategi",
+    image: "https://images.pexels.com/photos/5076511/pexels-photo-5076511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    excerpt: "Sering terjebak perang harga di marketplace? Temukan alasan mengapa memiliki website pribadi adalah kunci untuk keluar dari persaingan harga yang berdarah-darah.",
+    content: `
+      <p>Pertanyaan klasik setiap pengusaha yang baru merambah dunia digital: <i>"Buat apa keluar uang untuk bikin website kalau jualan di Shopee, Tokopedia, atau TikTok Shop itu gratis?"</i></p>
+      <p>Jawaban singkatnya: Keduanya memiliki fungsi yang sangat berbeda. Mengandalkan satu saja sama berbahayanya dengan memiliki toko fisik tanpa nama di pinggir jalan tol.</p>
+
+      <h3>Analogi Sederhana: Mall vs Butik Pribadi</h3>
+      <p>Berjualan di <b>Marketplace</b> ibarat menyewa lapak di dalam *mall* raksasa. Trafiknya memang luar biasa padat, tapi kompetisinya sangat brutal. Saat seseorang mencari "Kemeja Polos" di kolom pencarian, produk Anda akan disejajarkan dengan puluhan produk serupa dari toko lain. Di sini, <b>perang harga adalah raja</b>. Loyalitas pelanggan sangat rendah karena mereka membeli dari *mall* tersebut, bukan spesifik dari *brand* Anda.</p>
+      
+      <p>Memiliki <b>Website Pribadi</b> ibarat memiliki *butik mewah mandiri* di lokasi strategis. Saat pelanggan masuk, mereka hanya melihat produk Anda. Tidak ada produk kompetitor di sebelahnya. Anda bisa mengatur suasana, memutar musik (secara kiasan lewat desain), dan menciptakan pengalaman premium. Di sini, <b>brand adalah raja</b>. Pelanggan bersedia membayar lebih mahal karena mereka mempercayai *brand* Anda.</p>
+
+      <h3>Kelemahan Tersembunyi Marketplace</h3>
+      <ul>
+        <li><b>Potongan Admin yang Semakin Besar:</b> Awalnya memang gratis, namun kini potongan admin, layanan, dan gratis ongkir di marketplace bisa mencapai 7-12% per transaksi.</li>
+        <li><b>Data Pelanggan Bukan Milik Anda:</b> Anda tidak bisa mem-<i>follow up</i> pembeli lama dengan mudah, karena marketplace merahasiakan nomor telepon dan email pelanggan.</li>
+        <li><b>Perang Harga Berdarah-darah:</b> Sulit menjual produk premium jika di sebelah produk Anda selalu ada saran "Produk Serupa Lebih Murah".</li>
+      </ul>
+
+      <h3>Strategi Kolaborasi (The Hybrid Approach)</h3>
+      <p>Solusi terbaik bukanlah memilih, tapi memisahkan fungsi:</p>
+      <ul>
+        <li>Gunakan <b>Marketplace</b> untuk cuci gudang, mencari pelanggan baru (volume tinggi), dan menjual produk pancingan (*entry-level*).</li>
+        <li>Gunakan <b>Website Pribadi</b> untuk merilis produk terbaru, menjual produk premium (margin tinggi), memberikan program *loyalty* member, dan mengumpulkan *database* pelanggan jangka panjang.</li>
+      </ul>
+
+      <p><b>Lini Karya's Expert Take:</b> Bisnis yang sehat tidak bergantung pada satu keranjang. Marketplace adalah tempat berjualan, tapi Website adalah tempat Anda membangun *Brand Equity* (Nilai Brand) yang sesungguhnya.</p>
+    `,
+  },
+  {
+    slug: "kenapa-website-sepi-pengunjung",
+    title: "Sudah Buat Website Tapi Sepi? Ini 3 Kesalahan Fatal yang Sering Terjadi",
+    date: "2026-05-25",
+    category: "Pemasaran Digital",
+    image: "https://images.pexels.com/photos/4064227/pexels-photo-4064227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    excerpt: "Membuat website bukanlah akhir dari proses digital marketing, melainkan baru langkah pertama. Pahami kenapa website Anda seperti kuburan dan cara mengatasinya.",
+    content: `
+      <p>Ini adalah keluhan yang paling sering kami dengar dari klien yang sebelumnya menggunakan jasa pembuat web abal-abal: <i>"Saya sudah keluar uang jutaan bikin website yang bagus, tapi kok sepi banget? Boro-boro ada yang beli, yang klik aja jarang."</i></p>
+      <p>Mari kita luruskan satu hal penting: <b>Website itu ibarat brosur mewah. Kalau brosurnya hanya Anda simpan di dalam laci kamar, tidak akan ada yang tahu bisnis Anda.</b></p>
+      <p>Berikut adalah 3 alasan utama mengapa website Anda sepi seperti kuburan, dan bagaimana cara menghidupkannya:</p>
+
+      <h3>1. Sindrom "Build It and They Will Come" (Tanpa Strategi Trafik)</h3>
+      <p>Banyak pengusaha berpikir begitu website <i>live</i>, otomatis Google akan mengirimkan ribuan pengunjung. Ini salah besar. Ada jutaan website baru setiap hari.</p>
+      <p><b>Solusinya:</b> Anda harus secara aktif mendatangkan trafik. Caranya ada dua: 
+      <br/>- <i>Organik (Gratis tapi Lama):</i> Menulis artikel blog yang relevan (SEO) dan rutin membagikan link website di bio Instagram, TikTok, dan Google Business.
+      <br/>- <i>Berbayar (Cepat tapi Butuh Modal):</i> Menjalankan iklan Facebook Ads atau Google Ads yang langsung diarahkan (*redirect*) ke website Anda.</p>
+
+      <h3>2. Optimasi SEO yang Kosong (Website "Buta Huruf")</h3>
+      <p>Website Anda mungkin terlihat indah dengan banyak gambar besar, tapi Google itu buta huruf terhadap gambar jika tidak dioptimasi. Jika *developer* Anda tidak mengatur <i>Meta Title</i>, <i>Meta Description</i>, <i>Alt Text Image</i>, dan hierarki H1/H2, Google tidak tahu website Anda jualan apa.</p>
+      <p><b>Solusinya:</b> Pastikan website Anda dibangun dengan struktur SEO yang benar sejak awal. Jika Anda jualan Sepatu Kulit di Bandung, pastikan kata-kata tersebut terstruktur dengan baik di dalam kode *website* Anda.</p>
+
+      <h3>3. Website "Bocor" (Loading Lambat & Tidak Responsif)</h3>
+      <p>Ini yang paling menyakitkan. Anda sudah susah payah mendatangkan trafik lewat iklan, tapi saat orang mengklik link Anda, websitenya butuh 8 detik untuk terbuka. Atau tulisannya berantakan saat dibuka di HP.</p>
+      <p>Tahukah Anda? Lebih dari 53% pengguna akan menutup (*close*) website yang loadingnya lebih dari 3 detik. Uang iklan Anda hangus begitu saja tanpa menghasilkan leads.</p>
+      <p><b>Solusinya:</b> Pilih jasa pembuatan website yang berani menjamin skor performa. Pastikan desain menggunakan pendekatan *Mobile-First*, karena 90% pengunjung Anda akan menggunakan smartphone.</p>
+
+      <div className="bg-accent/5 p-6 border-l-4 border-accent my-8">
+        <p className="font-bold text-accent mb-2">Lini Karya's Expert Take:</p>
+        <p>Di Lini Karya, kami tidak hanya menyerahkan *password* lalu pergi. Kami memastikan fondasi "mesin" website Anda sudah 100% siap balapan (SEO Ready, Super Cepat). Tugas Anda selanjutnya adalah mengisikan "bensin" (Trafik Iklan/Sosmed) agar mobil tersebut melaju membawa profit bagi bisnis Anda.</p>
+      </div>
+    `,
+  },
 ];
