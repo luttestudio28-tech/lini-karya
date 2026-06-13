@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 const blogPosts = [
   {
@@ -7,24 +8,23 @@ const blogPosts = [
     title: "Kenapa Bisnis Kuliner Wajib Punya Website Sendiri",
     date: "2026-06-15",
     category: "Bisnis Lokal",
+    image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Bisnis kuliner dikenal sebagai salah satu sektor paling kreatif di Indonesia. Dari kedai kopi estetik hingga rumah makan legendaris, persaingan bisnis F&B saat ini sangatlah ketat. Namun, banyak pemilik bisnis yang masih terjebak pada ketergantungan 100% kepada platform pengiriman pihak ketiga (Gofood/Grabfood/ShopeeFood).</p>
+      <p>Bisnis kuliner dikenal sebagai salah satu sektor paling kreatif di Indonesia. Namun, banyak pemilik bisnis yang masih terjebak pada ketergantungan 100% kepada platform pihak ketiga. Padahal, memiliki website sendiri adalah langkah strategis untuk membangun identitas brand yang lebih kuat.</p>
       
-      <p>Meskipun platform tersebut membantu dalam hal logistik, ada beberapa alasan krusial kenapa Anda wajib memiliki website mandiri:</p>
+      <h3>1. Memangkas Biaya Potongan Platform (Komisi 20%+)</h3>
+      <p>Hampir semua platform pengiriman makanan menarik komisi yang cukup besar dari setiap transaksi. Dengan website mandiri yang memiliki sistem WhatsApp Order, pelanggan bisa bertransaksi langsung dengan Anda. Selisih 20% ini bisa dialokasikan untuk meningkatkan kualitas bahan baku atau budget promosi Anda sendiri.</p>
       
-      <h3>1. Memangkas Biaya Potongan Platform</h3>
-      <p>Platform pengiriman biasanya memotong 20% atau lebih dari setiap transaksi Anda. Dengan website mandiri yang terintegrasi dengan WhatsApp, pelanggan bisa memesan langsung kepada Anda tanpa potongan biaya tersebut. Bayangkan berapa banyak profit yang bisa Anda hemat dalam satu bulan.</p>
+      <h3>2. Kepemilikan Data Pelanggan (Customer Base)</h3>
+      <p>Siapa pelanggan setia Anda? Di aplikasi pihak ketiga, Anda tidak punya akses ke nomor telepon atau kebiasaan beli mereka. Website memungkinkan Anda menanamkan Pixel (seperti Meta Pixel) atau formulir kontak untuk mengumpulkan database pelanggan. Dengan data ini, Anda bisa mengirimkan promo khusus di hari ulang tahun mereka atau info menu baru secara personal.</p>
       
-      <h3>2. Kepemilikan Data Pelanggan</h3>
-      <p>Di platform pihak ketiga, Anda tidak tahu siapa pelanggan Anda sebenarnya. Dengan website sendiri, Anda bisa mengumpulkan data nomor WhatsApp atau email pelanggan (tentunya dengan izin) untuk mengirimkan info promo atau menu baru secara langsung. Ini adalah kunci dari <b>customer loyalty</b>.</p>
+      <h3>3. Membangun Brand Identity yang Berwibawa</h3>
+      <p>Website adalah wajah digital Anda. Di sini, Anda bebas bercerita tentang sejarah resep keluarga Anda, profil chef, hingga suasana interior outlet. Visual yang estetik dan navigasi yang mudah akan memberikan kesan bahwa bisnis kuliner Anda dikelola secara profesional dan modern.</p>
       
-      <h3>3. Membangun Brand Identity yang Kuat</h3>
-      <p>Website adalah "rumah digital" Anda. Anda bebas menentukan desain, suasana, dan cerita di balik brand Anda tanpa batasan format dari platform lain. Pelanggan saat ini sangat menghargai estetika dan keunikan brand; website yang bagus menunjukkan bahwa Anda serius dalam mengelola bisnis.</p>
+      <h3>4. Optimasi Menu untuk Konversi</h3>
+      <p>Berbeda dengan menu teks standar di aplikasi, di website Anda bisa menyajikan menu dengan fotografi resolusi tinggi, video pendek proses plating, hingga sistem rekomendasi "paling banyak dibeli" yang lebih dinamis.</p>
       
-      <h3>4. Menampilkan Menu Secara Atraktif</h3>
-      <p>Anda bisa menampilkan foto produk dengan resolusi tinggi, video proses memasak, hingga testimoni pelanggan dengan cara yang jauh lebih menarik daripada sekadar daftar teks di aplikasi pengiriman.</p>
-      
-      <p><b>Kesimpulan:</b> Website bukan pengganti aplikasi pengiriman, melainkan pelengkap strategis. Gunakan aplikasi untuk menjangkau pelanggan baru, dan gunakan website untuk mempertahankan pelanggan setia dan memaksimalkan profit.</p>
+      <p><b>Kesimpulan:</b> Investasi di website bukan berarti meninggalkan platform pengiriman, namun sebagai jembatan untuk kemandirian bisnis jangka panjang. Gunakan aplikasi untuk <i>user acquisition</i> (mencari pelanggan baru), dan arahkan mereka ke website Anda untuk pesanan berikutnya guna mendapatkan profit maksimal.</p>
     `,
   },
   {
@@ -32,24 +32,23 @@ const blogPosts = [
     title: "Cara Agar Toko Anda Muncul di Halaman Pertama Google",
     date: "2026-06-12",
     category: "SEO",
+    image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Pernahkah Anda mencari "Kopi enak di dekat saya" atau "Jasa jahit terdekat" di Google? Hasil yang muncul pertama kali biasanya adalah peta dengan daftar bisnis lokal. Itulah yang disebut dengan <b>Local SEO</b>.</p>
+      <p>Local SEO adalah strategi digital marketing yang memungkinkan bisnis fisik Anda (toko, kantor, atau cafe) ditemukan oleh orang-orang yang berada di area sekitar Anda. Jika dilakukan dengan benar, toko Anda akan menjadi pilihan utama saat calon pelanggan mencari solusi di mesin pencari.</p>
       
-      <p>Bagi UMKM, muncul di halaman pertama Google bukan sekadar gaya-gayaan, tapi soal kelangsungan bisnis. Berikut langkah praktis yang bisa Anda lakukan:</p>
+      <h3>Langkah 1: Maksimalkan Google Business Profile</h3>
+      <p>Google Business Profile (GBP) adalah "pintu masuk" utama. Pastikan profil Anda diverifikasi. Isilah deskripsi bisnis dengan kata kunci yang relevan, tambahkan foto produk terbaru setiap minggu, dan pastikan titik koordinat di Google Maps akurat. Jangan lupa untuk menjawab setiap ulasan pelanggan, baik yang positif maupun negatif.</p>
       
-      <h3>1. Optimasi Google Business Profile (Dulu Google My Business)</h3>
-      <p>Ini adalah langkah wajib. Pastikan alamat, nomor telepon, dan jam operasional toko Anda terisi dengan benar. Upload foto toko dan produk secara rutin. Semakin lengkap profil Anda, semakin besar peluang Google menampilkannya kepada calon pelanggan.</p>
+      <h3>Langkah 2: Gunakan Kata Kunci Berbasis Lokasi (Geo-Targeting)</h3>
+      <p>Jangan hanya menggunakan kata kunci luas seperti "Jasa Servis AC". Gunakan variasi seperti "Servis AC Jakarta Selatan" atau "Pasang AC di BSD". Masukkan kata-kata kunci ini ke dalam Tag Judul (H1), Meta Description, dan juga di dalam paragraf artikel website Anda agar Google tahu spesialisasi area jangkauan Anda.</p>
       
-      <h3>2. Gunakan Kata Kunci Lokal (Geo-Targeting)</h3>
-      <p>Jangan hanya menargetkan kata kunci umum seperti "Toko Baju". Gunakan kata kunci spesifik yang mencantumkan nama wilayah Anda, misalnya "Toko Baju Muslim di [Nama Kota Anda]". Masukkan kata kunci ini ke dalam judul halaman website dan deskripsi produk Anda.</p>
+      <h3>Langkah 3: Konsistensi NAP (Name, Address, Phone)</h3>
+      <p>Ini adalah kesalahan teknis yang sering terjadi. Pastikan penulisan nama bisnis, alamat, dan nomor telepon Anda SAMA PERSIS di seluruh internet—mulai dari website, profil Instagram, hingga direktori bisnis online. Ketidakkonsistenan data akan membuat Google ragu untuk menampilkan profil Anda.</p>
       
-      <h3>3. Kumpulkan Ulasan (Reviews) Pelanggan</h3>
-      <p>Ulasan bintang 5 bukan hanya mempercantik tampilan, tapi juga memberi sinyal kepada Google bahwa bisnis Anda terpercaya. Jangan ragu meminta pelanggan setia Anda untuk memberikan ulasan di Google Maps setelah mereka berkunjung.</p>
+      <h3>Langkah 4: Optimasi Kecepatan Mobile</h3>
+      <p>Mayoritas pencarian lokal dilakukan melalui smartphone saat orang sedang dalam perjalanan. Website yang lambat (lebih dari 3 detik) akan membuat calon pelanggan pindah ke kompetitor. Pastikan website Anda responsif, ringan, dan memiliki tombol "Hubungi Sekarang" yang mudah diakses.</p>
       
-      <h3>4. Website Harus Responsif di HP</h3>
-      <p>Lebih dari 80% pencarian lokal dilakukan melalui smartphone. Jika website bisnis Anda lambat atau berantakan saat dibuka di HP, pengunjung akan langsung keluar, dan Google akan menurunkan peringkat Anda.</p>
-      
-      <p><b>Tips Pro:</b> Pastikan nama, alamat, dan nomor telepon (NAP) Anda konsisten di seluruh internet—mulai dari website, Facebook, Instagram, hingga portal berita lokal.</p>
+      <p><b>Statistik Menarik:</b> 76% orang yang melakukan pencarian lokal melalui smartphone akan mengunjungi bisnis tersebut dalam kurun waktu 24 jam. Jangan lewatkan peluang emas ini.</p>
     `,
   },
   {
@@ -57,29 +56,28 @@ const blogPosts = [
     title: "Berapa Harga Pembuatan Website untuk UMKM di Tahun 2026?",
     date: "2026-06-10",
     category: "Investasi Digital",
+    image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Salah satu pertanyaan yang paling sering kami terima adalah: "Berapa sih harga buat website yang standar tapi bagus?" Di tahun 2026, harga pembuatan website untuk UMKM sangat bervariasi tergantung kebutuhan.</p>
+      <p>Menentukan budget untuk website seringkali membingungkan karena variasinya yang sangat luas. Sebagai pemilik UMKM, Anda perlu memahami apa yang Anda bayar agar tidak terjebak pada solusi yang "murah tapi merepotkan" atau "mahal tapi tidak berdampak".</p>
       
-      <p>Mari kita bedah secara transparan agar Anda tidak salah memilih partner:</p>
+      <h3>Pilihan 1: Solusi Mandiri (Budget Terbatas)</h3>
+      <p>Menggunakan platform <i>No-Code</i> seperti Wix atau Shopify. Biaya berkisar Rp 500rb - Rp 2,5jt per tahun. Kelebihannya adalah kontrol penuh di tangan Anda. Kekurangannya, Anda harus meluangkan waktu puluhan jam untuk belajar, dan optimasi SEO teknis biasanya sangat terbatas.</p>
       
-      <h3>1. Solusi Mandiri / DIY (Rp 500rb - Rp 2jt / tahun)</h3>
-      <p>Anda menggunakan platform seperti Wix, Shopify, atau WordPress.com. Anda melakukan semuanya sendiri. Harganya murah, tapi Anda harus meluangkan waktu berjam-jam untuk belajar desain dan teknis. Biasanya kurang optimal untuk SEO dan performa jangka panjang.</p>
+      <h3>Pilihan 2: Jasa Freelancer (Menengah)</h3>
+      <p>Biaya biasanya Rp 1,5jt - Rp 4jt. Sangat cocok untuk landing page sederhana. Tantangan utamanya adalah konsistensi dukungan teknis. Jika freelancer tersebut sibuk dengan proyek lain, website Anda mungkin akan terbengkalai jika terjadi error mendadak.</p>
       
-      <h3>2. Freelancer Pemula (Rp 1jt - Rp 3jt)</h3>
-      <p>Banyak freelancer yang menawarkan jasa pembuatan website dengan harga sangat terjangkau. Namun, berhati-hatilah dengan layanan purna jualnya. Seringkali setelah website jadi, sulit untuk menghubungi mereka jika ada error atau butuh update.</p>
+      <h3>Pilihan 3: Studio/Agensi Profesional (Investasi Strategis)</h3>
+      <p>Biaya mulai dari Rp 3jt hingga belasan juta rupiah. Di sini, Anda tidak hanya membeli kode, tapi membeli strategi pemasaran digital, desain kustom yang merepresentasikan brand, keamanan tingkat tinggi, dan dukungan teknis 24/7. Investasi ini biasanya balik modal (ROI) lebih cepat karena website dirancang khusus untuk konversi penjualan.</p>
       
-      <h3>3. Agensi / Studio Web Profesional (Rp 2,5jt - Rp 15jt+)</h3>
-      <p>Seperti layanan kami di Lini Karya. Anda membayar untuk strategi, desain kustom, kecepatan server, keamanan, dan dukungan teknis jangka panjang. Untuk Landing Page sederhana, harga Rp 2,5jt adalah standar yang wajar untuk mendapatkan kualitas premium.</p>
-      
-      <h3>Kenapa Harga Bisa Berbeda Jauh?</h3>
+      <h3>Apa Saja Komponen Biayanya?</h3>
       <ul>
-        <li><b>Kecepatan:</b> Website murah biasanya lambat karena menggunakan server "patungan".</li>
-        <li><b>Keamanan:</b> Apakah website Anda diproteksi dari serangan hacker?</li>
-        <li><b>Optimasi SEO:</b> Apakah website dibuat sekadar jadi, atau dirancang agar mudah ditemukan Google?</li>
-        <li><b>Maintenance:</b> Siapa yang mengurus jika website tiba-tiba mati atau butuh ganti nomor WA?</li>
+        <li><b>Domain & Hosting:</b> Biaya sewa nama alamat web dan "rumah" penyimpanan data (tahunan).</li>
+        <li><b>Design & Development:</b> Biaya tenaga ahli merancang layout dan fungsi sistem.</li>
+        <li><b>Copywriting:</b> Biaya penulisan kata-kata yang persuasif untuk menarik pembeli.</li>
+        <li><b>Maintenance:</b> Biaya update sistem dan keamanan agar website tidak mati atau kena hack.</li>
       </ul>
       
-      <p><b>Saran Kami:</b> Jangan hanya melihat harga termurah. Lihatlah website sebagai investasi aset digital. Website yang murah tapi tidak mendatangkan pelanggan justru lebih mahal daripada website berkualitas yang menghasilkan profit setiap hari.</p>
+      <p><b>Saran Investasi:</b> Jangan tanyakan "berapa harganya?", tapi tanyakan "berapa banyak potensi pelanggan yang bisa saya dapatkan dari website ini?". Website berkualitas adalah salesman terbaik Anda yang bekerja 24 jam sehari.</p>
     `,
   },
 ];
@@ -100,7 +98,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <article className="bg-background min-h-screen pt-32 pb-24 px-container">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         <Link 
           href="/blog" 
           className="font-mono text-[10px] uppercase tracking-widest text-accent font-bold mb-12 inline-block hover:opacity-70 transition-opacity"
@@ -117,13 +115,24 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               {post.date}
             </span>
           </div>
-          <h1 className="font-display text-4xl md:text-6xl uppercase tracking-tighter leading-tight mb-8">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl uppercase tracking-tighter leading-tight mb-12">
             {post.title}
           </h1>
+
+          {/* New Image Section */}
+          <div className="relative w-full aspect-video md:aspect-[21/9] overflow-hidden bg-muted border border-foreground/10 mb-12">
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+              priority
+            />
+          </div>
         </header>
 
         <div 
-          className="font-mono text-sm md:text-base leading-relaxed text-foreground/80 space-y-8 blog-content"
+          className="font-mono text-sm md:text-base leading-relaxed text-foreground/80 space-y-12 blog-content max-w-3xl"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
