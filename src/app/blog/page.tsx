@@ -9,6 +9,22 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "studi-kasus-klinik-kecantikan",
+    title: "Studi Kasus: Bagaimana Klinik Kecantikan X Meningkatkan Booking 300%",
+    excerpt: "Melihat langsung bagaimana redesain website dan optimasi SEO lokal berhasil melipatgandakan jadwal reservasi pasien dalam waktu kurang dari 3 bulan.",
+    date: "2026-06-18",
+    category: "Studi Kasus",
+    image: "https://images.pexels.com/photos/3985304/pexels-photo-3985304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    slug: "studi-kasus-kopi-lokal",
+    title: "Studi Kasus: Toko Kopi Lokal Naikkan Omzet Penjualan Online Tanpa Aplikasi Pihak Ketiga",
+    excerpt: "Strategi di balik kesuksesan sebuah kedai kopi melepaskan diri dari potongan komisi 20% dengan menggunakan sistem website mandiri.",
+    date: "2026-06-16",
+    category: "Studi Kasus",
+    image: "https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
     slug: "bisnis-kuliner-website",
     title: "Kenapa Bisnis Kuliner Wajib Punya Website Sendiri",
     excerpt: "Jangan hanya mengandalkan platform pihak ketiga. Pelajari bagaimana website mandiri bisa membangun brand dan menghemat biaya operasional bisnis F&B Anda.",
@@ -94,7 +110,7 @@ export default function BlogPage() {
             Blog <span className="italic-accent text-accent">Lini Karya</span>
           </h1>
           <p className="font-mono text-sm md:text-base text-foreground/50 max-w-2xl leading-relaxed">
-            Berbagi panduan praktis dan strategi digital untuk membantu UMKM Indonesia tumbuh lebih cepat dengan website yang tepat.
+            Berbagi panduan praktis, studi kasus, dan strategi digital untuk membantu UMKM Indonesia tumbuh lebih cepat dengan website yang tepat.
           </p>
         </header>
 

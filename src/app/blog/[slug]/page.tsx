@@ -4,6 +4,74 @@ import Image from "next/image";
 
 const blogPosts = [
   {
+    slug: "studi-kasus-klinik-kecantikan",
+    title: "Studi Kasus: Bagaimana Klinik Kecantikan X Meningkatkan Booking 300%",
+    date: "2026-06-18",
+    category: "Studi Kasus",
+    image: "https://images.pexels.com/photos/3985304/pexels-photo-3985304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    content: `
+      <p>Banyak pemilik bisnis jasa yang merasa cukup hanya dengan memiliki akun Instagram yang aktif. Namun, studi kasus ini akan menunjukkan mengapa mengandalkan satu platform saja sangat berisiko, dan bagaimana sebuah website yang dirancang dengan benar bisa menjadi "mesin kasir" otomatis untuk bisnis Anda.</p>
+      
+      <h3>Masalah: Followers Banyak, Tapi Booking Sepi</h3>
+      <p>Klinik Kecantikan X memiliki lebih dari 50.000 followers di Instagram. Namun, mereka menghadapi masalah besar: Admin WhatsApp kewalahan menjawab pertanyaan yang sama berulang kali ("Harga treatment A berapa kak?", "Jadwal dokter B kapan?"), dan banyak calon pasien yang membatalkan niat booking karena respon admin yang lambat di jam sibuk.</p>
+      
+      <p>Selain itu, ketika akun Instagram mereka sempat terkena *shadowban* selama 2 minggu, omzet mereka langsung anjlok 70% karena tidak ada sumber trafik lain.</p>
+
+      <h3>Solusi: Ekosistem Digital Berbasis Website</h3>
+      <p>Tim Lini Karya masuk untuk melakukan perombakan total. Kami tidak hanya membuat desain yang cantik, tapi membangun sistem yang fungsional:</p>
+      <ul>
+        <li><b>Katalog Layanan Transparan:</b> Kami membuat halaman khusus untuk setiap jenis *treatment*, lengkap dengan harga, durasi, dan foto *before-after* beresolusi tinggi.</li>
+        <li><b>Sistem Booking Online Terintegrasi:</b> Pasien tidak perlu lagi chat admin untuk cek jadwal. Mereka bisa melihat jadwal dokter yang kosong secara *real-time* di website dan langsung melakukan *booking* mandiri.</li>
+        <li><b>Optimasi Local SEO:</b> Kami menargetkan kata kunci seperti "Klinik Kecantikan Terbaik di [Nama Kota]" dan "Treatment Jerawat [Nama Kota]" agar website muncul di Google saat pasien mencari solusi secara aktif.</li>
+      </ul>
+
+      <div className="bg-accent/5 p-6 border-l-4 border-accent my-8">
+        <p className="font-bold text-accent mb-2">Hasil Nyata (Dalam 3 Bulan):</p>
+        <ul className="mb-0">
+          <li><b>Peningkatan Booking 300%:</b> Pasien menyukai kemudahan *booking* kapan saja (bahkan jam 2 pagi) tanpa harus menunggu balasan admin.</li>
+          <li><b>Efisiensi Waktu Admin:</b> Pertanyaan dasar turun 80%, sehingga admin bisa fokus melakukan *follow-up* pada pelanggan VIP.</li>
+          <li><b>Kemandirian Platform:</b> Trafik organik dari Google menyumbang 40% dari total pasien baru, mengurangi ketergantungan pada iklan Instagram.</li>
+        </ul>
+      </div>
+
+      <h3>Lini Karya's Expert Take:</h3>
+      <p>Studi kasus ini membuktikan bahwa untuk bisnis jasa bernilai tinggi (high-ticket service), kepercayaan adalah segalanya. Website yang terlihat mewah, transparan, dan mudah digunakan memberikan rasa aman bagi calon pelanggan sebelum mereka mengeluarkan uang jutaan rupiah.</p>
+    `,
+  },
+  {
+    slug: "studi-kasus-kopi-lokal",
+    title: "Studi Kasus: Toko Kopi Lokal Naikkan Omzet Penjualan Online Tanpa Aplikasi Pihak Ketiga",
+    date: "2026-06-16",
+    category: "Studi Kasus",
+    image: "https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    content: `
+      <p>Model bisnis *Food & Beverage* (F&B) saat ini sangat bergantung pada aplikasi pengiriman makanan. Meskipun aplikasi tersebut bagus untuk mendatangkan pelanggan baru, potongan komisi sebesar 20-30% sangat mencekik margin keuntungan para pemilik kedai kopi lokal.</p>
+      
+      <h3>Masalah: Bekerja Keras Hanya Untuk Membayar Komisi</h3>
+      <p>Kedai Kopi Y sangat populer di kalangan mahasiswa dan pekerja *remote*. Penjualan online mereka menyentuh angka ratusan cup per hari. Namun, pemilik mengeluh karena margin keuntungan sangat tipis akibat potongan platform. Jika mereka menaikkan harga di aplikasi, pelanggan akan lari ke kompetitor. Jika harga disamakan dengan toko, mereka rugi.</p>
+
+      <h3>Solusi: Membangun Jalur "Direct-to-Consumer"</h3>
+      <p>Kami merancang strategi *Direct-to-Consumer* (D2C) menggunakan website mandiri. Tujuannya bukan untuk mematikan aplikasi pengiriman, tapi memindahkan pelanggan setia ke platform milik kedai sendiri.</p>
+      <ul>
+        <li><b>Menu Interaktif & Upselling:</b> Kami membuat katalog menu digital yang sangat responsif. Saat pelanggan memesan Es Kopi Susu, sistem secara otomatis akan menawarkan "Tambah donat hanya Rp 10.000?" (*cross-selling* otomatis).</li>
+        <li><b>Integrasi WhatsApp Order:</b> Keranjang belanja di website terhubung langsung ke WhatsApp kasir dengan format pesanan yang sudah rapi, meminimalisir kesalahan catat.</li>
+        <li><b>Program Loyalitas (Web-Only):</b> Pemilik kedai membuat promo rahasia: "Pesan lewat website kami (alamatweb.com), harga lebih murah 15% dari aplikasi hijau/oren, dan dapatkan gratis ongkir untuk jarak 3KM."</li>
+      </ul>
+
+      <div className="bg-foreground/5 p-8 my-10 border border-foreground/10 rounded-xl">
+        <h4 className="text-xl font-bold mb-4 uppercase tracking-tighter">Perubahan Metrik Bisnis:</h4>
+        <ol className="list-decimal pl-5 space-y-3">
+          <li><b>Penghematan Biaya:</b> Dalam bulan pertama, 30% pelanggan reguler pindah memesan lewat website. Kedai menghemat jutaan rupiah dari komisi platform.</li>
+          <li><b>Database Pelanggan:</b> Kedai kini memiliki lebih dari 1.000 nomor WhatsApp pelanggan setia yang bisa dikirimi pesan siaran (broadcast) saat ada menu baru tanpa biaya sepeser pun.</li>
+          <li><b>Kenaikan Nilai Order (AOV):</b> Fitur *upselling* otomatis di website berhasil meningkatkan rata-rata belanja pelanggan sebesar 15% per transaksi.</li>
+        </ol>
+      </div>
+
+      <h3>Lini Karya's Expert Take:</h3>
+      <p>Dalam bisnis F&B, aplikasi pengiriman adalah biaya *marketing* (Customer Acquisition Cost). Gunakan mereka untuk menemukan pelanggan baru. Namun setelah pelanggan mencoba dan menyukai produk Anda, Anda harus punya cara (website) untuk membuat mereka bertransaksi langsung dengan Anda di masa depan.</p>
+    `,
+  },
+  {
     slug: "bisnis-kuliner-website",
     title: "Kenapa Bisnis Kuliner Wajib Punya Website Sendiri",
     date: "2026-06-15",
