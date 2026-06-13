@@ -46,19 +46,16 @@ const Hero = () => {
           animate="animate"
           className="w-full relative z-10 mb-12 md:mb-20 mt-12"
         >
-          <h1 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] tracking-[-0.04em] text-left">
+          <h1 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] tracking-[-0.04em] text-left uppercase">
             <div className="flex flex-col">
               <span className="overflow-hidden block">
-                <motion.span variants={lineVars} className="inline-block">Website</motion.span>
+                <motion.span variants={lineVars} className="inline-block">Website Menjual</motion.span>
               </span>
               <span className="overflow-hidden block ml-[8vw] md:ml-[12vw]">
-                <motion.span variants={lineVars} className="inline-block text-accent">Profesional</motion.span>
-              </span>
-              <span className="overflow-hidden block">
-                <motion.span variants={lineVars} className="inline-block">Bisnis Makin</motion.span>
+                <motion.span variants={lineVars} className="inline-block text-accent">Bisnis Anda</motion.span>
               </span>
               <span className="overflow-hidden block ml-[4vw]">
-                <motion.span variants={lineVars} className="inline-block opacity-40 font-light">Dikenal</motion.span>
+                <motion.span variants={lineVars} className="inline-block opacity-40 font-light">Naik Kelas</motion.span>
               </span>
             </div>
           </h1>
