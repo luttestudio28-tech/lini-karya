@@ -66,7 +66,7 @@ const Hero = () => {
         <div className="mt-4 md:mt-6 pt-8 border-t border-foreground/10 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
           <div className="md:col-span-6 lg:col-span-5">
             <p className="font-mono text-[10px] md:text-xs uppercase tracking-widest leading-relaxed text-foreground/40">
-              MEMBANGUN INFRASTRUKTUR DIGITAL BERPERFORMA TINGGI UNTUK GENERASI BARU UMKM INDONESIA. PRESISI DI ATAS DEKORASI.
+              KAMI MEMBANGUN WEBSITE YANG MENJUAL DAN MEMBUAT BISNIS ANDA TERLIHAT PROFESIONAL. HASIL NYATA, BUKAN SEKADAR HIASAN.
             </p>
           </div>
           <div className="md:col-start-9 md:col-span-4 flex flex-col items-end gap-3">

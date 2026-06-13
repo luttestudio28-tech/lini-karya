@@ -21,8 +21,8 @@ const Footer = () => {
             transition={{ duration: 1 }}
             className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.75] tracking-[-0.06em] uppercase"
           >
-            Mulai <br />
-            <span className="text-accent italic">Karya</span>
+            Siap Jadi <br />
+            <span className="text-accent italic">Mitra?</span>
           </motion.h2>
         </div>
 
@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Col 1: Direct Contact */}
           <div className="lg:col-span-5 lg:pr-16 lg:border-r border-background/10">
             <p className="font-mono text-[10px] md:text-xs uppercase tracking-widest leading-relaxed mb-12 opacity-50">
-              SIAP MEMBANGUN IDENTITAS DIGITAL ANDA? KIRIM PERMINTAAN PROYEK UNTUK MEMULAI DIAGNOSIS SISTEM OLEH TIM KAMI.
+              TANYAKAN APA SAJA MENGENAI WEBSITE BISNIS ANDA. KAMI SIAP MEMBANTU DENGAN SOLUSI TERBAIK UNTUK PERKEMBANGAN USAHA ANDA.
             </p>
             <div className="space-y-2 group cursor-pointer">
               <span className="font-mono text-[9px] uppercase tracking-widest opacity-30 group-hover:text-accent transition-colors">ALAMAT SUREL</span>

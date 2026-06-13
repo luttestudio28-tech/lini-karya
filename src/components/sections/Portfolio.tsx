@@ -59,7 +59,7 @@ const Portfolio = () => {
             Proyek <br /> <span className="italic opacity-20">Terpilih</span>
           </h2>
           <p className="mt-12 font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed max-w-sm mx-auto">
-            KUMPULAN PROYEK DIGITAL YANG KAMI BANGUN UNTUK MEMBANTU UMKM INDONESIA NAIK KELAS KE PASAR NASIONAL.
+            LIHAT BAGAIMANA KAMI MEMBANTU BISNIS LAIN TAMPIL LEBIH MENARIK DAN PROFESIONAL DI MATA PELANGGAN.
           </p>
         </div>
 
@@ -105,12 +105,12 @@ const Portfolio = () => {
                     rel="noopener noreferrer"
                     className="font-mono text-[10px] uppercase tracking-widest opacity-30 hover:opacity-100 hover:text-accent transition-all cursor-pointer"
                   >
-                    [ LIHAT DETAIL ] ↗
+                    [ LIHAT HASIL ] ↗
                   </a>
                 </div>
                 <div className="flex justify-between items-center font-mono text-[9px] md:text-[10px] uppercase tracking-widest opacity-50">
-                  <span>{project.category}</span>
-                  <span className="hidden md:inline">{project.tech}</span>
+                  <span>{project.category.replace('SISTEM KEAMANAN DIGITAL', 'SISTEM KEAMANAN WEB').replace('WEBSITE PORTFOLIO PREMIUM', 'PORTOFOLIO PROFESIONAL').replace('E-COMMERCE PRODUK MEWAH', 'TOKO ONLINE MEWAH').replace('PREMIUM DIGITAL AGENCY', 'WEBSITE AGENSI ELIT')}</span>
+                  <span className="hidden md:inline">{project.tech.replace('NEXT.JS / TAILWIND / MOTION', 'TEKNOLOGI MODERN & CEPAT')}</span>
                 </div>
               </div>
             </motion.div>

@@ -5,41 +5,41 @@ import { motion } from "framer-motion";
 const packages = [
   {
     name: "Landing Page",
-    description: "SISTEM SATU HALAMAN YANG DIOPTIMALKAN UNTUK MENGUBAH PENGUNJUNG MENJADI PEMBELI.",
+    description: "WEBSITE SATU HALAMAN UNTUK FOKUS BERJUALAN DAN MENARIK PELANGGAN BARU.",
     price: "2.500.000",
-    priceLabel: "OPTIMASI KONVERSI",
+    priceLabel: "OPTIMASI JUALAN",
     features: [
       "1 Halaman Landing Page Premium",
-      "Struktur Psikologi Penjualan",
-      "Sistem Cepat (WordPress)",
-      "Integrasi WhatsApp & Tracking",
-      "Dukungan Teknis Jangka Panjang"
+      "Desain Yang Menarik Pembeli",
+      "Sistem Cepat & Ringan",
+      "Integrasi WhatsApp Langsung",
+      "Gratis Konsultasi Selamanya"
     ]
   },
   {
-    name: "Corporate Web",
-    description: "EKOSISTEM DIGITAL MULTI-HALAMAN UNTUK KREDIBILITAS BISNIS UMKM YANG SEDANG BERKEMBANG.",
+    name: "Company Profile",
+    description: "WEBSITE LENGKAP UNTUK MENUNJUKKAN KREDIBILITAS DAN PROFESIONALISME BISNIS ANDA.",
     price: "7.500.000",
-    priceLabel: "EKOSISTEM KONTEN",
+    priceLabel: "KREDIBILITAS BISNIS",
     features: [
       "Hingga 5 Halaman Terintegrasi",
-      "Sistem CMS Handal & Mudah",
-      "Optimasi SEO & Kecepatan",
-      "Keamanan SSL & Backup Rutin",
-      "Partner Konsultasi Berkelanjutan"
+      "Bisa Edit Isi Web Sendiri",
+      "Muncul Di Pencarian Google",
+      "Email Bisnis Nama Perusahaan",
+      "Keamanan & Backup Rutin"
     ]
   },
   {
     name: "Custom System",
-    description: "ARSITEKTUR DIGITAL KHUSUS UNTUK KEBUTUHAN APLIKASI WEB DAN DASHBOARD YANG KOMPLEKS.",
+    description: "SOLUSI KHUSUS UNTUK KEBUTUHAN APLIKASI WEB DAN SISTEM INTERNAL YANG RUMIT.",
     price: "Kustom",
-    priceLabel: "ARSITEKTUR KHUSUS",
+    priceLabel: "SOLUSI KHUSUS",
     features: [
-      "Custom Web App / Dashboard",
-      "Arsitektur Modern (Next.js / React)",
-      "Sistem Database & API Khusus",
-      "Skalabilitas & Performa Tinggi",
-      "Prioritas Dukungan 24/7"
+      "Aplikasi Web / Dashboard Custom",
+      "Teknologi Terbaru & Tercepat",
+      "Sistem Database Sesuai Kebutuhan",
+      "Performa Tinggi Tanpa Lemot",
+      "Bantuan Teknis Prioritas 24/7"
     ]
   },
 ];
@@ -56,7 +56,7 @@ const Pricing = () => {
     }
 
     const priceText = pkg.price !== "Kustom" ? ` senilai Rp ${pkg.price}` : "";
-    const message = encodeURIComponent(`Halo Lini Karya, saya tertarik mendiskusikan pembuatan website dengan fokus ${pkg.name} (${pkg.priceLabel})${priceText}.`);
+    const message = encodeURIComponent(`Halo Lini Karya, saya ingin konsultasi gratis mengenai pembuatan website ${pkg.name} (${pkg.priceLabel})${priceText}.`);
     window.open(`https://wa.me/6285166635038?text=${message}`, "_blank");
   };
 
@@ -66,14 +66,14 @@ const Pricing = () => {
         <div className="flex flex-col md:flex-row justify-between items-end gap-12">
           <div className="max-w-2xl">
             <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-              [ 06 // PILIHAN INVESTASI ]
+              [ 04 // PILIHAN INVESTASI ]
             </span>
             <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] uppercase tracking-tighter">
-              Mulai <br /> <span className="italic-accent text-accent">Kolaborasi</span>
+              Mulai <br /> <span className="italic-accent text-accent">Konsultasi</span>
             </h2>
           </div>
           <div className="max-w-xs md:text-right font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed">
-            INVESTASI TERJANGKAU UNTUK TRANSFORMASI DIGITAL UMKM DENGAN STANDAR KUALITAS PREMIUM.
+            HARGA TRANSPARAN UNTUK HASIL YANG MAKSIMAL. PILIH PAKET YANG SESUAI DENGAN SKALA BISNIS ANDA.
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@ const Pricing = () => {
                 onClick={() => handleApply(pkg)}
                 className="w-full font-mono text-[10px] uppercase tracking-widest border border-foreground/20 group-hover:border-background/40 py-5 text-center group-hover:bg-background group-hover:text-foreground transition-all cursor-pointer font-bold"
               >
-                [ AJUKAN PROYEK ]
+                [ KONSULTASI GRATIS ]
               </button>
             </div>
           </motion.div>

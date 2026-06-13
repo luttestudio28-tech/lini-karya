@@ -8,7 +8,7 @@ const faqs = [
     id: "01",
     label: "WAKTU",
     question: "Berapa lama waktu pengerjaan?",
-    answer: "Rata-rata memakan waktu 4 hingga 8 minggu. Kami mengutamakan kualitas arsitektur sistem agar website Anda tahan lama dan tidak mudah error di masa depan.",
+    answer: "Rata-rata memakan waktu 4 hingga 8 minggu. Kami memastikan setiap website dibangun dengan teliti agar bisnis Anda tampil sempurna dan bebas kendala di masa depan.",
   },
   {
     id: "02",

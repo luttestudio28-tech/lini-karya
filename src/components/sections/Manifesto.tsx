@@ -38,11 +38,11 @@ const Manifesto = () => {
         {/* Section Header - Centered & Animated */}
         <motion.div variants={itemVariants} className="mb-32 md:mb-56 w-full text-center relative">
           <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-            [ 01 // KOMITMEN STRATEGIS ]
+            [ 01 // KOMITMEN KAMI ]
           </span>
           <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.75] uppercase text-foreground tracking-[-0.07em]">
-            Saatnya <br />
-            <span className="text-accent italic">Bicara</span>
+            Bisnis Anda, <br />
+            <span className="text-accent italic">Naik Kelas</span>
           </h2>
           <div className="absolute top-1/2 left-0 w-12 h-px bg-foreground/20 hidden lg:block" />
           <div className="absolute top-1/2 right-0 w-12 h-px bg-foreground/20 hidden lg:block" />
@@ -56,13 +56,13 @@ const Manifesto = () => {
             <motion.div variants={itemVariants} className="lg:col-span-8">
               <span className="font-mono text-[10px] uppercase tracking-[0.3em] opacity-30 block mb-6">REF SPEC: LOGIKA 01</span>
               <p className="font-display text-4xl md:text-6xl lg:text-7xl uppercase tracking-tighter leading-[0.8] max-w-4xl">
-                KAMI MENGUBAH WEBSITE PAJANGAN MENJADI MESIN <span className="text-accent italic">PENCETAK KEUNTUNGAN</span>
+                KAMI MENGUBAH WEBSITE BIASA MENJADI ALAT <span className="text-accent italic">PENCETAK PROFIT</span>
               </p>
             </motion.div>
             <motion.div variants={itemVariants} className="lg:col-span-4 lg:pt-2">
               <div className="border-l-2 border-accent/20 pl-8 space-y-6">
                 <p className="font-mono text-[11px] md:text-xs uppercase tracking-widest leading-relaxed opacity-60">
-                  KAMI MENGHAPUS KERUMITAN TEKNIS AGAR ANDA BISA FOKUS BERJUALAN. WEBSITE KAMI BUKAN HANYA PAJANGAN, TAPI ASSET YANG MENEMUKAN PELANGGAN BARU UNTUK ANDA SETIAP HARI.
+                  KAMI MENGHAPUS KERUMITAN TEKNIS AGAR ANDA BISA FOKUS BERJUALAN. WEBSITE KAMI BUKAN HANYA PAJANGAN, TAPI ASET YANG MENARIK PELANGGAN BARU SETIAP HARI.
                 </p>
                 <div className="font-mono text-[9px] uppercase tracking-[0.4em] opacity-20">[ PROSES DIMULAI ]</div>
               </div>
@@ -75,16 +75,16 @@ const Manifesto = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border-y border-foreground/10 w-full overflow-hidden"
           >
             <motion.div variants={itemVariants} className="px-8 md:px-12 py-20 md:py-24 flex flex-col gap-6 group bg-background">
-              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">01 // TARGET UTAMA</span>
+              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">01 // SOLUSI NYATA</span>
               <p className="font-display text-3xl uppercase tracking-tighter">MEMBANGUN KEPERCAYAAN</p>
             </motion.div>
             <motion.div variants={itemVariants} className="px-8 md:px-12 py-20 md:py-24 flex flex-col gap-6 group bg-background">
-              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">02 // ARSITEKTUR UI</span>
-              <p className="font-display text-3xl uppercase tracking-tighter">MINIMALIS PREMIUM</p>
+              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">02 // DESAIN BERKELAS</span>
+              <p className="font-display text-3xl uppercase tracking-tighter">MODERN & PREMIUM</p>
             </motion.div>
             <motion.div variants={itemVariants} className="px-8 md:px-12 py-20 md:py-24 flex flex-col gap-6 group bg-background">
-              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">03 // MISI SISTEM</span>
-              <p className="font-display text-3xl uppercase tracking-tighter">KONVERSI MAKSIMAL</p>
+              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">03 // TUJUAN UTAMA</span>
+              <p className="font-display text-3xl uppercase tracking-tighter">LEBIH BANYAK PEMBELI</p>
             </motion.div>
           </motion.div>
 
