@@ -7,46 +7,46 @@ export const blogPosts = [
     image: "https://images.pexels.com/photos/3985304/pexels-photo-3985304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Melihat langsung bagaimana redesain website dan optimasi SEO lokal berhasil melipatgandakan jadwal reservasi pasien dalam waktu kurang dari 3 bulan.",
     content: `
-      <p>Banyak pemilik bisnis jasa kesehatan dan kecantikan yang merasa cukup hanya dengan memiliki akun Instagram yang aktif. Mengunggah foto *before-after* dan promo bulanan dianggap sebagai satu-satunya cara marketing. Namun, studi kasus komprehensif ini akan menunjukkan mengapa mengandalkan satu platform saja sangat berisiko, dan bagaimana sebuah website yang dirancang dengan arsitektur yang benar bisa berubah menjadi "mesin kasir" otomatis untuk bisnis Anda 24 jam sehari.</p>
+      <p>Banyak pemilik bisnis jasa kesehatan dan kecantikan yang merasa cukup hanya dengan memiliki akun Instagram yang aktif. Mengunggah foto <i>before-after</i> dan promo bulanan dianggap sebagai satu-satunya cara marketing. Namun, studi kasus komprehensif ini akan menunjukkan mengapa mengandalkan satu platform saja sangat berisiko, dan bagaimana sebuah website yang dirancang dengan arsitektur yang benar bisa berubah menjadi "mesin kasir" otomatis untuk bisnis Anda 24 jam sehari.</p>
       
       <h3>Fase 1: Diagnosa Masalah (Kenapa Omzet Stagnan?)</h3>
       <p>Klinik Kecantikan X, klien kami yang berbasis di pusat kota, memiliki lebih dari 50.000 followers di Instagram. Secara kasat mata, bisnis mereka terlihat sangat sukses. Namun, saat sesi konsultasi mendalam, pemilik klinik mengungkapkan masalah operasional yang sangat krusial:</p>
       <ul>
         <li><b>Kelelahan Admin (Admin Burnout):</b> Tiga orang admin WhatsApp kewalahan menjawab pertanyaan yang sama berulang kali ("Harga facial jerawat berapa kak?", "Jadwal dokter B hari Sabtu ada?", "Lokasinya di mana?"). Waktu yang seharusnya digunakan untuk melayani pasien terbuang untuk tugas repetitif.</li>
-        <li><b>Tingkat Pembatalan Tinggi (High Drop-off Rate):</b> Banyak calon pasien yang membatalkan niat *booking* karena respon admin yang melambat saat jam sibuk (terutama jam makan siang dan pulang kerja). Ingat, dalam bisnis jasa, kecepatan respon adalah kunci penutupan penjualan.</li>
-        <li><b>Bencana Shadowban:</b> Puncaknya terjadi ketika akun Instagram mereka sempat terkena *shadowban* oleh algoritma selama 2 minggu karena dianggap melanggar pedoman komunitas (hal yang sangat umum di industri kecantikan). Omzet mereka langsung anjlok 70% karena mereka tidak memiliki sumber trafik lain. Mereka lumpuh total secara digital.</li>
+        <li><b>Tingkat Pembatalan Tinggi (High Drop-off Rate):</b> Banyak calon pasien yang membatalkan niat <i>booking</i> karena respon admin yang melambat saat jam sibuk (terutama jam makan siang dan pulang kerja). Ingat, dalam bisnis jasa, kecepatan respon adalah kunci penutupan penjualan.</li>
+        <li><b>Bencana Shadowban:</b> Puncaknya terjadi ketika akun Instagram mereka sempat terkena <i>shadowban</i> oleh algoritma selama 2 minggu karena dianggap melanggar pedoman komunitas (hal yang sangat umum di industri kecantikan). Omzet mereka langsung anjlok 70% karena mereka tidak memiliki sumber trafik lain. Mereka lumpuh total secara digital.</li>
       </ul>
 
       <h3>Fase 2: Perancangan Arsitektur Solusi (The Blueprint)</h3>
-      <p>Tim Lini Karya masuk bukan hanya sebagai *web designer*, tapi sebagai arsitek digital. Kami memetakan ulang seluruh perjalanan pelanggan (Customer Journey) dari awal mereka melihat iklan hingga mereka datang ke klinik. Solusi yang kami tawarkan berpusat pada satu tujuan: <b>Otomatisasi dan Kepercayaan</b>.</p>
+      <p>Tim Lini Karya masuk bukan hanya sebagai <i>web designer</i>, tapi sebagai arsitek digital. Kami memetakan ulang seluruh perjalanan pelanggan (Customer Journey) dari awal mereka melihat iklan hingga mereka datang ke klinik. Solusi yang kami tawarkan berpusat pada satu tujuan: <b>Otomatisasi dan Kepercayaan</b>.</p>
       
       <h4>A. Katalog Layanan yang Transparan & Edukatif</h4>
-      <p>Kami merancang halaman khusus untuk setiap jenis *treatment*. Berbeda dengan *Highlight* Instagram yang berantakan, halaman ini disusun layaknya brosur medis premium. Di dalamnya terdapat:</p>
+      <p>Kami merancang halaman khusus untuk setiap jenis <i>treatment</i>. Berbeda dengan <i>Highlight</i> Instagram yang berantakan, halaman ini disusun layaknya brosur medis premium. Di dalamnya terdapat:</p>
       <ul>
-        <li>Video penjelasan prosedur oleh dokter utama (meningkatkan *trust*).</li>
+        <li>Video penjelasan prosedur oleh dokter utama (meningkatkan <i>trust</i>).</li>
         <li>Rincian harga yang transparan tanpa biaya tersembunyi.</li>
-        <li>Estimasi durasi *downtime* (masa pemulihan) paska perawatan.</li>
-        <li>Galeri foto *before-after* beresolusi tinggi yang bisa di-*zoom* tanpa pecah.</li>
+        <li>Estimasi durasi <i>downtime</i> (masa pemulihan) paska perawatan.</li>
+        <li>Galeri foto <i>before-after</i> beresolusi tinggi yang bisa di-<i>zoom</i> tanpa pecah.</li>
       </ul>
 
       <h4>B. Sistem Booking Online Terintegrasi (Frictionless UX)</h4>
-      <p>Ini adalah *game-changer* utama. Kami membangun sistem jadwal terintegrasi di mana pasien tidak perlu lagi *chat* admin untuk mengecek jadwal kosong. Mereka bisa memilih layanan, melihat kalender interaktif untuk mengetahui dokter mana yang tersedia di jam tersebut, dan langsung mengunci jadwal secara mandiri. Sistem kemudian otomatis mengirimkan pengingat via WhatsApp H-1 sebelum kedatangan untuk menekan angka pasien yang tidak hadir (*no-show*).</p>
+      <p>Ini adalah <i>game-changer</i> utama. Kami membangun sistem jadwal terintegrasi di mana pasien tidak perlu lagi <i>chat</i> admin untuk mengecek jadwal kosong. Mereka bisa memilih layanan, melihat kalender interaktif untuk mengetahui dokter mana yang tersedia di jam tersebut, dan langsung mengunci jadwal secara mandiri. Sistem kemudian otomatis mengirimkan pengingat via WhatsApp H-1 sebelum kedatangan untuk menekan angka pasien yang tidak hadir (<i>no-show</i>).</p>
 
       <h4>C. Penaklukan Mesin Pencari (Local SEO Domination)</h4>
-      <p>Kami tidak ingin mereka bergantung pada Instagram selamanya. Struktur *coding* website dioptimasi secara ekstrem untuk Google. Kami menargetkan kata kunci berekspresi tinggi (*high-intent keywords*) seperti "Klinik Kecantikan Terbaik di [Nama Kota]" dan spesifik ke layanan seperti "Treatment Jerawat Bopeng [Nama Kota]". Hasilnya, ketika seseorang mencari solusi masalah kulit di Google, website Klinik X muncul di urutan tiga teratas.</p>
+      <p>Kami tidak ingin mereka bergantung pada Instagram selamanya. Struktur <i>coding</i> website dioptimasi secara ekstrem untuk Google. Kami menargetkan kata kunci berekspresi tinggi (<i>high-intent keywords</i>) seperti "Klinik Kecantikan Terbaik di [Nama Kota]" dan spesifik ke layanan seperti "Treatment Jerawat Bopeng [Nama Kota]". Hasilnya, ketika seseorang mencari solusi masalah kulit di Google, website Klinik X muncul di urutan tiga teratas.</p>
 
       <div className="bg-accent/5 p-8 border-l-4 border-accent my-10 rounded-r-xl">
         <h3 className="font-bold text-accent mb-4 text-2xl uppercase tracking-tighter">Evaluasi Kinerja: Hasil Nyata (Bulan Ke-3)</h3>
         <p className="mb-4">Setelah implementasi sistem selama 90 hari, data metrik menunjukkan perubahan yang radikal terhadap efisiensi bisnis:</p>
         <ul className="mb-0 space-y-3">
-          <li><b>Peningkatan Booking 300%:</b> Pasien menyukai kemudahan *booking* kapan saja. Menariknya, 35% reservasi baru masuk di luar jam kerja admin (di atas jam 10 malam). Ini membuktikan bahwa website yang bekerja 24/7 menyelamatkan pendapatan yang sebelumnya hilang.</li>
-          <li><b>Efisiensi Waktu Operasional:</b> Pertanyaan dasar turun drastis hingga 80%. Admin kini difokuskan sebagai "Customer Relation", bertugas melakukan *follow-up* edukasi pada pelanggan VIP, bukan lagi mesin penjawab harga.</li>
+          <li><b>Peningkatan Booking 300%:</b> Pasien menyukai kemudahan <i>booking</i> kapan saja. Menariknya, 35% reservasi baru masuk di luar jam kerja admin (di atas jam 10 malam). Ini membuktikan bahwa website yang bekerja 24/7 menyelamatkan pendapatan yang sebelumnya hilang.</li>
+          <li><b>Efisiensi Waktu Operasional:</b> Pertanyaan dasar turun drastis hingga 80%. Admin kini difokuskan sebagai "Customer Relation", bertugas melakukan <i>follow-up</i> edukasi pada pelanggan VIP, bukan lagi mesin penjawab harga.</li>
           <li><b>Diversifikasi Akuisisi Pelanggan:</b> Trafik organik dari pencarian Google kini stabil menyumbang 40% dari total pasien baru. Klinik X kini kebal terhadap ancaman perubahan algoritma Instagram.</li>
         </ul>
       </div>
 
       <h3>Lini Karya's Expert Take:</h3>
-      <p>Studi kasus ini menjadi bukti tak terbantahkan bahwa untuk bisnis jasa bernilai tinggi (*high-ticket service*), kepercayaan dan kemudahan adalah segalanya. Calon pelanggan yang akan mengeluarkan uang jutaan rupiah untuk perawatan wajah butuh diyakinkan. Website yang terlihat mewah, membeberkan informasi secara transparan, dan sangat mudah digunakan memberikan rasa aman yang tidak bisa diberikan oleh profil media sosial biasa. Website bukanlah beban biaya, melainkan asisten manajer terbaik yang pernah Anda miliki.</p>
+      <p>Studi kasus ini menjadi bukti tak terbantahkan bahwa untuk bisnis jasa bernilai tinggi (<i>high-ticket service</i>), kepercayaan dan kemudahan adalah segalanya. Calon pelanggan yang akan mengeluarkan uang jutaan rupiah untuk perawatan wajah butuh diyakinkan. Website yang terlihat mewah, membeberkan informasi secara transparan, dan sangat mudah digunakan memberikan rasa aman yang tidak bisa diberikan oleh profil media sosial biasa. Website bukanlah beban biaya, melainkan asisten manajer terbaik yang pernah Anda miliki.</p>
     `,
   },
 {
@@ -57,32 +57,32 @@ export const blogPosts = [
     image: "https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Strategi di balik kesuksesan sebuah kedai kopi melepaskan diri dari potongan komisi 20% dengan menggunakan sistem website mandiri.",
     content: `
-      <p>Model bisnis *Food & Beverage* (F&B), khususnya kedai kopi kekinian, saat ini seakan tersandera oleh aplikasi pengiriman makanan (seperti Gofood, GrabFood, ShopeeFood). Meskipun aplikasi tersebut sangat efektif untuk mendatangkan pelanggan baru (Discovery), ketergantungan 100% pada platform tersebut secara perlahan akan membunuh margin keuntungan para pemilik UMKM lokal.</p>
+      <p>Model bisnis <i>Food & Beverage</i> (F&B), khususnya kedai kopi kekinian, saat ini seakan tersandera oleh aplikasi pengiriman makanan (seperti Gofood, GrabFood, ShopeeFood). Meskipun aplikasi tersebut sangat efektif untuk mendatangkan pelanggan baru (Discovery), ketergantungan 100% pada platform tersebut secara perlahan akan membunuh margin keuntungan para pemilik UMKM lokal.</p>
       
       <h3>Masalah: Jebakan "Bekerja Keras Hanya Untuk Membayar Komisi"</h3>
-      <p>Kedai Kopi Y, sebuah *coffee shop* indie yang sangat populer di kalangan mahasiswa dan pekerja *remote*, adalah klien kami yang menghadapi dilema klasik ini. Penjualan *online* mereka sangat fantastis, menyentuh angka 300 cup per hari. Namun, pemilik mengeluh karena keuntungan bersih (Net Profit) sangat tipis.</p>
+      <p>Kedai Kopi Y, sebuah <i>coffee shop</i> indie yang sangat populer di kalangan mahasiswa dan pekerja <i>remote</i>, adalah klien kami yang menghadapi dilema klasik ini. Penjualan <i>online</i> mereka sangat fantastis, menyentuh angka 300 cup per hari. Namun, pemilik mengeluh karena keuntungan bersih (Net Profit) sangat tipis.</p>
       
-      <p>Akar masalahnya ada pada potongan platform yang mencapai 20-25% ditambah biaya partisipasi promo gratis ongkir. Jika Kedai Y menaikkan harga di aplikasi untuk menutupi potongan, pelanggan akan lari ke kompetitor karena sensitivitas harga sangat tinggi. Jika harga disamakan dengan pembelian langsung di toko (*dine-in*), kedai akan merugi. Mereka berada dalam posisi *lose-lose*.</p>
+      <p>Akar masalahnya ada pada potongan platform yang mencapai 20-25% ditambah biaya partisipasi promo gratis ongkir. Jika Kedai Y menaikkan harga di aplikasi untuk menutupi potongan, pelanggan akan lari ke kompetitor karena sensitivitas harga sangat tinggi. Jika harga disamakan dengan pembelian langsung di toko (<i>dine-in</i>), kedai akan merugi. Mereka berada dalam posisi <i>lose-lose</i>.</p>
 
       <h3>Solusi Strategis: Membangun Infrastruktur "Direct-to-Consumer" (D2C)</h3>
-      <p>Lini Karya tidak menyarankan mereka untuk keluar dari aplikasi pengiriman. Itu sama saja dengan bunuh diri secara *marketing*. Strategi yang kami rancang adalah <b>Memindahkan Pelanggan Setia</b> ke jalur distribusi milik kedai sendiri melalui pembuatan Website Pemesanan Mandiri.</p>
+      <p>Lini Karya tidak menyarankan mereka untuk keluar dari aplikasi pengiriman. Itu sama saja dengan bunuh diri secara <i>marketing</i>. Strategi yang kami rancang adalah <b>Memindahkan Pelanggan Setia</b> ke jalur distribusi milik kedai sendiri melalui pembuatan Website Pemesanan Mandiri.</p>
       
       <h4>1. Membangun Menu Interaktif & Sistem Upselling Otomatis</h4>
-      <p>Kami membuat antarmuka pemesanan web yang dirancang khusus untuk layar *smartphone* (Mobile-First). Menu ditampilkan dengan fotografi memukau. Keunggulan utamanya ada pada sistem *upselling*. Saat pelanggan memasukkan "Es Kopi Susu" ke keranjang, sistem secara otomatis akan memunculkan *pop-up* yang menggoda: *"Tambah Donat Kampung hangat hanya Rp 10.000?"*. Fitur ini tidak bisa dilakukan secara fleksibel di aplikasi pihak ketiga.</p>
+      <p>Kami membuat antarmuka pemesanan web yang dirancang khusus untuk layar <i>smartphone</i> (Mobile-First). Menu ditampilkan dengan fotografi memukau. Keunggulan utamanya ada pada sistem <i>upselling</i>. Saat pelanggan memasukkan "Es Kopi Susu" ke keranjang, sistem secara otomatis akan memunculkan <i>pop-up</i> yang menggoda: <i>"Tambah Donat Kampung hangat hanya Rp 10.000?"</i>. Fitur ini tidak bisa dilakukan secara fleksibel di aplikasi pihak ketiga.</p>
 
       <h4>2. Integrasi WhatsApp Order yang Bebas Hambatan (Frictionless)</h4>
-      <p>Membangun sistem pembayaran *payment gateway* lengkap kadang terlalu kompleks untuk pelanggan yang hanya ingin beli kopi seharga Rp 20.000. Oleh karena itu, kami menghubungkan keranjang belanja di website langsung ke WhatsApp kasir. Format pesanan sudah tersusun rapi secara otomatis (Nama, Alamat, Pesanan, Total Harga). Kasir hanya tinggal mengirimkan link QRIS untuk pembayaran.</p>
+      <p>Membangun sistem pembayaran <i>payment gateway</i> lengkap kadang terlalu kompleks untuk pelanggan yang hanya ingin beli kopi seharga Rp 20.000. Oleh karena itu, kami menghubungkan keranjang belanja di website langsung ke WhatsApp kasir. Format pesanan sudah tersusun rapi secara otomatis (Nama, Alamat, Pesanan, Total Harga). Kasir hanya tinggal mengirimkan link QRIS untuk pembayaran.</p>
 
       <h4>3. Peluncuran Program Loyalitas Eksklusif Web</h4>
-      <p>Untuk memaksa pelanggan berpindah aplikasi, harus ada insentif. Pemilik kedai membuat kampanye "Secret Menu & Secret Price": *"Pesan lewat website resmi kami (kopi-y-lokal.com), dapatkan harga lebih murah 15% dari aplikasi hijau/oren, ditambah stempel digital gratis ongkir untuk jarak di bawah 3KM."*</p>
+      <p>Untuk memaksa pelanggan berpindah aplikasi, harus ada insentif. Pemilik kedai membuat kampanye "Secret Menu & Secret Price": <i>"Pesan lewat website resmi kami (kopi-y-lokal.com), dapatkan harga lebih murah 15% dari aplikasi hijau/oren, ditambah stempel digital gratis ongkir untuk jarak di bawah 3KM."</i></p>
 
       <div className="bg-foreground/5 p-8 my-10 border border-foreground/10 rounded-xl">
         <h4 className="text-xl font-bold mb-4 uppercase tracking-tighter">Analisis Dampak Finansial (ROI)</h4>
         <p className="mb-4">Perubahan metrik bisnis setelah 60 hari peluncuran website D2C:</p>
         <ul className="list-disc pl-5 space-y-3">
           <li><b>Penghematan Komisi Masif:</b> Sekitar 35% pelanggan reguler (yang memesan 3x seminggu) berpindah menggunakan website. Kedai menghemat jutaan rupiah per minggu dari dana yang seharusnya menjadi komisi platform.</li>
-          <li><b>Penguasaan Database:</b> Kedai Y kini memiliki *database* berisi lebih dari 1.500 nomor WhatsApp pelanggan aktif. Mereka kini rutin mengirimkan pesan siaran (*broadcast*) setiap hari Jumat sore untuk promo akhir pekan, tanpa mengeluarkan biaya iklan sepeser pun.</li>
-          <li><b>Kenaikan Nilai Order (AOV - Average Order Value):</b> Berkat fitur *upselling* otomatis di website, rata-rata belanja pelanggan naik sebesar 18% per transaksi dibandingkan saat menggunakan aplikasi.</li>
+          <li><b>Penguasaan Database:</b> Kedai Y kini memiliki <i>database</i> berisi lebih dari 1.500 nomor WhatsApp pelanggan aktif. Mereka kini rutin mengirimkan pesan siaran (<i>broadcast</i>) setiap hari Jumat sore untuk promo akhir pekan, tanpa mengeluarkan biaya iklan sepeser pun.</li>
+          <li><b>Kenaikan Nilai Order (AOV - Average Order Value):</b> Berkat fitur <i>upselling</i> otomatis di website, rata-rata belanja pelanggan naik sebesar 18% per transaksi dibandingkan saat menggunakan aplikasi.</li>
         </ul>
       </div>
 
@@ -98,7 +98,7 @@ export const blogPosts = [
     image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Jangan hanya mengandalkan platform pihak ketiga. Pelajari bagaimana website mandiri bisa membangun brand dan menghemat biaya operasional bisnis F&B Anda.",
     content: `
-      <p>Industri kuliner di Indonesia adalah medan tempur yang luar biasa dinamis. Dari tren kopi susu gula aren hingga *cloud kitchen*, persaingan beralih dari fisik ke digital. Namun, banyak pemilik restoran, cafe, hingga UMKM katering yang masih "menitipkan" seluruh nasib bisnisnya pada platform pihak ketiga. Memang mudah, tapi apakah itu menguntungkan dalam jangka panjang?</p>
+      <p>Industri kuliner di Indonesia adalah medan tempur yang luar biasa dinamis. Dari tren kopi susu gula aren hingga <i>cloud kitchen</i>, persaingan beralih dari fisik ke digital. Namun, banyak pemilik restoran, cafe, hingga UMKM katering yang masih "menitipkan" seluruh nasib bisnisnya pada platform pihak ketiga. Memang mudah, tapi apakah itu menguntungkan dalam jangka panjang?</p>
       
       <div className="bg-accent/5 p-6 border-l-4 border-accent my-8">
         <p className="font-bold text-accent mb-2">Statistik Industri:</p>
@@ -109,7 +109,7 @@ export const blogPosts = [
       <p>Bayangkan jika Anda memiliki omzet Rp 100 juta per bulan dari aplikasi. Itu artinya Rp 20-25 juta hilang hanya untuk biaya platform. Dengan memiliki website mandiri yang terintegrasi dengan sistem pemesanan WhatsApp atau payment gateway langsung, Anda bisa menghemat jumlah tersebut secara signifikan. Website Anda adalah investasi satu kali (atau biaya maintenance ringan) dibandingkan dengan "pajak" selamanya dari aplikasi pihak ketiga.</p>
       
       <h3>2. Membangun "Aset" Paling Berharga: Database Pelanggan</h3>
-      <p>Kelemahan terbesar aplikasi pengiriman adalah mereka tidak memberikan data pelanggan kepada Anda. Anda tidak tahu siapa pelanggan setia Anda, apa kesukaan mereka, atau kapan mereka berulang tahun. Website memungkinkan Anda mengumpulkan database ini secara sah. Dengan sistem *loyalty program* di website, Anda bisa melakukan:</p>
+      <p>Kelemahan terbesar aplikasi pengiriman adalah mereka tidak memberikan data pelanggan kepada Anda. Anda tidak tahu siapa pelanggan setia Anda, apa kesukaan mereka, atau kapan mereka berulang tahun. Website memungkinkan Anda mengumpulkan database ini secara sah. Dengan sistem <i>loyalty program</i> di website, Anda bisa melakukan:</p>
       <ul>
         <li>Email atau WhatsApp Marketing yang dipersonalisasi.</li>
         <li>Retargeting Ads menggunakan Meta Pixel untuk mengingatkan pelanggan yang pernah melihat menu Anda.</li>
@@ -117,7 +117,7 @@ export const blogPosts = [
       </ul>
       
       <h3>3. Narasi Brand yang Tidak Terbatas</h3>
-      <p>Di aplikasi, brand Anda hanyalah satu kotak kecil di antara ribuan pilihan lain. Di website, Anda memegang kendali penuh atas *User Experience*. Anda bisa menampilkan:</p>
+      <p>Di aplikasi, brand Anda hanyalah satu kotak kecil di antara ribuan pilihan lain. Di website, Anda memegang kendali penuh atas <i>User Experience</i>. Anda bisa menampilkan:</p>
       <ul>
         <li><b>Kualitas Visual:</b> Fotografi makanan resolusi tinggi (hi-res) yang menggugah selera tanpa kompresi berlebih.</li>
         <li><b>Storytelling:</b> Cerita tentang bahan baku organik yang Anda gunakan atau resep warisan keluarga yang membuat Anda unik.</li>
@@ -159,7 +159,7 @@ export const blogPosts = [
       <ul>
         <li>Portal berita lokal atau blog komunitas di wilayah Anda.</li>
         <li>Direktori bisnis resmi pemerintah atau asosiasi pengusaha.</li>
-        <li>Kerjasama *link-exchange* dengan bisnis partner di wilayah yang sama namun tidak bersaing langsung.</li>
+        <li>Kerjasama <i>link-exchange</i> dengan bisnis partner di wilayah yang sama namun tidak bersaing langsung.</li>
       </ul>
 
       <p><b>Kesimpulan:</b> SEO adalah maraton, bukan sprint. Hasilnya mungkin baru terlihat dalam 3-6 bulan, namun trafik yang datang dari SEO adalah trafik "gratis" yang memiliki tingkat kepercayaan jauh lebih tinggi dibandingkan iklan berbayar.</p>
@@ -185,7 +185,7 @@ export const blogPosts = [
       </ul>
 
       <h3>2. Investasi Strategis (Rp 3jt - Rp 10jt)</h3>
-      <p>Ini adalah *sweet spot* bagi UMKM yang ingin tumbuh. Di Lini Karya, paket dalam rentang ini mencakup:</p>
+      <p>Ini adalah <i>sweet spot</i> bagi UMKM yang ingin tumbuh. Di Lini Karya, paket dalam rentang ini mencakup:</p>
       <ul>
         <li><b>Konsultasi Bisnis:</b> Kami merancang struktur web berdasarkan cara pelanggan Anda berbelanja.</li>
         <li><b>Copywriting Profesional:</b> Kata-kata di dalam web dibuat untuk memicu orang mengklik tombol beli/hubungi WA.</li>
@@ -400,7 +400,7 @@ export const blogPosts = [
       <p>Banyak UMKM yang merasa puas hanya dengan berjualan di TikTok Shop atau platform <i>Social Commerce</i> lainnya. Memang, potensi viralitasnya luar biasa. Tapi, pernahkah Anda memikirkan risiko "membangun istana di atas tanah sewaan"?</p>
       
       <h3>Bahaya Bergantung 100% pada Sosial Media</h3>
-      <p>Algoritma sosial media bisa berubah kapan saja tanpa pemberitahuan. Hari ini video Anda bisa FYP (*For You Page*) dan pesanan membludak, besok akun Anda bisa tiba-tiba di-*shadowban* atau bahkan diblokir secara permanen. Jika itu terjadi, bisnis Anda praktis "mati" dalam semalam karena Anda kehilangan satu-satunya sumber pendapatan.</p>
+      <p>Algoritma sosial media bisa berubah kapan saja tanpa pemberitahuan. Hari ini video Anda bisa FYP (<i>For You Page</i>) dan pesanan membludak, besok akun Anda bisa tiba-tiba di-<i>shadowban</i> atau bahkan diblokir secara permanen. Jika itu terjadi, bisnis Anda praktis "mati" dalam semalam karena Anda kehilangan satu-satunya sumber pendapatan.</p>
 
       <h3>Website: Sertifikat Hak Milik Digital Anda</h3>
       <p>Berbeda dengan sosial media, website adalah aset properti digital yang Anda miliki sepenuhnya. Anda tidak akan pernah diusir, tidak ada algoritma yang tiba-tiba menyembunyikan postingan Anda, dan Anda memegang 100% kendali atas data pelanggan (seperti email dan nomor WhatsApp).</p>
@@ -427,17 +427,17 @@ export const blogPosts = [
       <p>Apa yang terjadi? Pembeli tersebut menunda pembayaran, ketiduran, dan besok paginya mereka lupa atau berubah pikiran. Fenomena ini disebut "Ghosting Buyer".</p>
 
       <h3>Membunuh "Friction" (Hambatan) Berbelanja</h3>
-      <p>Dalam e-commerce, semakin banyak langkah yang harus dilalui pembeli, semakin tinggi rasio pembatalannya (*Cart Abandonment Rate*). Transfer manual dan konfirmasi chat adalah hambatan terbesar dalam transaksi *online* UMKM.</p>
+      <p>Dalam e-commerce, semakin banyak langkah yang harus dilalui pembeli, semakin tinggi rasio pembatalannya (<i>Cart Abandonment Rate</i>). Transfer manual dan konfirmasi chat adalah hambatan terbesar dalam transaksi <i>online</i> UMKM.</p>
       
       <h3>Keuntungan Sistem Payment Gateway Terintegrasi</h3>
-      <p>Dengan mengintegrasikan *Payment Gateway* (seperti Midtrans, Xendit, atau Doku) ke dalam website Anda, seluruh proses menjadi instan:</p>
+      <p>Dengan mengintegrasikan <i>Payment Gateway</i> (seperti Midtrans, Xendit, atau Doku) ke dalam website Anda, seluruh proses menjadi instan:</p>
       <ul>
         <li><b>Pembayaran 24/7 Tanpa Admin:</b> Pelanggan bisa membayar pakai QRIS, Virtual Account (BCA, Mandiri, dll), atau e-Wallet (Gopay, OVO, ShopeePay) jam 3 pagi, dan sistem akan langsung mengonfirmasi pembayaran secara otomatis.</li>
         <li><b>Terlihat Profesional & Terpercaya:</b> Menerima pembayaran kartu kredit atau QRIS resmi memberikan sinyal kepada pembeli bahwa bisnis Anda dikelola secara profesional dan bukan penipuan.</li>
         <li><b>Anti-Fraud & Bukti Palsu:</b> Anda tidak perlu lagi menyipitkan mata mengecek keaslian struk bukti transfer yang dikirim via WA. Sistem komputer mengecek mutasi secara instan dan 100% akurat.</li>
       </ul>
 
-      <p><b>Lini Karya's Expert Take:</b> Kami bisa membantu Anda mengimplementasikan sistem *checkout* kilat ini di website Anda. Ini bukan hanya tentang kecanggihan teknologi, tapi tentang mempermudah pelanggan memberikan uangnya kepada Anda.</p>
+      <p><b>Lini Karya's Expert Take:</b> Kami bisa membantu Anda mengimplementasikan sistem <i>checkout</i> kilat ini di website Anda. Ini bukan hanya tentang kecanggihan teknologi, tapi tentang mempermudah pelanggan memberikan uangnya kepada Anda.</p>
     `,
   },
 {
@@ -448,16 +448,16 @@ export const blogPosts = [
     image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     excerpt: "Berhenti membuat pelanggan bingung dengan puluhan link berbeda. Jadikan website Anda sebagai pusat komando yang elegan untuk seluruh ekosistem digital bisnis Anda.",
     content: `
-      <p>Pernahkah Anda melihat profil Instagram bisnis yang bio-nya berisi tautan Linktree yang isinya puluhan tombol membingungkan? Ada tombol ke Tokopedia, Shopee, WhatsApp Admin 1, Admin 2, Katalog PDF, dan lain-lain. Bukannya mempermudah, hal ini justru membuat pelanggan *overwhelmed* (bingung) dan pergi.</p>
+      <p>Pernahkah Anda melihat profil Instagram bisnis yang bio-nya berisi tautan Linktree yang isinya puluhan tombol membingungkan? Ada tombol ke Tokopedia, Shopee, WhatsApp Admin 1, Admin 2, Katalog PDF, dan lain-lain. Bukannya mempermudah, hal ini justru membuat pelanggan <i>overwhelmed</i> (bingung) dan pergi.</p>
 
       <h3>Masalah Fragmentasi Digital</h3>
       <p>UMKM saat ini dituntut hadir di mana-mana (Omnichannel). Namun, jika tidak dikelola dengan baik, identitas brand Anda akan terpecah-pecah. Pelanggan yang melihat produk A di Instagram Anda mungkin akan kesulitan mencarinya saat membuka toko Shopee Anda karena etalasenya berantakan.</p>
       
       <h3>Solusi: Website Sebagai "Hub" (Pusat Komando)</h3>
-      <p>Website yang baik bertindak seperti lobi hotel bintang lima. Ia harus menjadi satu-satunya *link* yang Anda pasang di profil media sosial manapun, yang kemudian secara cerdas dan cantik mengarahkan tamu ke kamar (layanan) yang mereka butuhkan.</p>
+      <p>Website yang baik bertindak seperti lobi hotel bintang lima. Ia harus menjadi satu-satunya <i>link</i> yang Anda pasang di profil media sosial manapun, yang kemudian secara cerdas dan cantik mengarahkan tamu ke kamar (layanan) yang mereka butuhkan.</p>
       
       <ul>
-        <li><b>Branding Premium:</b> Alih-alih menggunakan penyedia *link in bio* gratisan yang ada logo perusahaannya, Anda menggunakan domain Anda sendiri (misal: <i>link.namabisnisanda.com</i>). Ini mendongkrak gengsi brand.</li>
+        <li><b>Branding Premium:</b> Alih-alih menggunakan penyedia <i>link in bio</i> gratisan yang ada logo perusahaannya, Anda menggunakan domain Anda sendiri (misal: <i>link.namabisnisanda.com</i>). Ini mendongkrak gengsi brand.</li>
         <li><b>Katalog Terpusat:</b> Pengunjung bisa melihat foto dan membaca deskripsi produk di website Anda dengan nyaman tanpa gangguan iklan. Jika mereka memutuskan untuk beli, barulah website mengarahkan mereka secara otomatis ke halaman produk spesifik di Tokopedia atau Shopee pilihan mereka.</li>
         <li><b>Pelacakan Data Utuh:</b> Dengan semua lalu lintas masuk melalui satu "pintu" (website Anda), Anda bisa melacak secara akurat dari mana kebanyakan pelanggan Anda berasal (apakah dari Instagram, TikTok, atau pencarian organik Google).</li>
       </ul>
@@ -477,9 +477,9 @@ export const blogPosts = [
       <p>Jawaban singkatnya: Keduanya memiliki fungsi yang sangat berbeda. Mengandalkan satu saja sama berbahayanya dengan memiliki toko fisik tanpa nama di pinggir jalan tol.</p>
 
       <h3>Analogi Sederhana: Mall vs Butik Pribadi</h3>
-      <p>Berjualan di <b>Marketplace</b> ibarat menyewa lapak di dalam *mall* raksasa. Trafiknya memang luar biasa padat, tapi kompetisinya sangat brutal. Saat seseorang mencari "Kemeja Polos" di kolom pencarian, produk Anda akan disejajarkan dengan puluhan produk serupa dari toko lain. Di sini, <b>perang harga adalah raja</b>. Loyalitas pelanggan sangat rendah karena mereka membeli dari *mall* tersebut, bukan spesifik dari *brand* Anda.</p>
+      <p>Berjualan di <b>Marketplace</b> ibarat menyewa lapak di dalam <i>mall</i> raksasa. Trafiknya memang luar biasa padat, tapi kompetisinya sangat brutal. Saat seseorang mencari "Kemeja Polos" di kolom pencarian, produk Anda akan disejajarkan dengan puluhan produk serupa dari toko lain. Di sini, <b>perang harga adalah raja</b>. Loyalitas pelanggan sangat rendah karena mereka membeli dari <i>mall</i> tersebut, bukan spesifik dari <i>brand</i> Anda.</p>
       
-      <p>Memiliki <b>Website Pribadi</b> ibarat memiliki *butik mewah mandiri* di lokasi strategis. Saat pelanggan masuk, mereka hanya melihat produk Anda. Tidak ada produk kompetitor di sebelahnya. Anda bisa mengatur suasana, memutar musik (secara kiasan lewat desain), dan menciptakan pengalaman premium. Di sini, <b>brand adalah raja</b>. Pelanggan bersedia membayar lebih mahal karena mereka mempercayai *brand* Anda.</p>
+      <p>Memiliki <b>Website Pribadi</b> ibarat memiliki <i>butik mewah mandiri</i> di lokasi strategis. Saat pelanggan masuk, mereka hanya melihat produk Anda. Tidak ada produk kompetitor di sebelahnya. Anda bisa mengatur suasana, memutar musik (secara kiasan lewat desain), dan menciptakan pengalaman premium. Di sini, <b>brand adalah raja</b>. Pelanggan bersedia membayar lebih mahal karena mereka mempercayai <i>brand</i> Anda.</p>
 
       <h3>Kelemahan Tersembunyi Marketplace</h3>
       <ul>
@@ -491,11 +491,11 @@ export const blogPosts = [
       <h3>Strategi Kolaborasi (The Hybrid Approach)</h3>
       <p>Solusi terbaik bukanlah memilih, tapi memisahkan fungsi:</p>
       <ul>
-        <li>Gunakan <b>Marketplace</b> untuk cuci gudang, mencari pelanggan baru (volume tinggi), dan menjual produk pancingan (*entry-level*).</li>
-        <li>Gunakan <b>Website Pribadi</b> untuk merilis produk terbaru, menjual produk premium (margin tinggi), memberikan program *loyalty* member, dan mengumpulkan *database* pelanggan jangka panjang.</li>
+        <li>Gunakan <b>Marketplace</b> untuk cuci gudang, mencari pelanggan baru (volume tinggi), dan menjual produk pancingan (<i>entry-level</i>).</li>
+        <li>Gunakan <b>Website Pribadi</b> untuk merilis produk terbaru, menjual produk premium (margin tinggi), memberikan program <i>loyalty</i> member, dan mengumpulkan <i>database</i> pelanggan jangka panjang.</li>
       </ul>
 
-      <p><b>Lini Karya's Expert Take:</b> Bisnis yang sehat tidak bergantung pada satu keranjang. Marketplace adalah tempat berjualan, tapi Website adalah tempat Anda membangun *Brand Equity* (Nilai Brand) yang sesungguhnya.</p>
+      <p><b>Lini Karya's Expert Take:</b> Bisnis yang sehat tidak bergantung pada satu keranjang. Marketplace adalah tempat berjualan, tapi Website adalah tempat Anda membangun <i>Brand Equity</i> (Nilai Brand) yang sesungguhnya.</p>
     `,
   },
 {
@@ -514,20 +514,20 @@ export const blogPosts = [
       <p>Banyak pengusaha berpikir begitu website <i>live</i>, otomatis Google akan mengirimkan ribuan pengunjung. Ini salah besar. Ada jutaan website baru setiap hari.</p>
       <p><b>Solusinya:</b> Anda harus secara aktif mendatangkan trafik. Caranya ada dua: 
       <br/>- <i>Organik (Gratis tapi Lama):</i> Menulis artikel blog yang relevan (SEO) dan rutin membagikan link website di bio Instagram, TikTok, dan Google Business.
-      <br/>- <i>Berbayar (Cepat tapi Butuh Modal):</i> Menjalankan iklan Facebook Ads atau Google Ads yang langsung diarahkan (*redirect*) ke website Anda.</p>
+      <br/>- <i>Berbayar (Cepat tapi Butuh Modal):</i> Menjalankan iklan Facebook Ads atau Google Ads yang langsung diarahkan (<i>redirect</i>) ke website Anda.</p>
 
       <h3>2. Optimasi SEO yang Kosong (Website "Buta Huruf")</h3>
-      <p>Website Anda mungkin terlihat indah dengan banyak gambar besar, tapi Google itu buta huruf terhadap gambar jika tidak dioptimasi. Jika *developer* Anda tidak mengatur <i>Meta Title</i>, <i>Meta Description</i>, <i>Alt Text Image</i>, dan hierarki H1/H2, Google tidak tahu website Anda jualan apa.</p>
-      <p><b>Solusinya:</b> Pastikan website Anda dibangun dengan struktur SEO yang benar sejak awal. Jika Anda jualan Sepatu Kulit di Bandung, pastikan kata-kata tersebut terstruktur dengan baik di dalam kode *website* Anda.</p>
+      <p>Website Anda mungkin terlihat indah dengan banyak gambar besar, tapi Google itu buta huruf terhadap gambar jika tidak dioptimasi. Jika <i>developer</i> Anda tidak mengatur <i>Meta Title</i>, <i>Meta Description</i>, <i>Alt Text Image</i>, dan hierarki H1/H2, Google tidak tahu website Anda jualan apa.</p>
+      <p><b>Solusinya:</b> Pastikan website Anda dibangun dengan struktur SEO yang benar sejak awal. Jika Anda jualan Sepatu Kulit di Bandung, pastikan kata-kata tersebut terstruktur dengan baik di dalam kode <i>website</i> Anda.</p>
 
       <h3>3. Website "Bocor" (Loading Lambat & Tidak Responsif)</h3>
       <p>Ini yang paling menyakitkan. Anda sudah susah payah mendatangkan trafik lewat iklan, tapi saat orang mengklik link Anda, websitenya butuh 8 detik untuk terbuka. Atau tulisannya berantakan saat dibuka di HP.</p>
-      <p>Tahukah Anda? Lebih dari 53% pengguna akan menutup (*close*) website yang loadingnya lebih dari 3 detik. Uang iklan Anda hangus begitu saja tanpa menghasilkan leads.</p>
-      <p><b>Solusinya:</b> Pilih jasa pembuatan website yang berani menjamin skor performa. Pastikan desain menggunakan pendekatan *Mobile-First*, karena 90% pengunjung Anda akan menggunakan smartphone.</p>
+      <p>Tahukah Anda? Lebih dari 53% pengguna akan menutup (<i>close</i>) website yang loadingnya lebih dari 3 detik. Uang iklan Anda hangus begitu saja tanpa menghasilkan leads.</p>
+      <p><b>Solusinya:</b> Pilih jasa pembuatan website yang berani menjamin skor performa. Pastikan desain menggunakan pendekatan <i>Mobile-First</i>, karena 90% pengunjung Anda akan menggunakan smartphone.</p>
 
       <div className="bg-accent/5 p-6 border-l-4 border-accent my-8">
         <p className="font-bold text-accent mb-2">Lini Karya's Expert Take:</p>
-        <p>Di Lini Karya, kami tidak hanya menyerahkan *password* lalu pergi. Kami memastikan fondasi "mesin" website Anda sudah 100% siap balapan (SEO Ready, Super Cepat). Tugas Anda selanjutnya adalah mengisikan "bensin" (Trafik Iklan/Sosmed) agar mobil tersebut melaju membawa profit bagi bisnis Anda.</p>
+        <p>Di Lini Karya, kami tidak hanya menyerahkan <i>password</i> lalu pergi. Kami memastikan fondasi "mesin" website Anda sudah 100% siap balapan (SEO Ready, Super Cepat). Tugas Anda selanjutnya adalah mengisikan "bensin" (Trafik Iklan/Sosmed) agar mobil tersebut melaju membawa profit bagi bisnis Anda.</p>
       </div>
     `,
   },
@@ -558,7 +558,7 @@ export const blogPosts = [
       </ul>
 
       <h3>Dampak Langsung Rebranding Digital</h3>
-      <p>Ketika kemasan digital Anda berubah dari "toko biasa" menjadi "Butik Premium", jenis pelanggan yang datang pun akan berubah. Anda akan mulai menarik pelanggan *High-End* yang tidak rewel soal harga, melainkan peduli pada kualitas dan pelayanan.</p>
+      <p>Ketika kemasan digital Anda berubah dari "toko biasa" menjadi "Butik Premium", jenis pelanggan yang datang pun akan berubah. Anda akan mulai menarik pelanggan <i>High-End</i> yang tidak rewel soal harga, melainkan peduli pada kualitas dan pelayanan.</p>
 
       <div className="bg-accent/5 p-6 border-l-4 border-accent my-8">
         <p className="font-bold text-accent mb-2">Lini Karya's Expert Take:</p>
