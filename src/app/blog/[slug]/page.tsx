@@ -81,6 +81,27 @@ const blogPosts = [
     `,
   },
   {
+    slug: "manfaat-ai-umkm",
+    title: "Cara UMKM Pakai AI untuk Naikkan Omzet di Tahun 2026",
+    date: "2026-06-09",
+    category: "Teknologi AI",
+    image: "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    content: `
+      <p>Artificial Intelligence (AI) bukan lagi sekadar tren futuristik, melainkan alat bantu bisnis yang nyata dan terjangkau bagi UMKM. Di tahun 2026, AI telah menjadi standar baru untuk memenangkan persaingan pasar digital yang kian padat.</p>
+      
+      <h3>1. Otomatisasi Pembuatan Konten Pemasaran</h3>
+      <p>Menulis deskripsi produk atau caption Instagram tidak lagi memakan waktu berjam-jam. Dengan bantuan alat seperti ChatGPT atau Claude, Anda bisa merancang strategi konten untuk satu bulan penuh hanya dalam hitungan menit. AI membantu Anda menjaga konsistensi tanpa harus menyewa copywriter mahal di awal bisnis.</p>
+      
+      <h3>2. Analisis Data Penjualan yang Cerdas</h3>
+      <p>AI bisa membantu Anda melihat pola belanja pelanggan. Produk apa yang paling sering dibeli bersamaan? Kapan waktu terbaik untuk memberikan diskon? Dengan algoritma AI, Anda bisa membuat keputusan bisnis berbasis data, bukan sekadar insting.</p>
+      
+      <h3>3. Pembuatan Iklan yang Lebih Personal</h3>
+      <p>AI memungkinkan Anda untuk melakukan "Dynamic Creative Optimization". Artinya, iklan Anda bisa berubah tampilan dan bahasanya sesuai dengan siapa yang melihatnya. Ini sangat efektif meningkatkan tingkat klik (CTR) pada iklan Facebook atau Google Anda.</p>
+      
+      <p><b>Tips Memulai:</b> Jangan takut mencoba. Mulailah dengan alat gratis untuk membantu tugas harian yang membosankan. Ingat, AI tidak akan menggantikan bisnis Anda, tapi orang yang menggunakan AI akan melampaui bisnis yang tidak menggunakannya.</p>
+    `,
+  },
+  {
     slug: "keamanan-website-umkm",
     title: "5 Tanda Website Bisnis Anda Tidak Aman & Berisiko",
     date: "2026-06-08",
@@ -108,6 +129,27 @@ const blogPosts = [
     `,
   },
   {
+    slug: "chatbot-ai-website",
+    title: "Kenapa Website Anda Butuh AI Chatbot 24/7?",
+    date: "2026-06-07",
+    category: "Inovasi",
+    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    content: `
+      <p>Dalam dunia digital, kecepatan membalas adalah segalanya. Jika pelanggan bertanya jam 11 malam dan baru dibalas jam 8 pagi besoknya, kemungkinan besar mereka sudah membeli dari kompetitor Anda.</p>
+      
+      <h3>1. Melayani Pelanggan Tanpa Henti</h3>
+      <p>AI Chatbot tidak mengenal jam kerja. Mereka bisa menjawab pertanyaan standar seperti "Berapa harganya?", "Masih ada stok?", atau "Kapan dikirim?" secara instan. Ini menjaga momentum antusiasme pembeli agar tidak hilang.</p>
+      
+      <h3>2. Menangani Ribuan Pertanyaan Sekaligus</h3>
+      <p>Jika bisnis Anda sedang viral, admin manusia akan kewalahan. AI Chatbot bisa menangani ribuan percakapan dalam waktu bersamaan dengan kualitas jawaban yang konsisten.</p>
+      
+      <h3>3. Melakukan Kualifikasi Leads</h3>
+      <p>Chatbot bisa diatur untuk bertanya tentang kebutuhan pelanggan sebelum disambungkan ke admin manusia. Jadi, saat Anda mengambil alih percakapan, Anda sudah tahu apa yang pelanggan butuhkan, sehingga proses penutupan penjualan (closing) jadi lebih cepat.</p>
+      
+      <p><b>Lini Karya Integration:</b> Kami membantu mengintegrasikan sistem AI Chatbot pintar ke dalam website Anda agar Anda tidak pernah kehilangan satu leads pun.</p>
+    `,
+  },
+  {
     slug: "landing-page-vs-website",
     title: "Landing Page vs Website Lengkap: Mana yang Menghasilkan Uang?",
     date: "2026-06-05",
@@ -129,6 +171,27 @@ const blogPosts = [
       </ul>
       
       <p><b>Solusi Terbaik:</b> Mulailah dengan Landing Page untuk mendatangkan profit cepat, lalu kembangkan menjadi website lengkap seiring pertumbuhan bisnis Anda.</p>
+    `,
+  },
+  {
+    slug: "ai-dalam-digital-marketing",
+    title: "Masa Depan Digital Marketing: Kolaborasi AI & Kreativitas Manusia",
+    date: "2026-06-04",
+    category: "Tren Pemasaran",
+    image: "https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    content: `
+      <p>Digital marketing tidak lagi sama sejak kehadiran AI. Namun, AI bukanlah pengganti strategi manusia, melainkan "bahan bakar" yang mempercepat prosesnya.</p>
+      
+      <h3>1. Prediksi Tren Pasar</h3>
+      <p>AI mampu menganalisis jutaan data di internet untuk memprediksi apa yang akan populer bulan depan. Dengan informasi ini, bisnis Anda bisa menjadi yang pertama menyediakan solusi sebelum pasar menjadi jenuh.</p>
+      
+      <h3>2. Segmentasi Audiens yang Akurat</h3>
+      <p>Dulu kita menebak-nebak siapa target audiens kita. Sekarang, AI bisa mengidentifikasi kelompok orang yang paling mungkin membeli produk Anda berdasarkan perilaku digital mereka. Iklan Anda jadi tidak "nyasar".</p>
+      
+      <h3>3. Optimasi Konten Berbasis Kinerja</h3>
+      <p>AI bisa menguji puluhan variasi judul artikel atau gambar iklan (A/B Testing) secara otomatis dan memilih mana yang paling banyak mendatangkan leads. Ini membuat budget marketing Anda jadi sangat efisien.</p>
+      
+      <p><b>Filosofi Kolaborasi:</b> Di Lini Karya, kami menggunakan AI untuk efisiensi teknis, namun tetap menggunakan empati dan kreativitas manusia untuk memastikan brand Anda memiliki "jiwa" yang bisa terhubung dengan emosi pelanggan.</p>
     `,
   },
   {

@@ -33,6 +33,14 @@ const blogPosts = [
     image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
+    slug: "manfaat-ai-umkm",
+    title: "Cara UMKM Pakai AI untuk Naikkan Omzet di Tahun 2026",
+    excerpt: "AI bukan cuma untuk perusahaan besar. Pelajari cara praktis menggunakan AI untuk otomatisasi konten dan layanan pelanggan bisnis kecil.",
+    date: "2026-06-09",
+    category: "Teknologi AI",
+    image: "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
     slug: "keamanan-website-umkm",
     title: "5 Tanda Website Bisnis Anda Tidak Aman & Berisiko",
     excerpt: "Jangan biarkan data pelanggan Anda bocor. Kenali tanda-tanda website yang tidak aman dan cara melindunginya dari serangan hacker.",
@@ -41,12 +49,28 @@ const blogPosts = [
     image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
+    slug: "chatbot-ai-website",
+    title: "Kenapa Website Anda Butuh AI Chatbot 24/7?",
+    excerpt: "Jangan biarkan pelanggan kabur karena tidak dibalas. AI Chatbot bisa membantu melayani pembeli saat Anda sedang tidur sekalipun.",
+    date: "2026-06-07",
+    category: "Inovasi",
+    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
     slug: "landing-page-vs-website",
     title: "Landing Page vs Website Lengkap: Mana yang Menghasilkan Uang?",
     excerpt: "Sering bingung bedanya? Kami bedah mana yang paling cocok untuk jualan produk tunggal vs membangun kredibilitas brand perusahaan.",
     date: "2026-06-05",
     category: "Strategi",
     image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    slug: "ai-dalam-digital-marketing",
+    title: "Masa Depan Digital Marketing: Kolaborasi AI & Kreativitas Manusia",
+    excerpt: "Bagaimana tren pemasaran digital berubah dengan hadirnya AI? Pelajari cara agar bisnis Anda tetap relevan di tengah gempuran teknologi.",
+    date: "2026-06-04",
+    category: "Tren Pemasaran",
+    image: "https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     slug: "desain-website-konversi",
