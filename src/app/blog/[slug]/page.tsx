@@ -10,21 +10,34 @@ const blogPosts = [
     category: "Bisnis Lokal",
     image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Bisnis kuliner dikenal sebagai salah satu sektor paling kreatif di Indonesia. Namun, banyak pemilik bisnis yang masih terjebak pada ketergantungan 100% kepada platform pihak ketiga. Padahal, memiliki website sendiri adalah langkah strategis untuk membangun identitas brand yang lebih kuat.</p>
+      <p>Industri kuliner di Indonesia adalah medan tempur yang luar biasa dinamis. Dari tren kopi susu gula aren hingga *cloud kitchen*, persaingan beralih dari fisik ke digital. Namun, banyak pemilik restoran, cafe, hingga UMKM katering yang masih "menitipkan" seluruh nasib bisnisnya pada platform pihak ketiga. Memang mudah, tapi apakah itu menguntungkan dalam jangka panjang?</p>
       
-      <h3>1. Memangkas Biaya Potongan Platform (Komisi 20%+)</h3>
-      <p>Hampir semua platform pengiriman makanan menarik komisi yang cukup besar dari setiap transaksi. Dengan website mandiri yang memiliki sistem WhatsApp Order, pelanggan bisa bertransaksi langsung dengan Anda. Selisih 20% ini bisa dialokasikan untuk meningkatkan kualitas bahan baku atau budget promosi Anda sendiri.</p>
+      <div className="bg-accent/5 p-6 border-l-4 border-accent my-8">
+        <p className="font-bold text-accent mb-2">Statistik Industri:</p>
+        <p>Rata-rata komisi platform pengiriman makanan di Indonesia berkisar antara 20% hingga 25% per transaksi. Untuk bisnis dengan margin tipis, angka ini bisa menghabiskan seluruh keuntungan bersih Anda.</p>
+      </div>
+
+      <h3>1. Menghentikan "Kebocoran" Profit ke Komisi Platform</h3>
+      <p>Bayangkan jika Anda memiliki omzet Rp 100 juta per bulan dari aplikasi. Itu artinya Rp 20-25 juta hilang hanya untuk biaya platform. Dengan memiliki website mandiri yang terintegrasi dengan sistem pemesanan WhatsApp atau payment gateway langsung, Anda bisa menghemat jumlah tersebut secara signifikan. Website Anda adalah investasi satu kali (atau biaya maintenance ringan) dibandingkan dengan "pajak" selamanya dari aplikasi pihak ketiga.</p>
       
-      <h3>2. Kepemilikan Data Pelanggan (Customer Base)</h3>
-      <p>Siapa pelanggan setia Anda? Di aplikasi pihak ketiga, Anda tidak punya akses ke nomor telepon atau kebiasaan beli mereka. Website memungkinkan Anda menanamkan Pixel (seperti Meta Pixel) atau formulir kontak untuk mengumpulkan database pelanggan. Dengan data ini, Anda bisa mengirimkan promo khusus di hari ulang tahun mereka atau info menu baru secara personal.</p>
+      <h3>2. Membangun "Aset" Paling Berharga: Database Pelanggan</h3>
+      <p>Kelemahan terbesar aplikasi pengiriman adalah mereka tidak memberikan data pelanggan kepada Anda. Anda tidak tahu siapa pelanggan setia Anda, apa kesukaan mereka, atau kapan mereka berulang tahun. Website memungkinkan Anda mengumpulkan database ini secara sah. Dengan sistem *loyalty program* di website, Anda bisa melakukan:</p>
+      <ul>
+        <li>Email atau WhatsApp Marketing yang dipersonalisasi.</li>
+        <li>Retargeting Ads menggunakan Meta Pixel untuk mengingatkan pelanggan yang pernah melihat menu Anda.</li>
+        <li>Promosi khusus bagi pelanggan yang sudah memesan lebih dari 5 kali.</li>
+      </ul>
       
-      <h3>3. Membangun Brand Identity yang Berwibawa</h3>
-      <p>Website adalah wajah digital Anda. Di sini, Anda bebas bercerita tentang sejarah resep keluarga Anda, profil chef, hingga suasana interior outlet. Visual yang estetik dan navigasi yang mudah akan memberikan kesan bahwa bisnis kuliner Anda dikelola secara profesional dan modern.</p>
+      <h3>3. Narasi Brand yang Tidak Terbatas</h3>
+      <p>Di aplikasi, brand Anda hanyalah satu kotak kecil di antara ribuan pilihan lain. Di website, Anda memegang kendali penuh atas *User Experience*. Anda bisa menampilkan:</p>
+      <ul>
+        <li><b>Kualitas Visual:</b> Fotografi makanan resolusi tinggi (hi-res) yang menggugah selera tanpa kompresi berlebih.</li>
+        <li><b>Storytelling:</b> Cerita tentang bahan baku organik yang Anda gunakan atau resep warisan keluarga yang membuat Anda unik.</li>
+        <li><b>Interaksi:</b> Fitur reservasi meja langsung atau pemesanan katering kustom untuk acara besar.</li>
+      </ul>
       
-      <h3>4. Optimasi Menu untuk Konversi</h3>
-      <p>Berbeda dengan menu teks standar di aplikasi, di website Anda bisa menyajikan menu dengan fotografi resolusi tinggi, video pendek proses plating, hingga sistem rekomendasi "paling banyak dibeli" yang lebih dinamis.</p>
-      
-      <p><b>Kesimpulan:</b> Investasi di website bukan berarti meninggalkan platform pengiriman, namun sebagai jembatan untuk kemandirian bisnis jangka panjang. Gunakan aplikasi untuk <i>user acquisition</i> (mencari pelanggan baru), dan arahkan mereka ke website Anda untuk pesanan berikutnya guna mendapatkan profit maksimal.</p>
+      <h3>Lini Karya's Expert Take:</h3>
+      <p>Kami menyarankan UMKM kuliner menggunakan strategi "Hybrid". Gunakan aplikasi pihak ketiga untuk menjangkau orang baru (Discovery), namun berikan kupon fisik atau QR Code di dalam kemasan makanan yang mengarahkan mereka untuk memesan lewat website di orderan berikutnya. Ini adalah cara tercepat memindahkan pelanggan ke jalur yang lebih menguntungkan bagi Anda.</p>
     `,
   },
   {
@@ -34,21 +47,33 @@ const blogPosts = [
     category: "SEO",
     image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Local SEO adalah strategi digital marketing yang memungkinkan bisnis fisik Anda (toko, kantor, atau cafe) ditemukan oleh orang-orang yang berada di area sekitar Anda. Jika dilakukan dengan benar, toko Anda akan menjadi pilihan utama saat calon pelanggan mencari solusi di mesin pencari.</p>
+      <p>SEO (Search Engine Optimization) sering dianggap sebagai "ilmu hitam" yang rumit. Padahal, untuk bisnis lokal, prinsipnya sangat sederhana: Jadilah solusi paling relevan saat orang di sekitar Anda mencari bantuan di Google. Inilah panduan mendalam untuk mendominasi pencarian lokal.</p>
       
-      <h3>Langkah 1: Maksimalkan Google Business Profile</h3>
-      <p>Google Business Profile (GBP) adalah "pintu masuk" utama. Pastikan profil Anda diverifikasi. Isilah deskripsi bisnis dengan kata kunci yang relevan, tambahkan foto produk terbaru setiap minggu, dan pastikan titik koordinat di Google Maps akurat. Jangan lupa untuk menjawab setiap ulasan pelanggan, baik yang positif maupun negatif.</p>
-      
-      <h3>Langkah 2: Gunakan Kata Kunci Berbasis Lokasi (Geo-Targeting)</h3>
-      <p>Jangan hanya menggunakan kata kunci luas seperti "Jasa Servis AC". Gunakan variasi seperti "Servis AC Jakarta Selatan" atau "Pasang AC di BSD". Masukkan kata-kata kunci ini ke dalam Tag Judul (H1), Meta Description, dan juga di dalam paragraf artikel website Anda agar Google tahu spesialisasi area jangkauan Anda.</p>
-      
-      <h3>Langkah 3: Konsistensi NAP (Name, Address, Phone)</h3>
-      <p>Ini adalah kesalahan teknis yang sering terjadi. Pastikan penulisan nama bisnis, alamat, dan nomor telepon Anda SAMA PERSIS di seluruh internet—mulai dari website, profil Instagram, hingga direktori bisnis online. Ketidakkonsistenan data akan membuat Google ragu untuk menampilkan profil Anda.</p>
-      
-      <h3>Langkah 4: Optimasi Kecepatan Mobile</h3>
-      <p>Mayoritas pencarian lokal dilakukan melalui smartphone saat orang sedang dalam perjalanan. Website yang lambat (lebih dari 3 detik) akan membuat calon pelanggan pindah ke kompetitor. Pastikan website Anda responsif, ringan, dan memiliki tombol "Hubungi Sekarang" yang mudah diakses.</p>
-      
-      <p><b>Statistik Menarik:</b> 76% orang yang melakukan pencarian lokal melalui smartphone akan mengunjungi bisnis tersebut dalam kurun waktu 24 jam. Jangan lewatkan peluang emas ini.</p>
+      <h3>Fase 1: Optimasi Google Business Profile (GBP) Secara Agresif</h3>
+      <p>GBP bukan sekadar memasukkan alamat. Untuk benar-benar "nangkring" di urutan teratas (Local Pack), Anda harus:</p>
+      <ul>
+        <li><b>Gunakan Foto Nyata:</b> Google mendeteksi metadata lokasi pada foto. Upload foto interior, eksterior, dan aktivitas tim secara rutin.</li>
+        <li><b>Balas Ulasan dengan Kata Kunci:</b> Jika ada pelanggan memuji "kopi susunya enak", balaslah dengan "Terima kasih! Kami memang berkomitmen menyajikan <i>kopi susu enak di [Nama Wilayah]</i> untuk pelanggan setia kami."</li>
+        <li><b>Google Updates:</b> Gunakan fitur post di GBP untuk mengabarkan promo mingguan. Google menyukai bisnis yang aktif.</li>
+      </ul>
+
+      <h3>Fase 2: On-Page SEO yang Terfokus pada Lokasi</h3>
+      <p>Struktur website Anda harus memberi tahu Google secara eksplisit di mana area layanan Anda. Pastikan elemen berikut ada di website Anda:</p>
+      <ul>
+        <li><b>Title Tag & Meta Description:</b> Jangan hanya "Jasa Arsitek". Gunakan "Jasa Arsitek Rumah Minimalis di [Nama Kota] - [Nama Brand Anda]".</li>
+        <li><b>Local Schema Markup:</b> Gunakan kode JSON-LD untuk memberi tahu mesin pencari tentang koordinat GPS, jam buka, dan kategori bisnis Anda. (Lini Karya selalu menyertakan ini di setiap proyek).</li>
+        <li><b>Halaman Layanan Per Wilayah:</b> Jika Anda melayani beberapa area, buatlah sub-halaman khusus untuk masing-masing area tersebut dengan konten yang unik.</li>
+      </ul>
+
+      <h3>Fase 3: Membangun Otoritas Lewat Backlink Lokal</h3>
+      <p>Google melihat siapa saja yang membicarakan Anda. Cari tautan dari sumber lokal seperti:</p>
+      <ul>
+        <li>Portal berita lokal atau blog komunitas di wilayah Anda.</li>
+        <li>Direktori bisnis resmi pemerintah atau asosiasi pengusaha.</li>
+        <li>Kerjasama *link-exchange* dengan bisnis partner di wilayah yang sama namun tidak bersaing langsung.</li>
+      </ul>
+
+      <p><b>Kesimpulan:</b> SEO adalah maraton, bukan sprint. Hasilnya mungkin baru terlihat dalam 3-6 bulan, namun trafik yang datang dari SEO adalah trafik "gratis" yang memiliki tingkat kepercayaan jauh lebih tinggi dibandingkan iklan berbayar.</p>
     `,
   },
   {
@@ -58,26 +83,40 @@ const blogPosts = [
     category: "Investasi Digital",
     image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Menentukan budget untuk website seringkali membingungkan karena variasinya yang sangat luas. Sebagai pemilik UMKM, Anda perlu memahami apa yang Anda bayar agar tidak terjebak pada solusi yang "murah tapi merepotkan" atau "mahal tapi tidak berdampak".</p>
+      <p>Banyak pengusaha UMKM mundur sebelum memulai karena bingung dengan variasi harga website yang sangat ekstrem—ada yang menawarkan Rp 500 ribu, ada yang Rp 50 juta. Kenapa perbedaannya bisa seperti bumi dan langit? Mari kita bedah apa yang sebenarnya Anda bayar.</p>
       
-      <h3>Pilihan 1: Solusi Mandiri (Budget Terbatas)</h3>
-      <p>Menggunakan platform <i>No-Code</i> seperti Wix atau Shopify. Biaya berkisar Rp 500rb - Rp 2,5jt per tahun. Kelebihannya adalah kontrol penuh di tangan Anda. Kekurangannya, Anda harus meluangkan waktu puluhan jam untuk belajar, dan optimasi SEO teknis biasanya sangat terbatas.</p>
-      
-      <h3>Pilihan 2: Jasa Freelancer (Menengah)</h3>
-      <p>Biaya biasanya Rp 1,5jt - Rp 4jt. Sangat cocok untuk landing page sederhana. Tantangan utamanya adalah konsistensi dukungan teknis. Jika freelancer tersebut sibuk dengan proyek lain, website Anda mungkin akan terbengkalai jika terjadi error mendadak.</p>
-      
-      <h3>Pilihan 3: Studio/Agensi Profesional (Investasi Strategis)</h3>
-      <p>Biaya mulai dari Rp 3jt hingga belasan juta rupiah. Di sini, Anda tidak hanya membeli kode, tapi membeli strategi pemasaran digital, desain kustom yang merepresentasikan brand, keamanan tingkat tinggi, dan dukungan teknis 24/7. Investasi ini biasanya balik modal (ROI) lebih cepat karena website dirancang khusus untuk konversi penjualan.</p>
-      
-      <h3>Apa Saja Komponen Biayanya?</h3>
+      <h3>1. Jebakan "Website Murah" (Rp 500rb - Rp 1,5jt)</h3>
+      <p>Biasanya ini adalah layanan massal yang menggunakan template standar tanpa strategi pemasaran. Masalah yang sering muncul:</p>
       <ul>
-        <li><b>Domain & Hosting:</b> Biaya sewa nama alamat web dan "rumah" penyimpanan data (tahunan).</li>
-        <li><b>Design & Development:</b> Biaya tenaga ahli merancang layout dan fungsi sistem.</li>
-        <li><b>Copywriting:</b> Biaya penulisan kata-kata yang persuasif untuk menarik pembeli.</li>
-        <li><b>Maintenance:</b> Biaya update sistem dan keamanan agar website tidak mati atau kena hack.</li>
+        <li><b>Kecepatan Rendah:</b> Karena menggunakan server berbagi (shared hosting) kualitas rendah.</li>
+        <li><b>Tidak Ada Optimasi SEO:</b> Website hanya "jadi", tapi tidak akan pernah muncul di Google.</li>
+        <li><b>Keamanan Rentan:</b> Jarang ada update sistem, sehingga mudah disusupi virus atau hacker.</li>
+        <li><b>Biaya Tersembunyi:</b> Tahun depan, biaya perpanjangan domain dan hosting bisa melonjak drastis.</li>
       </ul>
-      
-      <p><b>Saran Investasi:</b> Jangan tanyakan "berapa harganya?", tapi tanyakan "berapa banyak potensi pelanggan yang bisa saya dapatkan dari website ini?". Website berkualitas adalah salesman terbaik Anda yang bekerja 24 jam sehari.</p>
+
+      <h3>2. Investasi Strategis (Rp 3jt - Rp 10jt)</h3>
+      <p>Ini adalah *sweet spot* bagi UMKM yang ingin tumbuh. Di Lini Karya, paket dalam rentang ini mencakup:</p>
+      <ul>
+        <li><b>Konsultasi Bisnis:</b> Kami merancang struktur web berdasarkan cara pelanggan Anda berbelanja.</li>
+        <li><b>Copywriting Profesional:</b> Kata-kata di dalam web dibuat untuk memicu orang mengklik tombol beli/hubungi WA.</li>
+        <li><b>Premium Infrastructure:</b> Menggunakan server cepat (Cloud) dan sistem keamanan SSL terbaru.</li>
+        <li><b>Pelatihan CMS:</b> Anda diajarkan cara mengganti harga atau foto produk sendiri tanpa harus bayar orang lagi.</li>
+      </ul>
+
+      <h3>3. Enterprise / Custom System (Rp 15jt+)</h3>
+      <p>Diperlukan jika bisnis Anda butuh fungsi khusus seperti integrasi inventaris stok otomatis, sistem membership multi-level, atau dashboard manajemen yang rumit.</p>
+
+      <div className="bg-foreground/5 p-8 my-10 border border-foreground/10 rounded-xl">
+        <h4 className="text-xl font-bold mb-4 uppercase tracking-tighter">Checklist Sebelum Membeli:</h4>
+        <ol className="list-decimal pl-5 space-y-3">
+          <li>Apakah websitenya akan menjadi milik saya sepenuhnya (hak akses hosting/domain)?</li>
+          <li>Apakah tampilannya responsif (bagus di HP)?</li>
+          <li>Berapa lama waktu loading halaman utamanya? (Harus di bawah 3 detik).</li>
+          <li>Apakah ada layanan maintenance jika website error?</li>
+        </ol>
+      </div>
+
+      <p><b>Filosofi Investasi:</b> Website berkualitas bukan pengeluaran, tapi aset yang bisa menghasilkan profit. Jika website seharga Rp 5 juta bisa mendatangkan 1 klien besar saja per bulan, maka dalam 2-3 bulan Anda sudah balik modal.</p>
     `,
   },
   {
@@ -87,18 +126,23 @@ const blogPosts = [
     category: "Teknologi AI",
     image: "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Artificial Intelligence (AI) bukan lagi sekadar tren futuristik, melainkan alat bantu bisnis yang nyata dan terjangkau bagi UMKM. Di tahun 2026, AI telah menjadi standar baru untuk memenangkan persaingan pasar digital yang kian padat.</p>
+      <p>AI (Artificial Intelligence) bukan lagi teknologi fiksi ilmiah. Di tahun 2026, AI adalah asisten virtual yang bisa membantu pemilik UMKM bekerja 10x lebih cepat dengan biaya 10x lebih murah. Bagaimana cara mengaplikasikannya secara nyata?</p>
       
-      <h3>1. Otomatisasi Pembuatan Konten Pemasaran</h3>
-      <p>Menulis deskripsi produk atau caption Instagram tidak lagi memakan waktu berjam-jam. Dengan bantuan alat seperti ChatGPT atau Claude, Anda bisa merancang strategi konten untuk satu bulan penuh hanya dalam hitungan menit. AI membantu Anda menjaga konsistensi tanpa harus menyewa copywriter mahal di awal bisnis.</p>
+      <h3>Strategi 1: Content Production Tanpa Henti</h3>
+      <p>Masalah utama UMKM adalah tidak punya waktu untuk membuat konten sosial media. Dengan AI seperti Claude atau ChatGPT, Anda bisa:</p>
+      <ul>
+        <li>Membuat jadwal konten (Content Calendar) untuk 30 hari ke depan dalam 5 menit.</li>
+        <li>Menulis script video TikTok yang viral berdasarkan tren terbaru.</li>
+        <li>Membuat desain grafis profesional menggunakan Midjourney atau Canva AI hanya dengan perintah teks.</li>
+      </ul>
+
+      <h3>Strategi 2: Otomatisasi Analisis Persaingan</h3>
+      <p>AI bisa "membaca" ribuan ulasan pelanggan kompetitor Anda dan memberi tahu apa kelemahan mereka. Misalnya, jika pelanggan kompetitor sering mengeluh tentang "pengemasan yang lama", Anda bisa menggunakan informasi ini untuk mempromosikan keunggulan "pengiriman kilat" pada bisnis Anda.</p>
+
+      <h3>Strategi 3: Personalisasi Penawaran (Hyper-Personalization)</h3>
+      <p>AI bisa mengelompokkan pelanggan Anda menjadi beberapa segmen. Pelanggan A hanya suka beli saat diskon, Pelanggan B selalu beli produk terbaru. AI akan membantu Anda mengirimkan pesan promosi yang berbeda ke masing-masing kelompok, sehingga konversi penjualan meningkat tajam.</p>
       
-      <h3>2. Analisis Data Penjualan yang Cerdas</h3>
-      <p>AI bisa membantu Anda melihat pola belanja pelanggan. Produk apa yang paling sering dibeli bersamaan? Kapan waktu terbaik untuk memberikan diskon? Dengan algoritma AI, Anda bisa membuat keputusan bisnis berbasis data, bukan sekadar insting.</p>
-      
-      <h3>3. Pembuatan Iklan yang Lebih Personal</h3>
-      <p>AI memungkinkan Anda untuk melakukan "Dynamic Creative Optimization". Artinya, iklan Anda bisa berubah tampilan dan bahasanya sesuai dengan siapa yang melihatnya. Ini sangat efektif meningkatkan tingkat klik (CTR) pada iklan Facebook atau Google Anda.</p>
-      
-      <p><b>Tips Memulai:</b> Jangan takut mencoba. Mulailah dengan alat gratis untuk membantu tugas harian yang membosankan. Ingat, AI tidak akan menggantikan bisnis Anda, tapi orang yang menggunakan AI akan melampaui bisnis yang tidak menggunakannya.</p>
+      <p><b>Peringatan Penting:</b> Jangan biarkan AI bekerja sendirian. Pastikan Anda tetap memberikan "sentuhan manusia" pada hasil kerja AI agar brand Anda tetap terasa hangat dan otentik di mata pelanggan.</p>
     `,
   },
   {
@@ -108,24 +152,26 @@ const blogPosts = [
     category: "Keamanan",
     image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Banyak pemilik bisnis merasa bahwa website mereka "biasa saja" sehingga tidak mungkin diincar hacker. Faktanya, hacker sering mengincar UMKM karena sistem keamanannya yang lemah untuk digunakan sebagai jembatan serangan yang lebih besar atau sekadar mencuri data pelanggan.</p>
+      <p>Setiap 39 detik, terjadi satu serangan hacker di internet. UMKM sering menjadi target empuk karena biasanya memiliki sistem pertahanan yang lemah. Keamanan website bukan hanya soal melindungi file, tapi melindungi kepercayaan pelanggan Anda.</p>
       
-      <h3>1. Tidak Memiliki Sertifikat SSL (HTTPS)</h3>
-      <p>Tanda paling jelas adalah adanya peringatan "Not Secure" di bar alamat browser. Selain membuat pengunjung takut, Google akan menurunkan peringkat website Anda secara drastis jika tidak menggunakan SSL.</p>
+      <h3>1. Tanda "Not Secure" dan Dampak Psikologisnya</h3>
+      <p>Jika pengunjung melihat ikon gembok terbuka atau tulisan "Not Secure" di browser, 85% dari mereka akan langsung membatalkan transaksi. Ini terjadi karena website Anda tidak memiliki SSL (Secure Sockets Layer). Tanpa SSL, data kartu kredit atau nomor telepon yang dimasukkan pelanggan bisa "diintip" oleh pihak ketiga.</p>
       
-      <h3>2. Menggunakan Software/Plugin Bajakan (Nulled)</h3>
-      <p>Menggunakan tema atau plugin "gratisan" hasil download ilegal sangat berbahaya. Seringkali di dalamnya sudah ditanam <i>malware</i> yang bisa mencuri data kartu kredit pelanggan atau mengirim email spam atas nama bisnis Anda.</p>
+      <h3>2. Pengalihan Link Secara Otomatis (Redirect)</h3>
+      <p>Pernahkah Anda mengklik link website Anda tapi malah diarahkan ke situs judi atau iklan aneh? Itu adalah tanda bahwa website Anda sudah terinfeksi malware. Ini sangat merusak reputasi bisnis Anda di mata Google dan pelanggan.</p>
       
-      <h3>3. Tidak Ada Backup Rutin</h3>
-      <p>Website yang aman adalah website yang siap menghadapi kemungkinan terburuk. Jika website Anda mati atau terkena hack, dan Anda tidak punya file cadangan (backup), maka seluruh investasi digital Anda bisa hilang dalam sekejap.</p>
-      
-      <h3>4. Password yang Terlalu Sederhana</h3>
-      <p>Hacker menggunakan bot untuk mencoba jutaan kombinasi password setiap detiknya. Menggunakan password seperti "admin123" atau nama bisnis Anda adalah tiket gratis bagi mereka untuk masuk ke sistem Anda.</p>
-      
-      <h3>5. Performa Lambat Tanpa Alasan Jelas</h3>
-      <p>Jika website Anda tiba-tiba menjadi sangat lambat, bisa jadi sistem Anda sedang digunakan oleh hacker untuk menjalankan script ilegal di latar belakang tanpa Anda sadari.</p>
-      
-      <p><b>Rekomendasi Kami:</b> Selalu gunakan penyedia jasa yang memberikan garansi keamanan dan melakukan update sistem secara berkala. Keamanan bukan biaya, tapi proteksi aset.</p>
+      <h3>3. Lonjakan Penggunaan Resource Server</h3>
+      <p>Jika biaya hosting Anda tiba-tiba membengkak atau website menjadi sangat lambat tanpa ada lonjakan pengunjung nyata, bisa jadi website Anda sedang digunakan oleh hacker untuk menambang crypto atau mengirim spam ke jutaan email orang lain.</p>
+
+      <h3>4. Bagaimana Lini Karya Mengamankan Website Anda?</h3>
+      <p>Di setiap proyek kami, kami menerapkan standard keamanan berlapis:</p>
+      <ul>
+        <li><b>Automatic Daily Backups:</b> Jika terjadi sesuatu, website bisa dikembalikan ke kondisi normal dalam hitungan menit.</li>
+        <li><b>Brute Force Protection:</b> Menghalangi bot yang mencoba menebak password admin secara berulang.</li>
+        <li><b>Uptime Monitoring 24/7:</b> Tim kami mendapat notifikasi instan jika website Anda mengalami gangguan.</li>
+      </ul>
+
+      <p><b>Kesimpulan:</b> Keamanan digital adalah fondasi bisnis. Jangan sampai penghematan beberapa ratus ribu rupiah di awal berujung pada kerugian puluhan juta karena data dicuri atau website mati total.</p>
     `,
   },
   {
@@ -135,18 +181,18 @@ const blogPosts = [
     category: "Inovasi",
     image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Dalam dunia digital, kecepatan membalas adalah segalanya. Jika pelanggan bertanya jam 11 malam dan baru dibalas jam 8 pagi besoknya, kemungkinan besar mereka sudah membeli dari kompetitor Anda.</p>
+      <p>Pelanggan zaman sekarang tidak suka menunggu. Sebuah penelitian menunjukkan bahwa jika pertanyaan pelanggan tidak dijawab dalam waktu 5 menit, kemungkinan mereka untuk membeli menurun hingga 80%. AI Chatbot hadir sebagai solusi "Salesman Abadi" untuk bisnis Anda.</p>
       
-      <h3>1. Melayani Pelanggan Tanpa Henti</h3>
-      <p>AI Chatbot tidak mengenal jam kerja. Mereka bisa menjawab pertanyaan standar seperti "Berapa harganya?", "Masih ada stok?", atau "Kapan dikirim?" secara instan. Ini menjaga momentum antusiasme pembeli agar tidak hilang.</p>
+      <h3>1. Respon Instan di Jam Berapapun</h3>
+      <p>Bayangkan pelanggan yang sedang begadang jam 2 pagi ingin bertanya tentang stok produk. Admin Anda sedang tidur, tapi AI Chatbot Anda tetap bekerja. Ia bisa menjawab, memberikan katalog, hingga mengarahkan pelanggan untuk langsung melakukan pembayaran di website.</p>
       
-      <h3>2. Menangani Ribuan Pertanyaan Sekaligus</h3>
-      <p>Jika bisnis Anda sedang viral, admin manusia akan kewalahan. AI Chatbot bisa menangani ribuan percakapan dalam waktu bersamaan dengan kualitas jawaban yang konsisten.</p>
+      <h3>2. Mencegah "Fatigue" pada Admin Manusia</h3>
+      <p>Menjawab pertanyaan yang sama 100x sehari seperti "Alamatnya di mana?" atau "Bisa kirim hari ini?" sangat melelahkan bagi admin Anda. AI Chatbot bisa menangani 90% pertanyaan repetitif ini, sehingga admin manusia bisa fokus pada 10% pertanyaan yang benar-benar butuh negosiasi atau empati tinggi.</p>
       
-      <h3>3. Melakukan Kualifikasi Leads</h3>
-      <p>Chatbot bisa diatur untuk bertanya tentang kebutuhan pelanggan sebelum disambungkan ke admin manusia. Jadi, saat Anda mengambil alih percakapan, Anda sudah tahu apa yang pelanggan butuhkan, sehingga proses penutupan penjualan (closing) jadi lebih cepat.</p>
+      <h3>3. Integrasi dengan Sistem Order</h3>
+      <p>AI Chatbot modern tidak hanya bisa mengobrol. Ia bisa mengecek status pengiriman pesanan secara otomatis hanya dengan menanyakan nomor resi kepada pelanggan. Ini meningkatkan efisiensi operasional bisnis Anda secara drastis.</p>
       
-      <p><b>Lini Karya Integration:</b> Kami membantu mengintegrasikan sistem AI Chatbot pintar ke dalam website Anda agar Anda tidak pernah kehilangan satu leads pun.</p>
+      <p><b>Langkah Memulai:</b> Kami di Lini Karya bisa mengintegrasikan chatbot pintar yang sudah "dilatih" dengan data produk Anda, sehingga ia bisa menjawab persis seperti admin terbaik Anda.</p>
     `,
   },
   {
@@ -156,21 +202,53 @@ const blogPosts = [
     category: "Strategi",
     image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Sebelum membangun aset digital, Anda harus menentukan tujuannya. Apakah untuk promosi produk spesifik, atau untuk membangun rumah besar bagi brand Anda? Memahami perbedaan keduanya akan menghemat budget pemasaran Anda.</p>
+      <p>Banyak pemilik bisnis bingung harus mulai dari mana. "Saya butuh website, atau cuma butuh satu halaman saja?" Jawabannya sangat tergantung pada di mana posisi bisnis Anda saat ini dan apa target jangka pendek Anda.</p>
       
-      <h3>Apa itu Landing Page?</h3>
-      <p>Ini adalah satu halaman khusus yang dirancang dengan satu tujuan: **Konversi**. Tidak ada menu navigasi yang membingungkan. Fokusnya hanya satu, misalnya: "Daftar Sekarang", "Beli Sekarang", atau "Hubungi WhatsApp". Sangat efektif jika Anda sedang menjalankan iklan Facebook Ads atau Google Ads.</p>
-      
-      <h3>Apa itu Website Lengkap?</h3>
-      <p>Ini adalah profil perusahaan (Company Profile) yang terdiri dari banyak halaman (Home, About, Services, Blog, Contact). Tujuannya adalah membangun kredibilitas, memberikan informasi lengkap, dan sebagai investasi SEO jangka panjang agar bisnis Anda ditemukan di Google tanpa harus selalu bayar iklan.</p>
-      
-      <h3>Mana yang Harus Dipilih?</h3>
+      <h3>Landing Page: Si Mesin Penjual Cepat</h3>
+      <p>Landing page adalah satu halaman tanpa gangguan menu navigasi. Tujuannya cuma satu: Konversi. Sangat cocok jika Anda:</p>
       <ul>
-        <li><b>Pilih Landing Page jika:</b> Anda punya produk spesifik untuk dijual cepat, sedang promo diskon, atau butuh data leads (nomor WA) dalam waktu singkat.</li>
-        <li><b>Pilih Website Lengkap jika:</b> Bisnis Anda butuh kepercayaan tinggi (seperti jasa kontraktor, konsultan, atau manufaktur), atau Anda ingin membangun otoritas brand di industri tersebut.</li>
+        <li>Sedang menjalankan iklan Facebook/Instagram/Google Ads.</li>
+        <li>Memiliki produk tunggal yang ingin dipromosikan (misal: Pre-order buku, kursus, atau satu jenis gadget).</li>
+        <li>Ingin mengumpulkan data nama dan nomor WhatsApp calon pelanggan (Lead Generation).</li>
       </ul>
+
+      <h3>Website Lengkap (Company Profile): Si Pembangun Kepercayaan</h3>
+      <p>Terdiri dari halaman Home, About, Services, Portofolio, hingga Blog. Sangat penting jika Anda:</p>
+      <ul>
+        <li>Menawarkan jasa profesional (Dokter, Pengacara, Arsitek, Kontraktor).</li>
+        <li>Memiliki banyak lini produk atau layanan.</li>
+        <li>Ingin membangun otoritas jangka panjang melalui konten edukasi (SEO).</li>
+      </ul>
+
+      <h3>Perbandingan Head-to-Head:</h3>
+      <table className="w-full border-collapse border border-foreground/10 my-8">
+        <thead>
+          <tr className="bg-foreground/5">
+            <th className="border border-foreground/10 p-3">Fitur</th>
+            <th className="border border-foreground/10 p-3">Landing Page</th>
+            <th className="border border-foreground/10 p-3">Full Website</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td className="border border-foreground/10 p-3">Tujuan Utama</td>
+            <td className="border border-foreground/10 p-3">Jualan Langsung</td>
+            <td className="border border-foreground/10 p-3">Kredibilitas Brand</td>
+          </tr>
+          <tr>
+            <td className="border border-foreground/10 p-3">Waktu Pembuatan</td>
+            <td className="border border-foreground/10 p-3">Cepat (3-7 hari)</td>
+            <td className="border border-foreground/10 p-3">Lama (2-4 minggu)</td>
+          </tr>
+          <tr>
+            <td className="border border-foreground/10 p-3">Potensi SEO</td>
+            <td className="border border-foreground/10 p-3">Rendah</td>
+            <td className="border border-foreground/10 p-3">Sangat Tinggi</td>
+          </tr>
+        </tbody>
+      </table>
       
-      <p><b>Solusi Terbaik:</b> Mulailah dengan Landing Page untuk mendatangkan profit cepat, lalu kembangkan menjadi website lengkap seiring pertumbuhan bisnis Anda.</p>
+      <p><b>Rekomendasi Lini Karya:</b> Jika budget terbatas, mulailah dengan Landing Page yang efektif untuk berjualan. Setelah profit terkumpul, kembangkan menjadi Full Website untuk dominasi pasar di Google.</p>
     `,
   },
   {
@@ -180,18 +258,18 @@ const blogPosts = [
     category: "Tren Pemasaran",
     image: "https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Digital marketing tidak lagi sama sejak kehadiran AI. Namun, AI bukanlah pengganti strategi manusia, melainkan "bahan bakar" yang mempercepat prosesnya.</p>
+      <p>Kita sedang berada di era revolusi pemasaran digital. Mereka yang menolak AI akan tertinggal, namun mereka yang mengandalkan AI 100% akan kehilangan koneksi emosional dengan pelanggannya. Kuncinya adalah kolaborasi.</p>
       
-      <h3>1. Prediksi Tren Pasar</h3>
-      <p>AI mampu menganalisis jutaan data di internet untuk memprediksi apa yang akan populer bulan depan. Dengan informasi ini, bisnis Anda bisa menjadi yang pertama menyediakan solusi sebelum pasar menjadi jenuh.</p>
+      <h3>1. AI Sebagai "Data Scientist" Anda</h3>
+      <p>AI sangat hebat dalam mengolah angka. Ia bisa memberi tahu Anda saluran pemasaran mana yang paling efisien, jam berapa pelanggan Anda paling aktif di internet, hingga prediksi tren apa yang akan meledak dalam 3 bulan ke depan. Biarkan AI menangani tugas teknis yang membosankan ini.</p>
       
-      <h3>2. Segmentasi Audiens yang Akurat</h3>
-      <p>Dulu kita menebak-nebak siapa target audiens kita. Sekarang, AI bisa mengidentifikasi kelompok orang yang paling mungkin membeli produk Anda berdasarkan perilaku digital mereka. Iklan Anda jadi tidak "nyasar".</p>
+      <h3>2. Manusia Sebagai "Storyteller"</h3>
+      <p>AI belum bisa merasakan empati, humor yang tepat sasaran, atau nuansa budaya lokal yang spesifik. Tugas Anda (dan agensi kreatif) adalah membungkus data dari AI menjadi cerita yang menyentuh hati pelanggan. Pelanggan membeli produk karena emosi, bukan sekadar logika komputer.</p>
       
-      <h3>3. Optimasi Konten Berbasis Kinerja</h3>
-      <p>AI bisa menguji puluhan variasi judul artikel atau gambar iklan (A/B Testing) secara otomatis dan memilih mana yang paling banyak mendatangkan leads. Ini membuat budget marketing Anda jadi sangat efisien.</p>
+      <h3>3. Efisiensi Budget dengan A/B Testing Otomatis</h3>
+      <p>Dulu, kita harus menunggu berminggu-minggu untuk tahu iklan mana yang paling bagus. Sekarang, AI bisa mencoba ratusan variasi iklan dalam satu hari dan mematikan iklan yang tidak berperforma baik secara otomatis. Ini membuat setiap rupiah budget marketing Anda bekerja secara maksimal.</p>
       
-      <p><b>Filosofi Kolaborasi:</b> Di Lini Karya, kami menggunakan AI untuk efisiensi teknis, namun tetap menggunakan empati dan kreativitas manusia untuk memastikan brand Anda memiliki "jiwa" yang bisa terhubung dengan emosi pelanggan.</p>
+      <p><b>Visi Lini Karya:</b> Kami membantu bisnis Anda mengadopsi teknologi AI ini tanpa harus kehilangan identitas brand yang otentik. Masa depan adalah tentang bisnis yang didukung oleh teknologi tercanggih namun tetap terasa manusiawi.</p>
     `,
   },
   {
@@ -201,21 +279,18 @@ const blogPosts = [
     category: "Desain UI/UX",
     image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     content: `
-      <p>Banyak pemilik bisnis ingin websitenya penuh dengan animasi warna-warni dan elemen dekoratif yang mencolok. Namun, data menunjukkan bahwa desain yang terlalu ramai justru menurunkan tingkat penjualan (Conversion Rate).</p>
+      <p>Banyak pemilik bisnis terjebak pada pemikiran bahwa semakin mewah dan penuh hiasan sebuah website, semakin baik citra bisnisnya. Fakta psikologis berkata sebaliknya: Desain minimalis justru lebih efektif dalam memicu orang untuk melakukan pembelian.</p>
       
-      <h3>1. Menghilangkan Beban Kognitif</h3>
-      <p>Otak manusia memiliki keterbatasan dalam memproses informasi. Jika website Anda terlalu penuh dengan teks dan gambar yang tidak perlu, pengunjung akan merasa lelah (Cognitive Load) dan akhirnya meninggalkan website Anda sebelum melakukan pembelian.</p>
+      <h3>Hukum Hick: Mengurangi Pilihan untuk Menambah Hasil</h3>
+      <p>Psikologi desain mengenal "Hukum Hick", yang menyatakan bahwa semakin banyak pilihan (tombol, link, menu) yang Anda berikan kepada pengunjung, semakin lama mereka butuh waktu untuk membuat keputusan, atau bahkan tidak memilih sama sekali. Minimalisme memandu mata pengunjung hanya ke arah yang penting: Tombol CTA.</p>
       
-      <h3>2. Fokus pada Tombol CTA (Call to Action)</h3>
-      <p>Dalam desain minimalis, elemen yang paling menonjol adalah yang paling penting. Dengan banyak ruang kosong (White Space), tombol "Beli Sekarang" atau "Konsultasi" akan terlihat sangat jelas dan menarik minat klik pengunjung secara alami.</p>
+      <h3>Memberikan Kesan "High-End" dan Terpercaya</h3>
+      <p>Perhatikan brand premium seperti Apple, Rolex, atau Porsche. Website mereka sangat bersih, memiliki banyak ruang kosong (white space), dan menggunakan tipografi yang berkelas. Desain yang tenang menunjukkan bahwa brand Anda percaya diri dengan kualitas produknya tanpa perlu "teriak" dengan banyak warna mencolok.</p>
       
-      <h3>3. Waktu Loading yang Lebih Cepat</h3>
-      <p>Elemen desain yang lebih sedikit berarti file yang harus didownload oleh browser pelanggan juga lebih kecil. Website yang cepat memberikan pengalaman pengguna (UX) yang jauh lebih baik, dan Google sangat menyukai website yang kencang.</p>
+      <h3>Kenyamanan Membaca (Readability)</h3>
+      <p>Di dunia yang penuh dengan gangguan, desain minimalis memberikan ketenangan bagi mata pembeli. Konten Anda jadi lebih mudah dicerna, poin keunggulan produk Anda jadi lebih menonjol, dan pesan utama brand Anda tersampaikan dengan jernih.</p>
       
-      <h3>4. Memberikan Kesan Profesional & Mewah</h3>
-      <p>Coba perhatikan brand besar seperti Apple atau Tesla. Mereka menggunakan desain minimalis untuk menunjukkan kepercayaan diri. Bisnis Anda akan terlihat lebih elegan dan terpercaya di mata pelanggan dengan estetika yang bersih.</p>
-      
-      <p><b>Filosofi Lini Karya:</b> Kami percaya bahwa "Less is More". Kami mendesain website bukan sekadar agar terlihat indah, tapi agar setiap elemen di dalamnya memiliki fungsi untuk membantu bisnis Anda tumbuh.</p>
+      <p><b>Prinsip Kami:</b> Kami mendesain website untuk manusia, bukan untuk komputer. Setiap piksel yang kami letakkan memiliki alasan yang jelas untuk membantu pelanggan Anda merasa nyaman dan aman saat bertransaksi dengan Anda.</p>
     `,
   },
 ];
@@ -268,8 +343,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
         </header>
 
+        {/* Post Content with Enhanced Styling */}
         <div 
-          className="font-mono text-sm md:text-base leading-relaxed text-foreground/80 space-y-12 blog-content max-w-3xl"
+          className="font-mono text-sm md:text-base leading-relaxed text-foreground/80 space-y-12 blog-content max-w-3xl prose-custom"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
