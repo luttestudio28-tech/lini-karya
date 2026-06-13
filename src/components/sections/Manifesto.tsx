@@ -40,7 +40,7 @@ const Manifesto = () => {
           <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
             Komitmen Kami
           </span>
-          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.75] text-foreground tracking-[-0.07em]">
+          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] text-foreground tracking-[-0.07em]">
             Bisnis Anda, <br />
             <span className="italic-accent text-accent">Naik Kelas</span>
           </h2>

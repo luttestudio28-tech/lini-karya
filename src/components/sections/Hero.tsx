@@ -46,7 +46,7 @@ const Hero = () => {
           animate="animate"
           className="w-full relative z-10 mb-12 md:mb-20 mt-12"
         >
-          <h1 className="font-display text-[clamp(3.5rem,8vw,9rem)] leading-[0.85] tracking-[-0.04em] text-left">
+          <h1 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] tracking-[-0.04em] text-left">
             <div className="flex flex-col">
               <span className="overflow-hidden block">
                 <motion.span variants={lineVars} className="inline-block">Website</motion.span>
