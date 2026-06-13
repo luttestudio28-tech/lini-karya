@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 
 const packages = [
   {
-    name: "Landing Page",
-    description: "Website satu halaman untuk fokus berjualan dan menarik pelanggan baru.",
+    name: "Toko Online",
+    description: "Website e-commerce mandiri untuk fokus berjualan tanpa potongan komisi platform.",
     price: "2.500.000",
     priceLabel: "OPTIMASI JUALAN",
     features: [
-      "1 Halaman Landing Page Premium",
-      "Desain yang Menarik Pembeli",
-      "Sistem Cepat & Ringan",
-      "Integrasi WhatsApp Langsung",
+      "Katalog Produk & Keranjang Belanja",
+      "Sistem Checkout ke WhatsApp",
+      "Desain Premium (Mobile-First)",
+      "Bebas Potongan Komisi Penjualan",
       "Gratis Konsultasi Selamanya"
     ]
   },

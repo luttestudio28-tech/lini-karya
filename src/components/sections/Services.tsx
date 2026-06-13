@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const services = [
   {
     id: "01",
-    title: "Landing Page",
-    description: "Website satu halaman yang dirancang khusus untuk menunjukkan produk Anda dan mengubah pengunjung menjadi pembeli.",
+    title: "Toko Online",
+    description: "Website katalog produk interaktif dengan sistem keranjang belanja dan checkout pesanan otomatis via WhatsApp.",
   },
   {
     id: "02",
