@@ -41,8 +41,8 @@ const Manifesto = () => {
             Komitmen Kami
           </span>
           <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] text-foreground tracking-[-0.07em]">
-            Standar Baru, <br />
-            <span className="italic-accent text-accent">Naik Kelas</span>
+            Wajah Baru, <br />
+            <span className="italic-accent text-accent">Kredibilitas Tinggi</span>
           </h2>
           <div className="absolute top-1/2 left-0 w-12 h-px bg-foreground/20 hidden lg:block" />
           <div className="absolute top-1/2 right-0 w-12 h-px bg-foreground/20 hidden lg:block" />
