@@ -68,7 +68,7 @@ const Pricing = () => {
             <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
               Pilihan Investasi
             </span>
-            <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] tracking-tighter">
+            <h2 className="font-display text-[clamp(3.5rem,9vw,140px)] leading-[0.8] tracking-tighter">
               Mulai <br /> <span className="italic-accent text-accent">Konsultasi</span>
             </h2>
           </div>

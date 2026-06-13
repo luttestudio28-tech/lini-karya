@@ -19,7 +19,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.75] tracking-[-0.06em] uppercase"
+            className="font-display text-[clamp(3.5rem,9vw,140px)] leading-[0.75] tracking-[-0.06em] uppercase"
           >
             Siap Jadi <br />
             <span className="text-accent italic">Mitra?</span>
