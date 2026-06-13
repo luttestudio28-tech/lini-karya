@@ -510,4 +510,39 @@ export const blogPosts = [
       </div>
     `,
   },
+  {
+    slug: "rebranding-digital-naikkan-harga",
+    title: "Cara Menjual Produk Lebih Mahal Tanpa Diprotes Pelanggan (Rahasia Rebranding Digital)",
+    date: "2026-05-20",
+    category: "Psikologi Bisnis",
+    image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    excerpt: "Lelah selalu diminta diskon oleh pelanggan? Pelajari bagaimana sebuah website premium dapat mengubah persepsi nilai brand Anda dan menjustifikasi harga tinggi.",
+    content: `
+      <p>Ini adalah jeritan hati banyak pemilik bisnis UMKM: <i>"Bahan baku saya kualitas premium, pengerjaannya detail, tapi kenapa pelanggan selalu membandingkan harga saya dengan toko sebelah yang murahan? Kenapa mereka selalu minta diskon?"</i></p>
+      <p>Jawabannya sederhana namun menyakitkan: <b>Karena kemasan digital Anda terlihat murahan.</b></p>
+      <p>Dalam dunia digital, pelanggan tidak bisa menyentuh produk Anda. Mereka hanya bisa melihatnya. Persepsi mereka tentang kualitas (dan harga yang pantas) 100% ditentukan oleh apa yang mata mereka tangkap di layar kaca.</p>
+
+      <h3>Analogi Kopi Pinggir Jalan vs Starbucks</h3>
+      <p>Bayangkan Anda membeli segelas kopi hitam di warung kopi pinggir jalan yang pencahayaannya remang-remang. Anda mungkin hanya bersedia membayar Rp 5.000. Jika penjualnya meminta Rp 50.000, Anda akan marah.</p>
+      <p>Sekarang bayangkan Anda membeli kopi hitam yang sama persis, tapi kali ini Anda membelinya di dalam cafe mewah dengan AC dingin, lantai kayu yang bersih, dan barista berseragam rapi. Anda akan dengan senang hati membayar Rp 50.000 tanpa protes.</p>
+      <p>Kopinya sama. Yang membedakan harganya adalah <b>Pengalaman dan Persepsi Lingkungan (Brand Equity)</b>.</p>
+
+      <h3>Website Adalah "Interior Cafe" Anda di Dunia Digital</h3>
+      <p>Jika Anda berjualan di Instagram atau WhatsApp, Anda sedang berjualan di "pinggir jalan digital". Semua orang terlihat sama. Format fotonya sama, layout teksnya sama. Sangat mudah bagi pelanggan untuk berpindah ke toko lain hanya karena selisih harga Rp 5.000.</p>
+      <p>Tapi ketika pelanggan mengklik tautan Anda dan masuk ke sebuah <b>Website Premium</b>, keajaiban psikologis terjadi:</p>
+      <ul>
+        <li><b>Ruang Kosong (White Space):</b> Mengesankan kemewahan dan eksklusivitas.</li>
+        <li><b>Tipografi Berkelas:</b> Huruf yang tertata rapi memberikan sinyal bahwa bisnis ini sangat memperhatikan detail (seperti kualitas produk Anda).</li>
+        <li><b>Kecepatan Memuat:</b> Website yang tidak <i>lemot</i> menunjukkan bahwa bisnis ini punya modal dan tidak main-main.</li>
+      </ul>
+
+      <h3>Dampak Langsung Rebranding Digital</h3>
+      <p>Ketika kemasan digital Anda berubah dari "toko biasa" menjadi "Butik Premium", jenis pelanggan yang datang pun akan berubah. Anda akan mulai menarik pelanggan *High-End* yang tidak rewel soal harga, melainkan peduli pada kualitas dan pelayanan.</p>
+
+      <div className="bg-accent/5 p-6 border-l-4 border-accent my-8">
+        <p className="font-bold text-accent mb-2">Lini Karya's Expert Take:</p>
+        <p>Jangan pernah menurunkan harga produk Anda hanya karena takut tidak laku. Anda hanya perlu menaikkan "Nilai Persepsi" bisnis Anda. Di Lini Karya, kami spesialis membangun website yang merubah identitas UMKM lokal menjadi Brand Nasional yang disegani. Investasi website satu kali bisa menyelamatkan Anda dari kerugian perang harga selamanya.</p>
+      </div>
+    `,
+  },
 ];
