@@ -35,15 +35,15 @@ export default function BlogListing() {
   return (
     <div className="w-full">
       {/* Category Filters */}
-      <div className="flex flex-wrap items-center gap-2 mb-16 border-b border-foreground/10 pb-6">
+      <div className="flex flex-wrap gap-4 mb-16 border-b border-foreground/10 pb-6">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => handleCategoryChange(category)}
-            className={`font-mono text-[10px] uppercase tracking-widest px-6 py-3 rounded-full transition-all duration-300 relative ${
+            className={`font-mono text-[10px] uppercase tracking-widest px-6 py-3 border transition-all duration-300 ${
               activeCategory === category 
-                ? "bg-foreground text-background font-bold shadow-md" 
-                : "bg-transparent text-foreground/50 hover:bg-foreground/5 hover:text-foreground"
+                ? "bg-foreground border-foreground text-background font-bold" 
+                : "border-foreground/20 text-foreground/50 hover:border-foreground/50 hover:text-foreground hover:bg-foreground/5"
             }`}
           >
             {category}
@@ -53,14 +53,14 @@ export default function BlogListing() {
 
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 min-h-[600px] items-start">
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="wait">
           {currentPosts.map((post) => (
             <motion.article 
               layout
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.4 }}
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -15 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               key={post.slug} 
               className="group flex flex-col border border-foreground/10 hover:border-accent/30 transition-all p-0 relative overflow-hidden h-full"
             >
@@ -69,7 +69,7 @@ export default function BlogListing() {
                   src={post.image}
                   alt={post.title}
                   fill
-                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
                 />
               </Link>
 
@@ -111,7 +111,7 @@ export default function BlogListing() {
           <button 
             onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
-            className="font-mono text-[10px] uppercase tracking-widest px-5 py-3 rounded-full border border-foreground/10 disabled:opacity-30 hover:bg-foreground/5 transition-all duration-300 cursor-pointer"
+            className="font-mono text-[10px] uppercase tracking-widest p-3 border border-foreground/20 disabled:opacity-30 hover:bg-foreground/5 transition-colors cursor-pointer"
           >
             ← SEBELUMNYA
           </button>
@@ -121,10 +121,10 @@ export default function BlogListing() {
               <button
                 key={i}
                 onClick={() => setCurrentPage(i + 1)}
-                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer ${
+                className={`w-10 h-10 flex items-center justify-center border transition-colors cursor-pointer ${
                   currentPage === i + 1 
-                    ? "bg-foreground text-background shadow-md" 
-                    : "bg-transparent text-foreground/50 hover:bg-foreground/5"
+                    ? "bg-foreground text-background border-foreground" 
+                    : "border-foreground/20 hover:border-foreground/50"
                 }`}
               >
                 {i + 1}
@@ -135,7 +135,7 @@ export default function BlogListing() {
           <button 
             onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
             disabled={currentPage === totalPages}
-            className="font-mono text-[10px] uppercase tracking-widest px-5 py-3 rounded-full border border-foreground/10 disabled:opacity-30 hover:bg-foreground/5 transition-all duration-300 cursor-pointer"
+            className="font-mono text-[10px] uppercase tracking-widest p-3 border border-foreground/20 disabled:opacity-30 hover:bg-foreground/5 transition-colors cursor-pointer"
           >
             SELANJUTNYA →
           </button>
