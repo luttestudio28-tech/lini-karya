@@ -70,6 +70,33 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
+        {/* LEAD MAGNET BANNER */}
+        <div className="my-20 p-8 md:p-12 bg-foreground text-background text-center rounded-2xl shadow-xl relative overflow-hidden">
+          {/* Decorative Background Elements */}
+          <div className="absolute -top-10 -right-10 w-40 h-40 bg-accent/20 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl"></div>
+          
+          <div className="relative z-10">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-accent font-bold mb-4 block">
+              Materi Edukasi Eksklusif
+            </span>
+            <h3 className="font-display text-3xl md:text-5xl uppercase tracking-tighter leading-tight mb-6">
+              Tingkatkan Profit <br /> Bisnis Anda Hari Ini
+            </h3>
+            <p className="font-mono text-sm md:text-base opacity-70 mb-10 max-w-xl mx-auto leading-relaxed">
+              Download E-Book Gratis: <b>"10 Kesalahan Website UMKM yang Bikin Rugi Jutaan (Serta Cara Memperbaikinya)"</b>. Jangan ulangi kesalahan kompetitor Anda.
+            </p>
+            <a 
+              href='https://wa.me/6285166635038?text=Halo%20Lini%20Karya,%20saya%20pembaca%20blog%20Anda.%20Saya%20ingin%20minta%20link%20download%20E-Book%20Gratis%20"10%20Kesalahan%20Website%20UMKM".%20Terima%20kasih!'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-mono text-[10px] uppercase tracking-widest bg-accent text-background px-8 py-4 font-bold hover:bg-white hover:text-foreground transition-all duration-300 rounded-full shadow-lg hover:shadow-accent/50"
+            >
+              [ KLAIM E-BOOK VIA WHATSAPP ] ↗
+            </a>
+          </div>
+        </div>
+
         {/* RELATED POSTS SECTION */}
         <div className="mt-32 pt-16 border-t border-foreground/10">
           <h3 className="font-display text-3xl uppercase tracking-tighter mb-12">Baca Juga Artikel Lainnya</h3>
