@@ -35,15 +35,15 @@ export default function BlogListing() {
   return (
     <div className="w-full">
       {/* Category Filters */}
-      <div className="flex flex-wrap gap-4 mb-16 border-b border-foreground/10 pb-6">
+      <div className="flex flex-wrap gap-4 mb-16">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => handleCategoryChange(category)}
-            className={`font-mono text-[10px] uppercase tracking-widest px-6 py-3 border transition-all duration-300 ${
+            className={`font-mono text-[10px] uppercase tracking-widest px-6 py-3 border transition-colors ${
               activeCategory === category 
-                ? "bg-foreground border-foreground text-background font-bold" 
-                : "border-foreground/20 text-foreground/50 hover:border-foreground/50 hover:text-foreground hover:bg-foreground/5"
+                ? "bg-accent border-accent text-background font-bold" 
+                : "border-foreground/20 text-foreground/60 hover:border-foreground/50 hover:text-foreground"
             }`}
           >
             {category}
@@ -115,7 +115,7 @@ export default function BlogListing() {
           >
             ← SEBELUMNYA
           </button>
-          
+
           <div className="flex gap-2 font-mono text-sm">
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
