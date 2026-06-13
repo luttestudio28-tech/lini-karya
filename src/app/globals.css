@@ -41,3 +41,70 @@ h1, h2, h3 {
   letter-spacing: -0.06em;
   line-height: 0.85;
 }
+
+/* Blog Content Polishing */
+.blog-content h3 {
+  font-size: 1.5rem;
+  line-height: 1.1;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.blog-content ul, .blog-content ol {
+  margin-bottom: 2rem;
+  padding-left: 1.25rem;
+  space-y: 0.5rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  list-style-type: none;
+}
+
+.blog-content ul li::before {
+  content: "[+]";
+  position: absolute;
+  left: -2rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.blog-content b, .blog-content strong {
+  color: var(--foreground);
+  font-weight: 700;
+  border-bottom: 1px solid var(--accent);
+}
+
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3rem 0;
+  font-size: 0.875rem;
+}
+
+.blog-content th {
+  background: rgba(0, 0, 0, 0.05);
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.blog-content td {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.blog-content i, .blog-content em {
+  color: var(--accent);
+  opacity: 0.8;
+}
