@@ -126,12 +126,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           <p className="font-mono text-xs opacity-40 mb-8 uppercase tracking-widest">
             Butuh bantuan membangun website untuk bisnis Anda?
           </p>
-          <Link 
-            href="/#kontak"
+          <a 
+            href="https://wa.me/6285166635038?text=Halo%20Lini%20Karya,%20saya%20sudah%20membaca%20artikel%20di%20blog.%20Saya%20ingin%20konsultasi%20gratis%20mengenai%20website%20bisnis%20saya."
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block font-mono text-[10px] uppercase tracking-widest bg-accent text-background px-8 py-4 font-bold hover:bg-foreground hover:text-background transition-colors"
           >
             KONSULTASI GRATIS SEKARANG
-          </Link>
+          </a>
         </footer>
       </div>
     </article>
