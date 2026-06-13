@@ -35,56 +35,55 @@ const Manifesto = () => {
         className="max-w-[1400px] mx-auto flex flex-col items-center"
       >
         
-        {/* Section Header - Centered & Animated */}
+        {/* Section Header */}
         <motion.div variants={itemVariants} className="mb-32 md:mb-56 w-full text-center relative">
           <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-            [ 01 // KOMITMEN KAMI ]
+            Komitmen Kami
           </span>
-          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.75] uppercase text-foreground tracking-[-0.07em]">
+          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.75] text-foreground tracking-[-0.07em]">
             Bisnis Anda, <br />
-            <span className="text-accent italic">Naik Kelas</span>
+            <span className="italic-accent text-accent">Naik Kelas</span>
           </h2>
           <div className="absolute top-1/2 left-0 w-12 h-px bg-foreground/20 hidden lg:block" />
           <div className="absolute top-1/2 right-0 w-12 h-px bg-foreground/20 hidden lg:block" />
         </motion.div>
 
-        {/* Panels - Animated Sequentially */}
+        {/* Panels */}
         <div className="w-full flex flex-col gap-24 md:gap-40">
           
           {/* Panel 1: Message */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start w-full">
             <motion.div variants={itemVariants} className="lg:col-span-8">
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] opacity-30 block mb-6">REF SPEC: LOGIKA 01</span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.3em] opacity-30 block mb-6">Misi Kami</span>
               <p className="font-display text-4xl md:text-6xl lg:text-7xl uppercase tracking-tighter leading-[0.8] max-w-4xl">
-                KAMI MENGUBAH WEBSITE BIASA MENJADI ALAT <span className="text-accent italic">PENCETAK PROFIT</span>
+                Kami mengubah website biasa menjadi alat <span className="text-accent italic">pencetak profit</span>
               </p>
             </motion.div>
             <motion.div variants={itemVariants} className="lg:col-span-4 lg:pt-2">
               <div className="border-l-2 border-accent/20 pl-8 space-y-6">
-                <p className="font-mono text-[11px] md:text-xs uppercase tracking-widest leading-relaxed opacity-60">
-                  KAMI MENGHAPUS KERUMITAN TEKNIS AGAR ANDA BISA FOKUS BERJUALAN. WEBSITE KAMI BUKAN HANYA PAJANGAN, TAPI ASET YANG MENARIK PELANGGAN BARU SETIAP HARI.
+                <p className="font-mono text-sm tracking-wide leading-relaxed opacity-60">
+                  Kami menghapus kerumitan teknis agar Anda bisa fokus berjualan. Website kami bukan hanya pajangan, tapi aset yang menarik pelanggan baru setiap hari.
                 </p>
-                <div className="font-mono text-[9px] uppercase tracking-[0.4em] opacity-20">[ PROSES DIMULAI ]</div>
               </div>
             </motion.div>
           </div>
 
-          {/* Panel 2: Technical Targets Grid - Final Precision Fix */}
+          {/* Panel 2: Targets Grid */}
           <motion.div 
             variants={containerVariants}
             className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border-y border-foreground/10 w-full overflow-hidden"
           >
             <motion.div variants={itemVariants} className="px-8 md:px-12 py-20 md:py-24 flex flex-col gap-6 group bg-background">
-              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">01 // SOLUSI NYATA</span>
-              <p className="font-display text-3xl uppercase tracking-tighter">MEMBANGUN KEPERCAYAAN</p>
+              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">01 // Solusi Nyata</span>
+              <p className="font-display text-3xl tracking-tighter uppercase">Membangun Kepercayaan</p>
             </motion.div>
             <motion.div variants={itemVariants} className="px-8 md:px-12 py-20 md:py-24 flex flex-col gap-6 group bg-background">
-              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">02 // DESAIN BERKELAS</span>
-              <p className="font-display text-3xl uppercase tracking-tighter">MODERN & PREMIUM</p>
+              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">02 // Desain Berkelas</span>
+              <p className="font-display text-3xl tracking-tighter uppercase">Modern & Premium</p>
             </motion.div>
             <motion.div variants={itemVariants} className="px-8 md:px-12 py-20 md:py-24 flex flex-col gap-6 group bg-background">
-              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">03 // TUJUAN UTAMA</span>
-              <p className="font-display text-3xl uppercase tracking-tighter">LEBIH BANYAK PEMBELI</p>
+              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 group-hover:text-accent transition-colors">03 // Tujuan Utama</span>
+              <p className="font-display text-3xl tracking-tighter uppercase">Lebih Banyak Pembeli</p>
             </motion.div>
           </motion.div>
 

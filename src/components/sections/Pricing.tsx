@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 const packages = [
   {
     name: "Landing Page",
-    description: "WEBSITE SATU HALAMAN UNTUK FOKUS BERJUALAN DAN MENARIK PELANGGAN BARU.",
+    description: "Website satu halaman untuk fokus berjualan dan menarik pelanggan baru.",
     price: "2.500.000",
     priceLabel: "OPTIMASI JUALAN",
     features: [
       "1 Halaman Landing Page Premium",
-      "Desain Yang Menarik Pembeli",
+      "Desain yang Menarik Pembeli",
       "Sistem Cepat & Ringan",
       "Integrasi WhatsApp Langsung",
       "Gratis Konsultasi Selamanya"
@@ -18,20 +18,20 @@ const packages = [
   },
   {
     name: "Company Profile",
-    description: "WEBSITE LENGKAP UNTUK MENUNJUKKAN KREDIBILITAS DAN PROFESIONALISME BISNIS ANDA.",
+    description: "Website lengkap untuk menunjukkan kredibilitas dan profesionalisme bisnis Anda.",
     price: "7.500.000",
     priceLabel: "KREDIBILITAS BISNIS",
     features: [
       "Hingga 5 Halaman Terintegrasi",
       "Bisa Edit Isi Web Sendiri",
-      "Muncul Di Pencarian Google",
+      "Muncul di Pencarian Google",
       "Email Bisnis Nama Perusahaan",
       "Keamanan & Backup Rutin"
     ]
   },
   {
     name: "Custom System",
-    description: "SOLUSI KHUSUS UNTUK KEBUTUHAN APLIKASI WEB DAN SISTEM INTERNAL YANG RUMIT.",
+    description: "Solusi khusus untuk kebutuhan aplikasi web dan sistem internal yang rumit.",
     price: "Kustom",
     priceLabel: "SOLUSI KHUSUS",
     features: [
@@ -66,14 +66,14 @@ const Pricing = () => {
         <div className="flex flex-col md:flex-row justify-between items-end gap-12">
           <div className="max-w-2xl">
             <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-              [ 04 // PILIHAN INVESTASI ]
+              Pilihan Investasi
             </span>
-            <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] uppercase tracking-tighter">
+            <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.8] tracking-tighter">
               Mulai <br /> <span className="italic-accent text-accent">Konsultasi</span>
             </h2>
           </div>
           <div className="max-w-xs md:text-right font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed">
-            HARGA TRANSPARAN UNTUK HASIL YANG MAKSIMAL. PILIH PAKET YANG SESUAI DENGAN SKALA BISNIS ANDA.
+            Harga transparan untuk hasil yang maksimal. Pilih paket yang sesuai dengan skala bisnis Anda.
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@ const Pricing = () => {
 
             {/* Price */}
             <div className="mb-12">
-              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 block mb-4">INVESTASI MINIMUM</span>
+              <span className="font-mono text-[10px] uppercase tracking-widest opacity-40 block mb-4">Investasi Minimum</span>
               <div className="font-display text-5xl lg:text-6xl tracking-tighter leading-none group-hover:scale-105 transition-transform duration-700 origin-left">
                 {pkg.price !== "Kustom" && <span className="text-xl opacity-20 mr-2">RP</span>}{pkg.price}
               </div>
@@ -110,7 +110,7 @@ const Pricing = () => {
                 <h3 className="font-display text-4xl uppercase tracking-tighter group-hover:italic-accent transition-all duration-500 mb-4">
                   {pkg.name}
                 </h3>
-                <p className="font-mono text-[10px] uppercase tracking-widest leading-relaxed opacity-60 group-hover:opacity-100">
+                <p className="font-mono text-[10px] tracking-widest leading-relaxed opacity-60 group-hover:opacity-100">
                   {pkg.description}
                 </p>
               </div>
@@ -139,12 +139,6 @@ const Pricing = () => {
             </div>
           </motion.div>
         ))}
-      </div>
-
-      {/* Bottom Architectural Stamp */}
-      <div className="px-container py-12 flex justify-between font-mono text-[9px] uppercase tracking-[0.4em] opacity-20">
-        <span>LINI KARYA // ARSITEKTUR FINANSIAL V.04</span>
-        <span className="hidden md:inline">SISTEM TERKONFIRMASI // SIAP UNTUK PENINGKATAN</span>
       </div>
     </section>
   );

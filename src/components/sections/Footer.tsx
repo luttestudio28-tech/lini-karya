@@ -7,11 +7,11 @@ const Footer = () => {
     <footer id="kontak" className="bg-foreground text-background py-24 md:py-32 px-container overflow-hidden relative border-t border-background/10">
       <div className="max-w-[1400px] mx-auto">
         
-        {/* Top Header - Panoramic Style */}
+        {/* Top Header */}
         <div className="mb-24 md:mb-32">
           <div className="flex justify-between items-center mb-12 opacity-30 font-mono text-[9px] uppercase tracking-[0.5em]">
-            <span>[ 07 // INISIALISASI KONTAK ]</span>
-            <span className="hidden md:block">LINI KARYA STUDIO // BDG ID</span>
+            <span>Hubungi Kami</span>
+            <span className="hidden md:block">LINI KARYA STUDIO // BANDUNG</span>
           </div>
           
           <motion.h2
@@ -26,25 +26,25 @@ const Footer = () => {
           </motion.h2>
         </div>
 
-        {/* Triple-Column Technical Grid */}
+        {/* Triple-Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 border-t border-background/10 pt-16 gap-16 lg:gap-0">
           
           {/* Col 1: Direct Contact */}
           <div className="lg:col-span-5 lg:pr-16 lg:border-r border-background/10">
-            <p className="font-mono text-[10px] md:text-xs uppercase tracking-widest leading-relaxed mb-12 opacity-50">
-              TANYAKAN APA SAJA MENGENAI WEBSITE BISNIS ANDA. KAMI SIAP MEMBANTU DENGAN SOLUSI TERBAIK UNTUK PERKEMBANGAN USAHA ANDA.
+            <p className="font-mono text-sm tracking-wide leading-relaxed mb-12 opacity-50">
+              Tanyakan apa saja mengenai kebutuhan website bisnis Anda. Kami siap membantu dengan solusi terbaik untuk perkembangan usaha Anda.
             </p>
             <div className="space-y-2 group cursor-pointer">
-              <span className="font-mono text-[9px] uppercase tracking-widest opacity-30 group-hover:text-accent transition-colors">ALAMAT SUREL</span>
+              <span className="font-mono text-[9px] uppercase tracking-widest opacity-30 group-hover:text-accent transition-colors">Email Kami</span>
               <a href="mailto:halo@linikarya.com" className="block font-display text-2xl md:text-4xl lg:text-5xl uppercase tracking-tighter hover:text-accent transition-colors">
-                HALO@LINIKARYA.COM
+                halo@linikarya.com
               </a>
             </div>
           </div>
 
           {/* Col 2: Social Matrix */}
           <div className="lg:col-span-3 lg:px-16 lg:border-r border-background/10">
-            <span className="font-mono text-[9px] uppercase tracking-widest opacity-30 block mb-12">JARINGAN SOSIAL</span>
+            <span className="font-mono text-[9px] uppercase tracking-widest opacity-30 block mb-12">Media Sosial</span>
             <div className="flex flex-col gap-6 font-display text-2xl uppercase tracking-tighter">
               <a href="https://www.instagram.com/linikaryastudio/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors flex justify-between items-center group">
                 <span>Instagram</span>
@@ -61,16 +61,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Col 3: Studio Coordinates */}
+          {/* Col 3: Studio Location */}
           <div className="lg:col-span-4 lg:pl-16">
-            <span className="font-mono text-[9px] uppercase tracking-widest opacity-30 block mb-12">LOKASI PUSAT</span>
+            <span className="font-mono text-[9px] uppercase tracking-widest opacity-30 block mb-12">Lokasi Utama</span>
             <div className="space-y-8">
               <p className="font-display text-2xl md:text-4xl uppercase tracking-tighter leading-none">
                 BANDUNG, <br /> INDONESIA
               </p>
               <div className="pt-8 border-t border-background/5 space-y-2 font-mono text-[9px] uppercase tracking-[0.2em] opacity-30">
-                <p>COORD: 6.9175° S, 107.6191° E</p>
-                <p>STATUS: OPERASIONAL PENUH</p>
+                <p>Melayani Klien Seluruh Indonesia</p>
               </div>
             </div>
           </div>

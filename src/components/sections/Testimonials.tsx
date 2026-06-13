@@ -4,25 +4,25 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    id: "LOG_01",
-    quote: "Lini Karya tidak hanya membangun website, mereka membangun identitas digital yang selama ini kami cari namun sulit kami bahasakan. Presisi di setiap piksel.",
+    id: "Partner 01",
+    quote: "Lini Karya tidak hanya membangun website, mereka membangun identitas digital yang selama ini kami cari namun sulit kami bahasakan. Hasilnya sangat memuaskan.",
     author: "Budi Santoso",
     role: "Pemilik Aluna Studio",
-    status: "SISTEM STABIL",
+    status: "PROYEK SELESAI",
   },
   {
-    id: "LOG_02",
-    quote: "Efisiensi operasional kami meningkat tajam setelah transisi ke platform baru. Estetika minimalis premium benar-benar berdampak pada konversi penjualan.",
+    id: "Partner 02",
+    quote: "Efisiensi operasional kami meningkat tajam setelah transisi ke platform baru. Desain yang bersih benar-benar berdampak pada kepercayaan pelanggan kami.",
     author: "Siti Aminah",
     role: "Founder Grosir Beras",
-    status: "SKALA MAKSIMAL",
+    status: "PERFORMA TINGGI",
   },
   {
-    id: "LOG_03",
-    quote: "Visi teknis kami yang kompleks diterjemahkan dengan sangat elegan. Sebuah investasi arsitektur digital yang sangat berharga untuk masa depan brand.",
+    id: "Partner 03",
+    quote: "Visi bisnis kami yang kompleks diterjemahkan dengan sangat elegan. Investasi yang sangat berharga untuk pertumbuhan brand kami ke depan.",
     author: "Irwan Hakim",
     role: "CEO NovaFlow",
-    status: "TERINTEGRASI",
+    status: "KERJASAMA AKTIF",
   },
 ];
 
@@ -33,13 +33,13 @@ const Testimonials = () => {
         {/* Section Header */}
         <div className="mb-24 md:mb-40 w-full text-center border-b border-foreground/10 pb-20">
           <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-            [ 05 // VERIFIKASI KLIEN ]
+            Kata Klien Kami
           </span>
-          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.65] uppercase tracking-tighter mx-auto max-w-4xl">
-            Suara <br /> <span className="italic opacity-20">Partner.</span>
+          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.65] tracking-tighter mx-auto max-w-4xl">
+            Suara <br /> <span className="italic-accent text-accent">Partner.</span>
           </h2>
           <p className="mt-12 font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed max-w-sm mx-auto">
-            BUKTI NYATA DARI SISTEM YANG TELAH KAMI DEPLOY UNTUK MENDUKUNG SKALA BISNIS MEREKA.
+            Bukti nyata dari hasil kerja kami dalam membantu mitra bisnis mencapai target mereka.
           </p>
         </div>
 
@@ -57,7 +57,7 @@ const Testimonials = () => {
               {/* Top Meta */}
               <div className="flex justify-between items-start">
                 <span className="font-mono text-[9px] opacity-30 group-hover:opacity-100 transition-opacity uppercase tracking-widest">
-                  {item.id}
+                  Klien {index + 1}
                 </span>
                 <span className="font-mono text-[9px] text-accent font-bold group-hover:text-background transition-colors uppercase tracking-[0.2em]">
                   [ {item.status} ]
@@ -66,7 +66,7 @@ const Testimonials = () => {
 
               {/* Quote */}
               <div className="my-16">
-                <p className="font-display text-3xl md:text-4xl uppercase tracking-tighter leading-[0.9] group-hover:text-accent transition-colors">
+                <p className="font-display text-3xl md:text-4xl tracking-tighter leading-[0.9] group-hover:text-accent transition-colors">
                   "{item.quote}"
                 </p>
               </div>

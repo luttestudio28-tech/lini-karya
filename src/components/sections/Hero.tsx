@@ -29,14 +29,13 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-start px-container overflow-hidden bg-background pt-24 md:pt-28">
       <div className="max-w-[1400px] mx-auto w-full relative flex flex-col justify-start py-2">
-        {/* Top Technical Metadata - Absolute Corners */}
-        <div className="absolute top-2 left-0 w-full flex justify-between font-mono text-[9px] uppercase tracking-[0.4em] opacity-40 z-10">
+        {/* Simplified Metadata */}
+        <div className="absolute top-2 left-0 w-full flex justify-between font-mono text-[9px] tracking-[0.2em] opacity-40 z-10">
           <div className="flex gap-12">
-            <span className="text-accent font-bold">[ LINI KARYA // WEB DEVELOPMENT STUDIO ]</span>
-            <span className="hidden md:inline">[ LOKASI: BANDUNG, INDONESIA ]</span>
+            <span className="text-accent font-bold">LINI KARYA STUDIO</span>
+            <span className="hidden md:inline">BANDUNG, INDONESIA</span>
           </div>
           <div className="flex gap-12">
-            <span className="hidden lg:inline opacity-60">[ SIAP BERKOLABORASI ]</span>
             <span>EDISI 2026</span>
           </div>
         </div>
@@ -47,36 +46,35 @@ const Hero = () => {
           animate="animate"
           className="w-full relative z-10 mb-12 md:mb-20 mt-12"
         >
-          <h1 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.75] tracking-[-0.06em] uppercase text-left">
+          <h1 className="font-display text-[clamp(3.5rem,8vw,9rem)] leading-[0.85] tracking-[-0.04em] text-left">
             <div className="flex flex-col">
               <span className="overflow-hidden block">
-                <motion.span variants={lineVars} className="inline-block">Bangun</motion.span>
+                <motion.span variants={lineVars} className="inline-block">Website</motion.span>
               </span>
               <span className="overflow-hidden block ml-[8vw] md:ml-[12vw]">
-                <motion.span variants={lineVars} className="inline-block text-accent">Website</motion.span>
+                <motion.span variants={lineVars} className="inline-block text-accent">Profesional.</motion.span>
               </span>
               <span className="overflow-hidden block">
-                <motion.span variants={lineVars} className="inline-block">Premium</motion.span>
+                <motion.span variants={lineVars} className="inline-block">Bisnis Makin</motion.span>
+              </span>
+              <span className="overflow-hidden block ml-[4vw]">
+                <motion.span variants={lineVars} className="inline-block italic opacity-40 font-light">Dikenal.</motion.span>
               </span>
             </div>
           </h1>
         </motion.div>
 
-        {/* Industrial Utility Bar */}
-        <div className="mt-4 md:mt-6 pt-8 border-t border-foreground/10 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
-          <div className="md:col-span-6 lg:col-span-5">
-            <p className="font-mono text-[10px] md:text-xs uppercase tracking-widest leading-relaxed text-foreground/40">
-              KAMI MEMBANGUN WEBSITE YANG MENJUAL DAN MEMBUAT BISNIS ANDA TERLIHAT PROFESIONAL. HASIL NYATA, BUKAN SEKADAR HIASAN.
+        {/* Value Proposition Bar */}
+        <div className="mt-4 md:mt-6 pt-8 border-t border-foreground/10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          <div className="md:col-span-8 lg:col-span-7">
+            <p className="font-mono text-sm md:text-base leading-relaxed text-foreground/60 max-w-2xl">
+              Kami membantu UMKM dan pengusaha lokal membangun website yang tidak hanya tampil modern, tapi juga efektif mendatangkan pelanggan baru. Tanpa ribet urusan teknis.
             </p>
           </div>
-          <div className="md:col-start-9 md:col-span-4 flex flex-col items-end gap-3">
+          <div className="md:col-start-10 md:col-span-3 flex flex-col items-end gap-3">
             <div className="flex gap-2 items-center">
               <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent font-bold">Mesin Aktif</span>
-            </div>
-            <div className="font-mono text-[9px] uppercase tracking-[0.3em] opacity-30 text-right leading-relaxed">
-              BENTUK MENGIKUTI FUNGSI<br />
-              DIBANGUN OLEH LINI KARYA
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent font-bold">Siap Berkolaborasi</span>
             </div>
           </div>
         </div>

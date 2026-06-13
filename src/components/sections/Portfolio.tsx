@@ -7,8 +7,8 @@ const projects = [
   {
     id: "01",
     title: "Sentinel",
-    category: "SISTEM KEAMANAN DIGITAL",
-    tech: "NEXT.JS / TAILWIND / MOTION",
+    category: "Sistem Keamanan Web",
+    tech: "Teknologi Modern & Cepat",
     image: "/sentinel.png?v=1",
     size: "md:col-span-8",
     link: "https://sentinel.imanabdul929.workers.dev/",
@@ -16,9 +16,9 @@ const projects = [
   },
   {
     id: "02",
-    title: "FOLIO",
-    category: "WEBSITE PORTFOLIO PREMIUM",
-    tech: "NEXT.JS / TAILWIND / MOTION",
+    title: "Folio",
+    category: "Portofolio Profesional",
+    tech: "Desain Responsif",
     image: "/folio.png?v=1",
     size: "md:col-span-4",
     link: "https://personal-portfolio-xi-one-59.vercel.app/",
@@ -27,8 +27,8 @@ const projects = [
   {
     id: "03",
     title: "Aluna",
-    category: "E-COMMERCE PRODUK MEWAH",
-    tech: "NEXT.JS / TAILWIND / MOTION",
+    category: "Toko Online Mewah",
+    tech: "Optimasi Penjualan",
     image: "/aluna.png?v=1",
     size: "md:col-span-5",
     link: "https://lumina-creative-hub-eins.vercel.app/",
@@ -36,9 +36,9 @@ const projects = [
   },
   {
     id: "04",
-    title: "STUDIO",
-    category: "PREMIUM DIGITAL AGENCY",
-    tech: "NEXT.JS / TAILWIND / MOTION",
+    title: "Studio",
+    category: "Website Agensi Elit",
+    tech: "Performa Tinggi",
     image: "/studio.png?v=1",
     size: "md:col-span-7",
     link: "https://lumina-creative-hub.vercel.app/",
@@ -50,16 +50,16 @@ const Portfolio = () => {
   return (
     <section id="karya" className="bg-background py-24 md:py-32 px-container border-t border-foreground/10 overflow-hidden relative">
       <div className="max-w-[1400px] mx-auto">
-        {/* Section Header - Massive & Centered */}
+        {/* Section Header */}
         <div className="mb-24 md:mb-40 w-full text-center border-b border-foreground/10 pb-20">
           <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-            [ 03 // HASIL KARYA ]
+            Hasil Karya
           </span>
-          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.65] uppercase tracking-tighter mx-auto max-w-4xl">
-            Proyek <br /> <span className="italic opacity-20">Terpilih</span>
+          <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.65] tracking-tighter mx-auto max-w-4xl">
+            Proyek <br /> <span className="italic-accent text-accent">Terpilih</span>
           </h2>
           <p className="mt-12 font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed max-w-sm mx-auto">
-            LIHAT BAGAIMANA KAMI MEMBANTU BISNIS LAIN TAMPIL LEBIH MENARIK DAN PROFESIONAL DI MATA PELANGGAN.
+            Lihat bagaimana kami membantu bisnis lain tampil lebih menarik dan profesional di mata pelanggan.
           </p>
         </div>
 
@@ -74,7 +74,7 @@ const Portfolio = () => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className={`flex flex-col group ${project.size}`}
             >
-              {/* Technical Container */}
+              {/* Image Container */}
               <a 
                 href={project.link} 
                 target="_blank" 
@@ -88,9 +88,6 @@ const Portfolio = () => {
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
-                <div className="absolute top-4 left-4 font-mono text-[8px] uppercase tracking-widest bg-background/90 px-3 py-1 border border-foreground/5 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                  ID {project.id} // 2026
-                </div>
               </a>
 
               {/* Info Block */}
@@ -109,8 +106,8 @@ const Portfolio = () => {
                   </a>
                 </div>
                 <div className="flex justify-between items-center font-mono text-[9px] md:text-[10px] uppercase tracking-widest opacity-50">
-                  <span>{project.category.replace('SISTEM KEAMANAN DIGITAL', 'SISTEM KEAMANAN WEB').replace('WEBSITE PORTFOLIO PREMIUM', 'PORTOFOLIO PROFESIONAL').replace('E-COMMERCE PRODUK MEWAH', 'TOKO ONLINE MEWAH').replace('PREMIUM DIGITAL AGENCY', 'WEBSITE AGENSI ELIT')}</span>
-                  <span className="hidden md:inline">{project.tech.replace('NEXT.JS / TAILWIND / MOTION', 'TEKNOLOGI MODERN & CEPAT')}</span>
+                  <span>{project.category}</span>
+                  <span className="hidden md:inline">{project.tech}</span>
                 </div>
               </div>
             </motion.div>

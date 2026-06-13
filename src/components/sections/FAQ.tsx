@@ -37,20 +37,20 @@ const FAQ = () => {
     <section className="bg-background py-24 md:py-32 px-container border-t border-foreground/10 overflow-hidden relative">
       <div className="max-w-[1400px] mx-auto flex flex-col items-center">
         
-        {/* Section Header - Consistent Massive & Centered */}
+        {/* Section Header */}
         <div className="mb-24 md:mb-40 w-full text-center border-b border-foreground/10 pb-20">
           <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-            [ 05 // PUSAT BANTUAN ]
+            Pusat Bantuan
           </span>
           <h2 className="font-display text-[clamp(3.5rem,10vw,10rem)] leading-[0.65] uppercase tracking-tighter mx-auto max-w-4xl">
-            Sering <br /> & <span className="italic opacity-20">Ditanya</span>
+            Tanya <br /> & <span className="italic-accent text-accent">Jawab</span>
           </h2>
           <p className="mt-12 font-mono text-[10px] uppercase tracking-widest opacity-40 leading-relaxed max-w-sm mx-auto">
-            KLARIFIKASI TEKNIS DAN JAWABAN TERHADAP PROSEDUR KERJA KAMI.
+            Pertanyaan yang sering diajukan mengenai layanan dan prosedur kerja kami.
           </p>
         </div>
 
-        {/* Industrial Command Tabs */}
+        {/* Command Tabs */}
         <div className="w-full flex flex-col gap-px bg-foreground/10 border border-foreground/10">
           
           {/* Tab Selection Row */}
@@ -62,7 +62,7 @@ const FAQ = () => {
                 className={`p-8 md:p-12 flex flex-col gap-4 text-left transition-all duration-500 relative overflow-hidden group ${activeIndex === index ? 'bg-foreground text-background' : 'bg-background text-foreground hover:bg-foreground/[0.02]'}`}
               >
                 <div className="flex justify-between items-center relative z-10 font-mono text-[9px] uppercase tracking-widest opacity-40 group-hover:opacity-100 transition-opacity">
-                   <span>Q ID: {faq.id}</span>
+                   <span>Topik 0{index + 1}</span>
                    {activeIndex === index && <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />}
                 </div>
                 <span className="font-display text-2xl lg:text-3xl uppercase tracking-tighter relative z-10">
@@ -92,24 +92,13 @@ const FAQ = () => {
                 </h3>
                 <div className="flex flex-col md:flex-row gap-12 items-start md:items-end">
                   <div className="h-px w-24 bg-foreground/10" />
-                  <p className="font-mono text-sm md:text-base uppercase tracking-widest leading-relaxed opacity-60 flex-grow">
+                  <p className="font-mono text-sm md:text-base tracking-widest leading-relaxed opacity-60 flex-grow">
                     {faqs[activeIndex].answer}
                   </p>
                 </div>
               </motion.div>
             </AnimatePresence>
-
-            {/* Background Structural Detail */}
-            <div className="absolute top-0 right-0 p-12 font-mono text-[15vw] opacity-[0.02] font-bold select-none pointer-events-none">
-              {faqs[activeIndex].id}
-            </div>
           </div>
-        </div>
-
-        {/* Bottom Technical Note */}
-        <div className="w-full py-12 flex justify-between font-mono text-[9px] uppercase tracking-[0.4em] opacity-20 px-4">
-          <span>LINI KARYA // INTERACTIVE SUPPORT TAB V.04</span>
-          <span>SYSTEM READY FOR INPUT</span>
         </div>
       </div>
     </section>

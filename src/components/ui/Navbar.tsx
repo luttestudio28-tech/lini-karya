@@ -17,10 +17,10 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: "Layanan", href: "#layanan" },
-    { name: "Karya", href: "#karya" },
-    { name: "Tentang", href: "#tentang" },
-    { name: "Kontak", href: "#kontak" },
+    { name: "Layanan", href: "/#layanan" },
+    { name: "Karya", href: "/#karya" },
+    { name: "Blog", href: "/blog" },
+    { name: "Kontak", href: "/#kontak" },
   ];
 
   return (
@@ -62,12 +62,6 @@ const Navbar = () => {
             >
               [ MENU ]
             </button>
-
-            {/* System Status */}
-            <div className="hidden lg:flex items-center gap-3 pl-8 border-l border-foreground/10">
-              <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-              <span className="font-mono text-[8px] uppercase tracking-[0.2em] opacity-40">SISTEM SIAP</span>
-            </div>
           </div>
         </nav>
       </header>
