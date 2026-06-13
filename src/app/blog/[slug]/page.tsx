@@ -3,12 +3,12 @@ import { notFound } from "next/navigation";
 
 const blogPosts = [
   {
-    slug: "bisnis-kuliner-bandung-website",
-    title: "Kenapa Bisnis Kuliner di Bandung Wajib Punya Website Sendiri",
+    slug: "bisnis-kuliner-website",
+    title: "Kenapa Bisnis Kuliner Wajib Punya Website Sendiri",
     date: "2026-06-15",
     category: "Bisnis Lokal",
     content: `
-      <p>Bandung dikenal sebagai kiblat kuliner kreatif di Indonesia. Dari kedai kopi estetik di Dago hingga rumah makan legendaris di pusat kota, persaingan bisnis F&B di Bandung sangatlah ketat. Namun, banyak pemilik bisnis yang masih terjebak pada ketergantungan 100% kepada platform pengiriman pihak ketiga (Gofood/Grabfood/ShopeeFood).</p>
+      <p>Bisnis kuliner dikenal sebagai salah satu sektor paling kreatif di Indonesia. Dari kedai kopi estetik hingga rumah makan legendaris, persaingan bisnis F&B saat ini sangatlah ketat. Namun, banyak pemilik bisnis yang masih terjebak pada ketergantungan 100% kepada platform pengiriman pihak ketiga (Gofood/Grabfood/ShopeeFood).</p>
       
       <p>Meskipun platform tersebut membantu dalam hal logistik, ada beberapa alasan krusial kenapa Anda wajib memiliki website mandiri:</p>
       
@@ -19,7 +19,7 @@ const blogPosts = [
       <p>Di platform pihak ketiga, Anda tidak tahu siapa pelanggan Anda sebenarnya. Dengan website sendiri, Anda bisa mengumpulkan data nomor WhatsApp atau email pelanggan (tentunya dengan izin) untuk mengirimkan info promo atau menu baru secara langsung. Ini adalah kunci dari <b>customer loyalty</b>.</p>
       
       <h3>3. Membangun Brand Identity yang Kuat</h3>
-      <p>Website adalah "rumah digital" Anda. Anda bebas menentukan desain, suasana, dan cerita di balik brand Anda tanpa batasan format dari platform lain. Klien di Bandung sangat menghargai estetika dan keunikan brand; website yang bagus menunjukkan bahwa Anda serius dalam mengelola bisnis.</p>
+      <p>Website adalah "rumah digital" Anda. Anda bebas menentukan desain, suasana, dan cerita di balik brand Anda tanpa batasan format dari platform lain. Pelanggan saat ini sangat menghargai estetika dan keunikan brand; website yang bagus menunjukkan bahwa Anda serius dalam mengelola bisnis.</p>
       
       <h3>4. Menampilkan Menu Secara Atraktif</h3>
       <p>Anda bisa menampilkan foto produk dengan resolusi tinggi, video proses memasak, hingga testimoni pelanggan dengan cara yang jauh lebih menarik daripada sekadar daftar teks di aplikasi pengiriman.</p>
@@ -28,20 +28,20 @@ const blogPosts = [
     `,
   },
   {
-    slug: "seo-lokal-bandung",
-    title: "Cara Agar Toko Anda Muncul di Halaman Pertama Google di Bandung",
+    slug: "seo-lokal",
+    title: "Cara Agar Toko Anda Muncul di Halaman Pertama Google",
     date: "2026-06-12",
     category: "SEO",
     content: `
-      <p>Pernahkah Anda mencari "Kopi enak di dekat saya" atau "Jasa jahit di Bandung" di Google? Hasil yang muncul pertama kali biasanya adalah peta dengan daftar bisnis lokal. Itulah yang disebut dengan <b>Local SEO</b>.</p>
+      <p>Pernahkah Anda mencari "Kopi enak di dekat saya" atau "Jasa jahit terdekat" di Google? Hasil yang muncul pertama kali biasanya adalah peta dengan daftar bisnis lokal. Itulah yang disebut dengan <b>Local SEO</b>.</p>
       
-      <p>Bagi UMKM di Bandung, muncul di halaman pertama Google bukan sekadar gaya-gayaan, tapi soal kelangsungan bisnis. Berikut langkah praktis yang bisa Anda lakukan:</p>
+      <p>Bagi UMKM, muncul di halaman pertama Google bukan sekadar gaya-gayaan, tapi soal kelangsungan bisnis. Berikut langkah praktis yang bisa Anda lakukan:</p>
       
       <h3>1. Optimasi Google Business Profile (Dulu Google My Business)</h3>
-      <p>Ini adalah langkah wajib. Pastikan alamat, nomor telepon, dan jam operasional toko Anda di Bandung terisi dengan benar. Upload foto toko dan produk secara rutin. Semakin lengkap profil Anda, semakin besar peluang Google menampilkannya kepada calon pelanggan.</p>
+      <p>Ini adalah langkah wajib. Pastikan alamat, nomor telepon, dan jam operasional toko Anda terisi dengan benar. Upload foto toko dan produk secara rutin. Semakin lengkap profil Anda, semakin besar peluang Google menampilkannya kepada calon pelanggan.</p>
       
       <h3>2. Gunakan Kata Kunci Lokal (Geo-Targeting)</h3>
-      <p>Jangan hanya menargetkan kata kunci umum seperti "Toko Baju". Gunakan kata kunci spesifik seperti "Toko Baju Muslim di Antapani" atau "Grosir Kaos Polos Bandung". Masukkan kata kunci ini ke dalam judul halaman website dan deskripsi produk Anda.</p>
+      <p>Jangan hanya menargetkan kata kunci umum seperti "Toko Baju". Gunakan kata kunci spesifik yang mencantumkan nama wilayah Anda, misalnya "Toko Baju Muslim di [Nama Kota Anda]". Masukkan kata kunci ini ke dalam judul halaman website dan deskripsi produk Anda.</p>
       
       <h3>3. Kumpulkan Ulasan (Reviews) Pelanggan</h3>
       <p>Ulasan bintang 5 bukan hanya mempercantik tampilan, tapi juga memberi sinyal kepada Google bahwa bisnis Anda terpercaya. Jangan ragu meminta pelanggan setia Anda untuk memberikan ulasan di Google Maps setelah mereka berkunjung.</p>
@@ -53,8 +53,8 @@ const blogPosts = [
     `,
   },
   {
-    slug: "harga-website-umkm-bandung-2026",
-    title: "Berapa Harga Pembuatan Website untuk UMKM di Bandung Tahun 2026?",
+    slug: "harga-website-umkm-2026",
+    title: "Berapa Harga Pembuatan Website untuk UMKM di Tahun 2026?",
     date: "2026-06-10",
     category: "Investasi Digital",
     content: `
@@ -69,7 +69,7 @@ const blogPosts = [
       <p>Banyak freelancer yang menawarkan jasa pembuatan website dengan harga sangat terjangkau. Namun, berhati-hatilah dengan layanan purna jualnya. Seringkali setelah website jadi, sulit untuk menghubungi mereka jika ada error atau butuh update.</p>
       
       <h3>3. Agensi / Studio Web Profesional (Rp 2,5jt - Rp 15jt+)</h3>
-      <p>Seperti layanan kami di Lini Karya. Anda membayar untuk strategi, desain kustom, kecepatan server, keamanan, dan dukungan teknis jangka panjang. Untuk Landing Page sederhana, harga Rp 2,5jt adalah standar yang wajar di Bandung untuk mendapatkan kualitas premium.</p>
+      <p>Seperti layanan kami di Lini Karya. Anda membayar untuk strategi, desain kustom, kecepatan server, keamanan, dan dukungan teknis jangka panjang. Untuk Landing Page sederhana, harga Rp 2,5jt adalah standar yang wajar untuk mendapatkan kualitas premium.</p>
       
       <h3>Kenapa Harga Bisa Berbeda Jauh?</h3>
       <ul>

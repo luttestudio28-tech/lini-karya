@@ -2,28 +2,28 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog & Wawasan Digital UMKM Bandung",
-  description: "Dapatkan tips, panduan, dan strategi pengembangan website untuk memajukan bisnis UMKM Anda, khususnya di wilayah Bandung dan sekitarnya.",
+  title: "Blog & Wawasan Digital UMKM Indonesia",
+  description: "Dapatkan tips, panduan, dan strategi pengembangan website untuk memajukan bisnis UMKM Anda di seluruh Indonesia.",
 };
 
 const blogPosts = [
   {
-    slug: "bisnis-kuliner-bandung-website",
-    title: "Kenapa Bisnis Kuliner di Bandung Wajib Punya Website Sendiri",
+    slug: "bisnis-kuliner-website",
+    title: "Kenapa Bisnis Kuliner Wajib Punya Website Sendiri",
     excerpt: "Jangan hanya mengandalkan platform pihak ketiga. Pelajari bagaimana website mandiri bisa membangun brand dan menghemat biaya operasional bisnis F&B Anda.",
     date: "2026-06-15",
     category: "Bisnis Lokal",
   },
   {
-    slug: "seo-lokal-bandung",
-    title: "Cara Agar Toko Anda Muncul di Halaman Pertama Google di Bandung",
-    excerpt: "Panduan praktis SEO Lokal untuk membantu calon pelanggan di sekitar Bandung menemukan bisnis Anda lebih mudah di mesin pencari.",
+    slug: "seo-lokal",
+    title: "Cara Agar Toko Anda Muncul di Halaman Pertama Google",
+    excerpt: "Panduan praktis SEO Lokal untuk membantu calon pelanggan di sekitar Anda menemukan bisnis Anda lebih mudah di mesin pencari.",
     date: "2026-06-12",
     category: "SEO",
   },
   {
-    slug: "harga-website-umkm-bandung-2026",
-    title: "Berapa Harga Pembuatan Website untuk UMKM di Bandung Tahun 2026?",
+    slug: "harga-website-umkm-2026",
+    title: "Berapa Harga Pembuatan Website untuk UMKM di Tahun 2026?",
     excerpt: "Transparansi harga dan apa saja yang harus Anda perhatikan saat memilih jasa pembuatan website agar tidak salah investasi.",
     date: "2026-06-10",
     category: "Investasi Digital",
@@ -42,7 +42,7 @@ export default function BlogPage() {
             Blog <span className="italic-accent text-accent">Lini Karya</span>
           </h1>
           <p className="font-mono text-sm md:text-base text-foreground/50 max-w-2xl leading-relaxed">
-            Berbagi panduan praktis dan strategi digital untuk membantu UMKM Indonesia, khususnya di Bandung, tumbuh lebih cepat dengan website yang tepat.
+            Berbagi panduan praktis dan strategi digital untuk membantu UMKM Indonesia tumbuh lebih cepat dengan website yang tepat.
           </p>
         </header>
 
