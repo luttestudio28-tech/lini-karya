@@ -5,4 +5,4 @@
 - [x] Task 3: Hero Section (Editorial Impact)
 - [x] Task 4: Manifesto & Philosophy
 - [x] Task 5: Services (The "Boutique" List)
-- [ ] Task 6: Selected Works & Footer
+- [x] Task 6: Selected Works & Footer

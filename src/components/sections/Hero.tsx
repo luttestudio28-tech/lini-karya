@@ -63,10 +63,19 @@ const Hero = () => {
 
         {/* Value Proposition Bar */}
         <div className="mt-4 md:mt-6 pt-8 border-t border-foreground/10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-          <div className="md:col-span-8 lg:col-span-7">
+          <div className="md:col-span-8 lg:col-span-7 flex flex-col gap-8 items-start">
             <p className="font-mono text-sm md:text-base leading-relaxed text-foreground/60 max-w-2xl">
               Kami membantu UMKM dan pengusaha lokal membangun website yang tidak hanya tampil modern, tapi juga efektif mendatangkan pelanggan baru. Tanpa ribet urusan teknis.
             </p>
+            <motion.a
+              href="#biaya"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1, duration: 0.5 }}
+              className="inline-block font-mono text-[10px] md:text-xs uppercase tracking-widest border border-foreground/20 hover:border-background/40 py-4 px-8 text-center bg-foreground text-background hover:bg-background hover:text-foreground transition-all cursor-pointer font-bold"
+            >
+              [ MULAI KONSULTASI ] ↗
+            </motion.a>
           </div>
           <div className="md:col-start-10 md:col-span-3 flex flex-col items-end gap-3">
             <div className="flex gap-2 items-center">

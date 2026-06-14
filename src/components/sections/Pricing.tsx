@@ -132,6 +132,7 @@ const Pricing = () => {
             <div className="mt-auto pt-20">
               <button 
                 onClick={() => handleApply(pkg)}
+                aria-label={`Mulai konsultasi gratis untuk paket pembuatan website ${pkg.name}`}
                 className="w-full font-mono text-[10px] uppercase tracking-widest border border-foreground/20 group-hover:border-background/40 py-5 text-center group-hover:bg-background group-hover:text-foreground transition-all cursor-pointer font-bold"
               >
                 [ KONSULTASI GRATIS ]

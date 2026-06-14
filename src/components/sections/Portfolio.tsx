@@ -100,6 +100,7 @@ const Portfolio = () => {
                     href={project.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
+                    aria-label={`Lihat hasil proyek website ${project.title}`}
                     className="font-mono text-[10px] uppercase tracking-widest opacity-30 hover:opacity-100 hover:text-accent transition-all cursor-pointer"
                   >
                     [ LIHAT HASIL ] ↗
