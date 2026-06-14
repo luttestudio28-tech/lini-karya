@@ -73,9 +73,13 @@ const Services = () => {
                 <p className="font-mono text-[10px] md:text-sm tracking-wide leading-relaxed opacity-50 group-hover:opacity-100 transition-opacity">
                   {service.description}
                 </p>
-                <div className="pt-8 border-t border-foreground/5 group-hover:border-background/20 font-mono text-[10px] uppercase tracking-widest text-accent font-bold cursor-pointer opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">
+                <a 
+                  href="#biaya"
+                  aria-label={`Konsultasi gratis untuk layanan ${service.title}`}
+                  className="block pt-8 border-t border-foreground/5 group-hover:border-background/20 font-mono text-[10px] uppercase tracking-widest text-accent font-bold cursor-pointer opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0"
+                >
                   [ KONSULTASI GRATIS ] ↗
-                </div>
+                </a>
               </div>
             </motion.div>
           ))}
