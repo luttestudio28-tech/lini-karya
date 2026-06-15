@@ -12,6 +12,9 @@ const CustomCursor = () => {
   const cursorYSpring = useSpring(cursorY, springConfig);
 
   useEffect(() => {
+    // Disable on touch devices
+    if (window.matchMedia("(pointer: coarse)").matches) return;
+
     const moveCursor = (e: MouseEvent) => {
       cursorX.set(e.clientX);
       cursorY.set(e.clientY);
@@ -20,6 +23,11 @@ const CustomCursor = () => {
     window.addEventListener("mousemove", moveCursor);
     return () => window.removeEventListener("mousemove", moveCursor);
   }, [cursorX, cursorY]);
+
+  // Return null on touch devices to save resources
+  if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) {
+    return null;
+  }
 
   return (
     <div className="fixed inset-0 pointer-events-none z-[9999] hidden md:block">
