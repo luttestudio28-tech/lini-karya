@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { blogPosts } from "@/lib/blog-data";
+import ShareArticle from "@/components/ui/ShareArticle";
 
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
@@ -69,6 +70,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           className="font-mono text-sm md:text-base leading-relaxed text-foreground/80 space-y-12 blog-content max-w-3xl prose-custom mx-auto"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
+
+        <ShareArticle title={post.title} slug={post.slug} />
 
         {/* LEAD MAGNET BANNER */}
         <div className="my-20 p-8 md:p-12 bg-foreground text-background text-center rounded-2xl shadow-xl relative overflow-hidden">
