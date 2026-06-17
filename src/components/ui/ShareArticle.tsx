@@ -31,10 +31,6 @@ const ShareArticle = ({ title, slug }: ShareArticleProps) => {
       name: "LinkedIn",
       url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
     },
-    {
-      name: "Facebook",
-      url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
-    },
   ];
 
   return (
