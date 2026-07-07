@@ -165,7 +165,7 @@ function EditorialLayout({
               <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
                 {page.eyebrow}
               </span>
-              <h1 className="font-display text-[clamp(2.8rem,8vw,8rem)] leading-[0.82] tracking-[-0.04em] uppercase">
+              <h1 className="font-display text-[clamp(3.5rem,9vw,9rem)] leading-[0.8] tracking-[-0.04em] uppercase">
                 {page.titleLines.map((line, i) => (
                   <span
                     key={i}
@@ -245,7 +245,7 @@ function EditorialLayout({
       {page.steps && (
         <section className="px-container py-24 md:py-32 border-b border-foreground/10">
           <div className="max-w-[1400px] mx-auto">
-            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-16 font-bold">
+            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-20 md:mb-28 font-bold">
               Alur Kerja Kami
             </span>
             <div className="space-y-px">
@@ -346,7 +346,7 @@ function CommerceLayout({
       {/* MASALAH — daftar ringkas */}
       <section className="px-container py-24 md:py-32 border-b border-foreground/10">
         <div className="max-w-[1400px] mx-auto">
-          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-tighter leading-none mb-16 max-w-2xl">
+          <h2 className="font-display text-[clamp(2.5rem,6vw,5rem)] uppercase tracking-tighter leading-[0.85] mb-20 md:mb-28 max-w-3xl">
             Kenapa harus <span className="text-accent italic">berhenti</span>{" "}
             bergantung marketplace?
           </h2>
@@ -371,7 +371,7 @@ function CommerceLayout({
       {/* SOLUSI — alur belanja bernomor horizontal */}
       <section className="px-container py-24 md:py-32 border-b border-foreground/10">
         <div className="max-w-[1400px] mx-auto">
-          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-16 font-bold">
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-20 md:mb-28 font-bold">
             Cara Toko Anda Bekerja
           </span>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -455,7 +455,7 @@ function CorporateLayout({
       {/* MASALAH — daftar bernomor vertikal besar */}
       <section className="px-container py-24 md:py-32 border-b border-foreground/10">
         <div className="max-w-[1400px] mx-auto">
-          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-16 font-bold">
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-20 md:mb-28 font-bold">
             Yang Dipertaruhkan
           </span>
           <div className="border-t border-foreground/10">
@@ -482,7 +482,7 @@ function CorporateLayout({
       {/* SOLUSI — inverted (gelap) untuk kesan premium */}
       <section className="bg-foreground text-background px-container py-24 md:py-32">
         <div className="max-w-[1400px] mx-auto">
-          <h2 className="font-display text-4xl md:text-6xl uppercase tracking-tighter leading-none mb-16">
+          <h2 className="font-display text-[clamp(3rem,7vw,6rem)] uppercase tracking-tighter leading-[0.8] mb-20 md:mb-28">
             Standar <span className="text-accent italic">Lini Karya</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
@@ -521,12 +521,12 @@ function PriceTable({ page }: { page: LandingPage }) {
   return (
     <section className="px-container py-24 md:py-32 border-b border-foreground/10">
       <div className="max-w-[1400px] mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+        <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-20 md:mb-32">
           <div>
-            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-6 font-bold">
+            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
               Pilihan Investasi
             </span>
-            <h2 className="font-display text-5xl md:text-7xl uppercase tracking-tighter leading-none">
+            <h2 className="font-display text-[clamp(3rem,8vw,7rem)] uppercase tracking-tighter leading-[0.8]">
               Paket <span className="text-accent italic">Layanan</span>
             </h2>
           </div>
@@ -589,9 +589,14 @@ function FaqAccordionStyle({ page }: { page: LandingPage }) {
   return (
     <section className="px-container py-24 md:py-32 border-b border-foreground/10">
       <div className="max-w-[1400px] mx-auto">
-        <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-          Tanya &amp; Jawab
-        </span>
+        <div className="mb-20 md:mb-32">
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
+            Pusat Bantuan
+          </span>
+          <h2 className="font-display text-[clamp(3rem,8vw,7rem)] uppercase tracking-tighter leading-[0.8]">
+            Tanya &amp; <span className="text-accent italic">Jawab</span>
+          </h2>
+        </div>
         <div className="border-t border-foreground/10">
           {page.faqs.map((faq, i) => (
             <div
