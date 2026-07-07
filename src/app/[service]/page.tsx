@@ -9,6 +9,7 @@ import {
 } from "@/lib/landing-data";
 import { blogPosts } from "@/lib/blog-data";
 import Footer from "@/components/sections/Footer";
+import { Reveal } from "@/components/landing/Reveal";
 
 // Hanya slug yang terdaftar yang di-generate; sisanya 404.
 export const dynamicParams = false;
@@ -178,7 +179,7 @@ function EditorialLayout({
                 ))}
               </h1>
             </div>
-            <div className="lg:col-span-4 lg:border-l border-foreground/10 lg:pl-10">
+            <Reveal delay={0.2} className="lg:col-span-4 lg:border-l border-foreground/10 lg:pl-10">
               <p className="font-mono text-sm leading-relaxed text-foreground/60 mb-8">
                 {page.intro}
               </p>
@@ -186,11 +187,12 @@ function EditorialLayout({
                 href={ctaFor(page)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block font-mono text-[10px] uppercase tracking-widest bg-accent text-background px-8 py-5 font-bold hover:bg-foreground transition-colors"
+                className="group inline-flex items-center gap-3 font-mono text-[10px] uppercase tracking-widest bg-accent text-background px-8 py-5 font-bold hover:bg-foreground transition-colors"
               >
-                [ KONSULTASI GRATIS ] ↗
+                [ KONSULTASI GRATIS ]
+                <span className="group-hover:translate-x-1 transition-transform">↗</span>
               </a>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -270,9 +272,11 @@ function EditorialLayout({
         </section>
       )}
 
+      <TestimonialBlock page={page} />
       <PriceTable page={page} />
       <FaqAccordionStyle page={page} />
       <RelatedBlock page={page} related={related} />
+      <FinalCta page={page} />
       <Footer />
     </main>
   );
@@ -330,14 +334,14 @@ function CommerceLayout({
         <section className="border-b border-foreground/10">
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-foreground/10">
             {page.stats.map((s, i) => (
-              <div key={i} className="px-container py-14 text-center">
+              <Reveal key={i} delay={i * 0.12} y={20} className="px-container py-14 text-center">
                 <div className="font-display text-6xl md:text-7xl tracking-tighter text-accent leading-none mb-4">
                   {s.value}
                 </div>
                 <div className="font-mono text-[10px] uppercase tracking-widest opacity-50">
                   {s.label}
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </section>
@@ -352,17 +356,21 @@ function CommerceLayout({
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-foreground/10 border border-foreground/10">
             {page.problems.map((item, i) => (
-              <div key={i} className="bg-background p-10 flex flex-col gap-4">
+              <Reveal
+                key={i}
+                delay={i * 0.1}
+                className="group bg-background p-10 flex flex-col gap-4 hover:bg-foreground hover:text-background transition-colors duration-500"
+              >
                 <span className="font-mono text-[10px] text-accent font-bold">
                   ✕
                 </span>
                 <h3 className="font-display text-xl md:text-2xl uppercase tracking-tighter leading-none">
                   {item.heading}
                 </h3>
-                <p className="font-mono text-[11px] leading-relaxed opacity-50">
+                <p className="font-mono text-[11px] leading-relaxed opacity-50 group-hover:opacity-90">
                   {item.body}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -376,7 +384,7 @@ function CommerceLayout({
           </span>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {page.solutions.map((item, i) => (
-              <div key={i} className="flex flex-col gap-4">
+              <Reveal key={i} delay={i * 0.1} className="flex flex-col gap-4">
                 <span className="font-display text-4xl tracking-tighter text-accent leading-none">
                   0{i + 1}
                 </span>
@@ -387,15 +395,17 @@ function CommerceLayout({
                 <p className="font-mono text-[11px] leading-relaxed opacity-50">
                   {item.body}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
+      <TestimonialBlock page={page} />
       <PriceTable page={page} />
       <FaqAccordionStyle page={page} />
       <RelatedBlock page={page} related={related} />
+      <FinalCta page={page} />
       <Footer />
     </main>
   );
@@ -487,8 +497,9 @@ function CorporateLayout({
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
             {page.solutions.map((item, i) => (
-              <div
+              <Reveal
                 key={i}
+                delay={i * 0.08}
                 className="flex gap-6 pt-8 border-t border-background/15"
               >
                 <span className="font-mono text-[10px] text-accent font-bold pt-2">
@@ -502,15 +513,17 @@ function CorporateLayout({
                     {item.body}
                   </p>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
+      <TestimonialBlock page={page} />
       <PriceTable page={page} />
       <FaqAccordionStyle page={page} />
       <RelatedBlock page={page} related={related} />
+      <FinalCta page={page} />
       <Footer />
     </main>
   );
@@ -540,29 +553,33 @@ function PriceTable({ page }: { page: LandingPage }) {
             page.packages.length === 3 ? "lg:grid-cols-3" : ""
           } gap-px bg-foreground/10 border border-foreground/10`}
         >
-          {page.packages.map((pkg) => (
-            <div key={pkg.name} className="bg-background p-10 lg:p-12 flex flex-col">
+          {page.packages.map((pkg, idx) => (
+            <Reveal
+              key={pkg.name}
+              delay={idx * 0.1}
+              className="group bg-background p-10 lg:p-12 flex flex-col hover:bg-foreground hover:text-background transition-colors duration-700"
+            >
               <div className="flex justify-between items-start mb-12">
-                <h3 className="font-display text-3xl uppercase tracking-tighter">
+                <h3 className="font-display text-3xl uppercase tracking-tighter group-hover:italic-accent transition-all duration-500">
                   {pkg.name}
                 </h3>
                 <span className="font-mono text-[9px] uppercase tracking-widest text-accent font-bold text-right">
                   {pkg.label}
                 </span>
               </div>
-              <div className="font-display text-4xl lg:text-5xl tracking-tighter leading-none mb-10">
+              <div className="font-display text-4xl lg:text-5xl tracking-tighter leading-none mb-10 group-hover:scale-105 transition-transform duration-700 origin-left">
                 {pkg.price !== "Kustom" && (
                   <span className="text-lg opacity-20 mr-2">RP</span>
                 )}
                 {pkg.price}
               </div>
-              <div className="space-y-4 pt-8 border-t border-foreground/5 mb-10">
+              <div className="space-y-4 pt-8 border-t border-foreground/5 group-hover:border-background/10 mb-10">
                 {pkg.features.map((f, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <span className="font-mono text-[10px] text-accent shrink-0">
+                    <span className="font-mono text-[10px] text-accent shrink-0 group-hover:text-background transition-colors">
                       [+]
                     </span>
-                    <span className="font-mono text-[10px] uppercase tracking-widest opacity-70">
+                    <span className="font-mono text-[10px] uppercase tracking-widest opacity-70 group-hover:opacity-100">
                       {f}
                     </span>
                   </div>
@@ -572,11 +589,11 @@ function PriceTable({ page }: { page: LandingPage }) {
                 href={pkgCta(page, pkg.name)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto font-mono text-[10px] uppercase tracking-widest border border-foreground/20 py-5 text-center font-bold hover:bg-accent hover:text-background hover:border-accent transition-all"
+                className="mt-auto font-mono text-[10px] uppercase tracking-widest border border-foreground/20 group-hover:border-background/40 py-5 text-center font-bold hover:bg-accent hover:text-background hover:border-accent transition-all"
               >
                 [ KONSULTASI GRATIS ]
               </a>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -599,8 +616,9 @@ function FaqAccordionStyle({ page }: { page: LandingPage }) {
         </div>
         <div className="border-t border-foreground/10">
           {page.faqs.map((faq, i) => (
-            <div
+            <Reveal
               key={i}
+              delay={i * 0.05}
               className="py-10 border-b border-foreground/10 grid grid-cols-1 md:grid-cols-12 gap-6"
             >
               <h2 className="md:col-span-5 font-display text-xl md:text-2xl uppercase tracking-tighter leading-tight text-accent">
@@ -609,9 +627,77 @@ function FaqAccordionStyle({ page }: { page: LandingPage }) {
               <p className="md:col-span-7 font-mono text-xs md:text-sm leading-relaxed opacity-60">
                 {faq.answer}
               </p>
-            </div>
+            </Reveal>
           ))}
         </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------------------------- Testimoni + trust bar (semua varian) */
+function TestimonialBlock({ page }: { page: LandingPage }) {
+  const t = page.testimonial;
+  return (
+    <section className="px-container py-24 md:py-32 border-b border-foreground/10">
+      <div className="max-w-[1400px] mx-auto">
+        <Reveal>
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-12 font-bold">
+            Kata Klien Kami
+          </span>
+          <blockquote className="font-display text-2xl md:text-4xl lg:text-5xl uppercase tracking-tighter leading-[1.05] max-w-5xl">
+            <span className="text-accent">“</span>
+            {t.quote}
+            <span className="text-accent">”</span>
+          </blockquote>
+          <div className="mt-12 flex items-center gap-4 font-mono text-[10px] uppercase tracking-widest">
+            <span className="font-bold">{t.author}</span>
+            <span className="w-8 h-px bg-foreground/20" />
+            <span className="opacity-50">{t.role}</span>
+          </div>
+        </Reveal>
+
+        {/* Trust bar */}
+        <Reveal delay={0.15}>
+          <div className="mt-20 pt-10 border-t border-foreground/10 grid grid-cols-2 md:grid-cols-4 gap-8 font-mono text-[9px] md:text-[10px] uppercase tracking-widest opacity-50">
+            <span>Berbasis di Bandung</span>
+            <span>Melayani Se-Indonesia</span>
+            <span>SEO-Ready & Cepat</span>
+            <span>Konsultasi Gratis</span>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------------------------- CTA besar sebelum footer (semua varian) */
+function FinalCta({ page }: { page: LandingPage }) {
+  return (
+    <section className="px-container py-24 md:py-40 bg-foreground text-background overflow-hidden relative">
+      <div className="max-w-[1400px] mx-auto">
+        <Reveal>
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
+            Mulai Sekarang
+          </span>
+          <h2 className="font-display text-[clamp(3rem,9vw,9rem)] uppercase tracking-tighter leading-[0.8] mb-12">
+            Siap Naik <br />
+            <span className="text-accent italic">Level?</span>
+          </h2>
+          <p className="font-mono text-sm md:text-base leading-relaxed opacity-60 max-w-xl mb-12">
+            Ceritakan kebutuhan bisnis Anda. Konsultasi 100% gratis, tanpa
+            komitmen — kami bantu petakan solusi terbaik untuk {page.eyebrow.toLowerCase()}.
+          </p>
+          <a
+            href={ctaFor(page)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-4 font-mono text-[10px] uppercase tracking-widest bg-accent text-background px-10 py-6 font-bold hover:bg-background hover:text-foreground transition-colors duration-500"
+          >
+            [ KONSULTASI GRATIS VIA WHATSAPP ]
+            <span className="group-hover:translate-x-1 transition-transform">↗</span>
+          </a>
+        </Reveal>
       </div>
     </section>
   );

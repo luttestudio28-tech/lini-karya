@@ -41,6 +41,8 @@ export type LandingPage = {
   // Opsional, khas per-variant
   stats?: { value: string; label: string }[];
   steps?: LandingSection[];
+  // Social proof
+  testimonial: { quote: string; author: string; role: string };
   // Internal linking
   relatedBlogSlugs: string[];
 };
@@ -157,6 +159,12 @@ export const landingPages: LandingPage[] = [
           "Ya. Setiap website kami bangun dengan fondasi teknis SEO yang benar: struktur heading, metadata, schema markup, dan kecepatan optimal.",
       },
     ],
+    testimonial: {
+      quote:
+        "Lini Karya tidak hanya membangun website, mereka membangun identitas digital yang selama ini kami cari namun sulit kami bahasakan. Hasilnya sangat memuaskan.",
+      author: "Budi Santoso",
+      role: "Pemilik Aluna Studio",
+    },
     steps: [
       {
         heading: "Konsultasi & Riset",
@@ -279,6 +287,12 @@ export const landingPages: LandingPage[] = [
       { value: "24/7", label: "Toko buka & terima order otomatis" },
       { value: "100%", label: "Data pelanggan jadi milik Anda" },
     ],
+    testimonial: {
+      quote:
+        "Efisiensi operasional kami meningkat tajam setelah transisi ke platform baru. Desain yang bersih benar-benar berdampak pada kepercayaan pelanggan kami.",
+      author: "Siti Aminah",
+      role: "Founder Grosir Beras",
+    },
     relatedBlogSlugs: [
       "qris-payment-otomatis-website",
       "website-pribadi-vs-marketplace",
@@ -382,6 +396,12 @@ export const landingPages: LandingPage[] = [
           "Bisa. Untuk kebutuhan lanjutan seperti halaman karier, portal klien, atau integrasi sistem internal, kami tawarkan paket Custom System.",
       },
     ],
+    testimonial: {
+      quote:
+        "Visi bisnis kami yang kompleks diterjemahkan dengan sangat elegan. Investasi yang sangat berharga untuk pertumbuhan brand kami ke depan.",
+      author: "Irwan Hakim",
+      role: "CEO NovaFlow",
+    },
     relatedBlogSlugs: [
       "rebranding-digital-naikkan-harga",
       "desain-website-konversi",
