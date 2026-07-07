@@ -17,6 +17,7 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
+    { name: "Jasa Website", href: "/jasa-pembuatan-website-bandung" },
     { name: "Layanan", href: "/#layanan" },
     { name: "Karya", href: "/#karya" },
     { name: "Kontak", href: "/#kontak" },
