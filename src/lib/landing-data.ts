@@ -18,8 +18,12 @@ export type LandingFaq = {
   answer: string;
 };
 
+// Menentukan tata letak visual halaman agar tiap layanan tampil berbeda.
+export type LandingVariant = "editorial" | "commerce" | "corporate";
+
 export type LandingPage = {
   slug: string;
+  variant: LandingVariant;
   // SEO
   metaTitle: string;
   metaDescription: string;
@@ -34,6 +38,9 @@ export type LandingPage = {
   solutions: LandingSection[];
   packages: LandingPackage[];
   faqs: LandingFaq[];
+  // Opsional, khas per-variant
+  stats?: { value: string; label: string }[];
+  steps?: LandingSection[];
   // Internal linking
   relatedBlogSlugs: string[];
 };
@@ -45,6 +52,7 @@ export const waLink = (text: string) =>
 export const landingPages: LandingPage[] = [
   {
     slug: "jasa-pembuatan-website-bandung",
+    variant: "editorial",
     metaTitle: "Jasa Pembuatan Website Bandung — Profesional & SEO Ready",
     metaDescription:
       "Jasa pembuatan website profesional di Bandung untuk UMKM & bisnis lokal. Desain premium, cepat, SEO-ready, dan mudah dikelola. Konsultasi gratis via WhatsApp.",
@@ -149,10 +157,29 @@ export const landingPages: LandingPage[] = [
           "Ya. Setiap website kami bangun dengan fondasi teknis SEO yang benar: struktur heading, metadata, schema markup, dan kecepatan optimal.",
       },
     ],
+    steps: [
+      {
+        heading: "Konsultasi & Riset",
+        body: "Kami pelajari bisnis, target pelanggan, dan kompetitor Anda di Bandung untuk menyusun strategi website yang tepat sasaran.",
+      },
+      {
+        heading: "Desain & Struktur",
+        body: "Merancang tampilan premium sekaligus struktur SEO yang benar sejak fondasi — bukan tempelan di akhir.",
+      },
+      {
+        heading: "Pengembangan Cepat",
+        body: "Dibangun dengan teknologi modern (Next.js) agar ringan, kencang, dan sempurna di layar smartphone.",
+      },
+      {
+        heading: "Peluncuran & Pendampingan",
+        body: "Website tayang, terhubung ke Google, dan Anda diajari mengelolanya sendiri. Konsultasi tetap berlanjut.",
+      },
+    ],
     relatedBlogSlugs: ["seo-lokal", "kenapa-website-sepi-pengunjung", "harga-website-umkm-2026"],
   },
   {
     slug: "jasa-pembuatan-toko-online",
+    variant: "commerce",
     metaTitle: "Jasa Pembuatan Toko Online — Website Jualan Tanpa Komisi",
     metaDescription:
       "Jasa pembuatan toko online mandiri: katalog produk, checkout WhatsApp, & pembayaran otomatis. Lepas dari potongan komisi marketplace. Konsultasi gratis.",
@@ -247,6 +274,11 @@ export const landingPages: LandingPage[] = [
           "Sangat bisa. Kami sediakan panel yang mudah — semudah menggunakan WhatsApp — untuk mengelola produk, harga, dan foto secara mandiri.",
       },
     ],
+    stats: [
+      { value: "0%", label: "Potongan komisi penjualan" },
+      { value: "24/7", label: "Toko buka & terima order otomatis" },
+      { value: "100%", label: "Data pelanggan jadi milik Anda" },
+    ],
     relatedBlogSlugs: [
       "qris-payment-otomatis-website",
       "website-pribadi-vs-marketplace",
@@ -255,6 +287,7 @@ export const landingPages: LandingPage[] = [
   },
   {
     slug: "jasa-pembuatan-company-profile",
+    variant: "corporate",
     metaTitle: "Jasa Pembuatan Website Company Profile Perusahaan",
     metaDescription:
       "Jasa pembuatan website company profile profesional untuk membangun kredibilitas perusahaan. Desain premium, SEO-ready, mudah dikelola. Konsultasi gratis.",
