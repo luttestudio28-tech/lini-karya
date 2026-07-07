@@ -4,6 +4,15 @@ import BlogListing from "@/components/sections/BlogListing";
 export const metadata: Metadata = {
   title: "Blog & Wawasan Digital UMKM Indonesia",
   description: "Dapatkan tips, panduan, dan strategi pengembangan website untuk memajukan bisnis UMKM Anda di seluruh Indonesia.",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://linikarya.com/blog",
+    title: "Blog & Wawasan Digital UMKM Indonesia | Lini Karya",
+    description: "Tips, panduan, dan strategi pengembangan website untuk memajukan bisnis UMKM Anda.",
+  },
 };
 
 export default function BlogPage() {

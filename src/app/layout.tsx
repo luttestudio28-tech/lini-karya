@@ -19,6 +19,7 @@ const fontMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://linikarya.com"),
   title: {
     default: "Lini Karya | Studio Arsitektur Digital & Jasa Website Bandung",
     template: "%s | Lini Karya"
@@ -27,6 +28,9 @@ export const metadata: Metadata = {
   keywords: ["Digital Agency Bandung", "Jasa Website UMKM", "Arsitektur Digital", "Web Development Indonesia", "Lini Karya Studio", "Branding Design Bandung"],
   authors: [{ name: "Lini Karya Studio" }],
   creator: "Lini Karya Studio",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "id_ID",
@@ -34,24 +38,22 @@ export const metadata: Metadata = {
     title: "Lini Karya | Studio Arsitektur Digital & Jasa Website Bandung",
     description: "Membangun infrastruktur digital berperforma tinggi untuk generasi baru UMKM Indonesia. Presisi di atas dekorasi.",
     siteName: "Lini Karya",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Lini Karya Studio Arsitektur Digital",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lini Karya | Studio Arsitektur Digital",
     description: "Membangun infrastruktur digital berperforma tinggi untuk generasi baru UMKM Indonesia.",
-    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   verification: {
     google: "kdjbVMfE0pbawZhV08Ogv8EFzXKCGlPUaHz9Zp6NRHo",

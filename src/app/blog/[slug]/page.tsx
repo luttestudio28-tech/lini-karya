@@ -1,12 +1,54 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { blogPosts } from "@/lib/blog-data";
 
+const SITE_URL = "https://linikarya.com";
+
 export async function generateStaticParams() {
   return blogPosts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
+
+  if (!post) {
+    return { title: "Artikel Tidak Ditemukan" };
+  }
+
+  const url = `${SITE_URL}/blog/${post.slug}`;
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
+    openGraph: {
+      type: "article",
+      url,
+      title: post.title,
+      description: post.excerpt,
+      publishedTime: new Date(post.date).toISOString(),
+      authors: ["Lini Karya Studio"],
+      section: post.category,
+      images: [{ url: post.image, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -30,8 +72,46 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     relatedPosts.push(...additionalPosts);
   }
 
+  const url = `${SITE_URL}/blog/${post.slug}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        headline: post.title,
+        description: post.excerpt,
+        image: post.image,
+        datePublished: new Date(post.date).toISOString(),
+        dateModified: new Date(post.date).toISOString(),
+        articleSection: post.category,
+        author: { "@type": "Organization", name: "Lini Karya Studio", url: SITE_URL },
+        publisher: {
+          "@type": "Organization",
+          name: "Lini Karya Studio",
+          logo: { "@type": "ImageObject", url: `${SITE_URL}/logo1.png` },
+        },
+        mainEntityOfPage: { "@type": "WebPage", "@id": url },
+        inLanguage: "id-ID",
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Beranda", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+          { "@type": "ListItem", position: 3, name: post.title, item: url },
+        ],
+      },
+    ],
+  };
+
   return (
     <article className="bg-background min-h-screen pt-32 pb-24 px-container">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="max-w-4xl mx-auto">
         <Link 
           href="/blog" 
