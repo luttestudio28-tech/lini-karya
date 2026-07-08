@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import CostCalculator from "@/components/tools/CostCalculator";
+import FaqAccordion from "@/components/tools/FaqAccordion";
 import Footer from "@/components/sections/Footer";
+import { blogPosts } from "@/lib/blog-data";
 
 const url = "https://linikarya.com/kalkulator-biaya-website";
 
@@ -53,7 +56,17 @@ const faqs = [
   },
 ];
 
+const LEARN_SLUGS = [
+  "harga-website-umkm-2026",
+  "kenapa-website-sepi-pengunjung",
+  "landing-page-vs-website",
+];
+
 export default function CalculatorPage() {
+  const learnPosts = LEARN_SLUGS.map((slug) =>
+    blogPosts.find((p) => p.slug === slug)
+  ).filter((p): p is (typeof blogPosts)[number] => Boolean(p));
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -155,53 +168,51 @@ export default function CalculatorPage() {
                 Tanya &amp; <span className="text-accent italic">Jawab</span>
               </h2>
             </div>
-            <div className="border-t border-foreground/10">
-              {faqs.map((faq, i) => (
-                <div
-                  key={i}
-                  className="py-10 border-b border-foreground/10 grid grid-cols-1 md:grid-cols-12 gap-6"
-                >
-                  <h3 className="md:col-span-5 font-display text-xl md:text-2xl uppercase tracking-tighter leading-tight text-accent">
-                    {faq.q}
-                  </h3>
-                  <p className="md:col-span-7 font-mono text-xs md:text-sm leading-relaxed opacity-60">
-                    {faq.a}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <FaqAccordion items={faqs} />
           </div>
         </section>
 
-        {/* LINK KE ARTIKEL TERKAIT */}
+        {/* KARTU ARTIKEL TERKAIT */}
         <section className="px-container py-24 md:py-32 border-b border-foreground/10">
           <div className="max-w-[1400px] mx-auto">
-            <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-8 font-bold">
-              Pelajari Lebih Lanjut
-            </span>
-            <div className="flex flex-col">
-              <Link
-                href="/blog/harga-website-umkm-2026"
-                className="group flex justify-between items-center py-6 border-t border-foreground/10 hover:text-accent transition-colors"
-              >
-                <span className="font-display text-2xl md:text-3xl uppercase tracking-tighter">
-                  Panduan Harga Website UMKM 2026
-                </span>
-                <span className="font-mono text-[10px] opacity-30 group-hover:opacity-100">
-                  ↗
-                </span>
-              </Link>
+            <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-6 mb-16">
+              <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block font-bold">
+                Pelajari Lebih Lanjut
+              </span>
               <Link
                 href="/blog"
-                className="group flex justify-between items-center py-6 border-t border-foreground/10 hover:text-accent transition-colors"
+                className="font-mono text-[10px] uppercase tracking-widest opacity-40 hover:opacity-100 hover:text-accent transition-all"
               >
-                <span className="font-display text-2xl md:text-3xl uppercase tracking-tighter">
-                  Semua Artikel &amp; Wawasan
-                </span>
-                <span className="font-mono text-[10px] opacity-30 group-hover:opacity-100">
-                  ↗
-                </span>
+                [ LIHAT SEMUA ARTIKEL ] ↗
               </Link>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {learnPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group block border border-foreground/10 hover:border-accent/40 transition-all"
+                >
+                  <div className="relative w-full aspect-[16/10] overflow-hidden bg-muted">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <span className="font-mono text-[9px] uppercase tracking-widest text-accent font-bold block mb-4">
+                      {post.category}
+                    </span>
+                    <h3 className="font-display text-xl uppercase tracking-tighter leading-tight group-hover:text-accent transition-colors line-clamp-3">
+                      {post.title}
+                    </h3>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
