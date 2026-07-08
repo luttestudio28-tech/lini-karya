@@ -43,6 +43,16 @@ export type LandingPage = {
   steps?: LandingSection[];
   // Social proof
   testimonial: { quote: string; author: string; role: string };
+  // Konten unik khas per-halaman (agar tidak duplikat dengan homepage)
+  deepDive?: { heading: string; paragraphs: string[] };
+  areaServed?: string[];
+  comparison?: {
+    heading: string;
+    labelA: string;
+    labelB: string;
+    rows: { aspect: string; a: string; b: string }[];
+  };
+  checklist?: { heading: string; intro: string; items: string[] };
   // Internal linking
   relatedBlogSlugs: string[];
 };
@@ -183,6 +193,22 @@ export const landingPages: LandingPage[] = [
         body: "Website tayang, terhubung ke Google, dan Anda diajari mengelolanya sendiri. Konsultasi tetap berlanjut.",
       },
     ],
+    deepDive: {
+      heading: "Kenapa Bisnis di Bandung Wajib Punya Website Sendiri",
+      paragraphs: [
+        "Bandung punya ekosistem UMKM, kuliner, fesyen, dan industri kreatif yang sangat padat. Artinya kompetisi juga sengit. Saat calon pelanggan mengetik “kuliner enak Bandung”, “jasa arsitek Bandung”, atau “toko baju Bandung” di Google, bisnis yang muncul di halaman pertamalah yang menang. Kalau Anda hanya mengandalkan Instagram, Anda tidak ada di percakapan itu.",
+        "Website milik sendiri adalah aset digital yang Anda kuasai penuh — berbeda dengan media sosial yang bisa kena shadowban atau berubah algoritma kapan saja. Ini fondasi yang membuat bisnis Anda tidak lumpuh hanya karena satu platform bermasalah.",
+        "Kombinasi website yang cepat, terstruktur SEO, dan terhubung dengan Google Business Profile inilah yang membuat bisnis lokal Bandung ditemukan tepat saat pelanggan sedang mencari. Kami membangun keduanya sekaligus, bukan sekadar menyerahkan website lalu pergi.",
+      ],
+    },
+    areaServed: [
+      "Kota Bandung",
+      "Cimahi",
+      "Kabupaten Bandung",
+      "Bandung Barat",
+      "Sumedang",
+      "& Seluruh Indonesia",
+    ],
     relatedBlogSlugs: ["seo-lokal", "kenapa-website-sepi-pengunjung", "harga-website-umkm-2026"],
   },
   {
@@ -293,6 +319,18 @@ export const landingPages: LandingPage[] = [
       author: "Siti Aminah",
       role: "Founder Grosir Beras",
     },
+    comparison: {
+      heading: "Marketplace vs Toko Online Sendiri",
+      labelA: "Marketplace",
+      labelB: "Toko Sendiri",
+      rows: [
+        { aspect: "Potongan komisi", a: "20–25% tiap transaksi", b: "0% — 100% milik Anda" },
+        { aspect: "Data pelanggan", a: "Dirahasiakan platform", b: "Sepenuhnya milik Anda" },
+        { aspect: "Perang harga", a: "Disandingkan kompetitor", b: "Hanya produk Anda" },
+        { aspect: "Branding", a: "Terbatas template", b: "Bebas & premium" },
+        { aspect: "Kepemilikan", a: "Menyewa lapak", b: "Aset milik sendiri" },
+      ],
+    },
     relatedBlogSlugs: [
       "qris-payment-otomatis-website",
       "website-pribadi-vs-marketplace",
@@ -401,6 +439,21 @@ export const landingPages: LandingPage[] = [
         "Visi bisnis kami yang kompleks diterjemahkan dengan sangat elegan. Investasi yang sangat berharga untuk pertumbuhan brand kami ke depan.",
       author: "Irwan Hakim",
       role: "CEO NovaFlow",
+    },
+    checklist: {
+      heading: "Ciri Company Profile yang Benar-Benar Kredibel",
+      intro:
+        "Bukan sekadar 'punya website'. Inilah elemen yang membuat calon klien besar percaya sebelum diskusi dimulai:",
+      items: [
+        "Halaman Tentang yang menceritakan siapa Anda & kredibilitas tim",
+        "Portofolio atau studi kasus dengan hasil yang nyata",
+        "Layanan dijelaskan lewat manfaat, bukan sekadar daftar fitur",
+        "Testimoni & logo klien sebagai bukti sosial",
+        "Kontak dan tombol aksi mudah dijangkau di setiap halaman",
+        "Kecepatan tinggi & tampilan sempurna di smartphone",
+        "Email domain sendiri (nama@perusahaan.com)",
+        "Struktur SEO agar ditemukan calon klien di Google",
+      ],
     },
     relatedBlogSlugs: [
       "rebranding-digital-naikkan-harga",

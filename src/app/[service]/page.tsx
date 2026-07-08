@@ -272,6 +272,44 @@ function EditorialLayout({
         </section>
       )}
 
+      {/* KONTEN UNIK: prosa lokal + area layanan */}
+      {page.deepDive && (
+        <section className="px-container py-24 md:py-32 border-b border-foreground/10">
+          <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+            <div className="lg:col-span-5">
+              <Reveal>
+                <h2 className="font-display text-3xl md:text-5xl uppercase tracking-tighter leading-[0.9]">
+                  {page.deepDive.heading}
+                </h2>
+              </Reveal>
+              {page.areaServed && (
+                <Reveal delay={0.15}>
+                  <div className="mt-10 flex flex-wrap gap-2">
+                    {page.areaServed.map((area) => (
+                      <span
+                        key={area}
+                        className="font-mono text-[9px] uppercase tracking-widest border border-foreground/15 px-3 py-2 opacity-60"
+                      >
+                        {area}
+                      </span>
+                    ))}
+                  </div>
+                </Reveal>
+              )}
+            </div>
+            <div className="lg:col-span-7 space-y-6">
+              {page.deepDive.paragraphs.map((p, i) => (
+                <Reveal key={i} delay={i * 0.08}>
+                  <p className="font-mono text-xs md:text-sm leading-relaxed opacity-70">
+                    {p}
+                  </p>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <TestimonialBlock page={page} />
       <PriceTable page={page} />
       <FaqAccordionStyle page={page} />
@@ -401,6 +439,44 @@ function CommerceLayout({
         </div>
       </section>
 
+      {/* KONTEN UNIK: tabel perbandingan */}
+      {page.comparison && (
+        <section className="px-container py-24 md:py-32 border-b border-foreground/10">
+          <div className="max-w-[1400px] mx-auto">
+            <Reveal>
+              <h2 className="font-display text-[clamp(2.5rem,7vw,6rem)] uppercase tracking-tighter leading-[0.85] mb-16 md:mb-24 max-w-3xl">
+                {page.comparison.heading}
+              </h2>
+            </Reveal>
+            <div className="border-t border-foreground/10">
+              {/* header baris */}
+              <div className="grid grid-cols-12 gap-4 py-6 border-b border-foreground/10 font-mono text-[9px] md:text-[10px] uppercase tracking-widest font-bold">
+                <span className="col-span-4 opacity-40">Aspek</span>
+                <span className="col-span-4 opacity-40">{page.comparison.labelA}</span>
+                <span className="col-span-4 text-accent">{page.comparison.labelB}</span>
+              </div>
+              {page.comparison.rows.map((row, i) => (
+                <Reveal
+                  key={i}
+                  delay={i * 0.06}
+                  className="grid grid-cols-12 gap-4 py-6 border-b border-foreground/10 items-center"
+                >
+                  <span className="col-span-4 font-mono text-[10px] md:text-xs uppercase tracking-widest opacity-70">
+                    {row.aspect}
+                  </span>
+                  <span className="col-span-4 font-mono text-[10px] md:text-xs leading-snug opacity-40 line-through decoration-foreground/20">
+                    {row.a}
+                  </span>
+                  <span className="col-span-4 font-mono text-[10px] md:text-xs leading-snug font-bold">
+                    {row.b}
+                  </span>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <TestimonialBlock page={page} />
       <PriceTable page={page} />
       <FaqAccordionStyle page={page} />
@@ -518,6 +594,42 @@ function CorporateLayout({
           </div>
         </div>
       </section>
+
+      {/* KONTEN UNIK: checklist kredibilitas */}
+      {page.checklist && (
+        <section className="px-container py-24 md:py-32 border-b border-foreground/10">
+          <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+            <div className="lg:col-span-5">
+              <Reveal>
+                <h2 className="font-display text-3xl md:text-5xl uppercase tracking-tighter leading-[0.9] mb-8">
+                  {page.checklist.heading}
+                </h2>
+                <p className="font-mono text-xs md:text-sm leading-relaxed opacity-60">
+                  {page.checklist.intro}
+                </p>
+              </Reveal>
+            </div>
+            <div className="lg:col-span-7">
+              <div className="border-t border-foreground/10">
+                {page.checklist.items.map((item, i) => (
+                  <Reveal
+                    key={i}
+                    delay={i * 0.05}
+                    className="flex items-center gap-5 py-5 border-b border-foreground/10"
+                  >
+                    <span className="font-mono text-[10px] text-accent font-bold shrink-0">
+                      ✓
+                    </span>
+                    <span className="font-mono text-[11px] md:text-sm leading-snug opacity-80">
+                      {item}
+                    </span>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       <TestimonialBlock page={page} />
       <PriceTable page={page} />
