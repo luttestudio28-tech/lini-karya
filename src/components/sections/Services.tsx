@@ -1,26 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 const services = [
   {
     id: "01",
     title: "Toko Online",
     description: "Website katalog produk interaktif dengan sistem keranjang belanja dan checkout pesanan otomatis via WhatsApp.",
-    href: "/jasa-pembuatan-toko-online",
   },
   {
     id: "02",
     title: "Sistem & Dashboard",
     description: "Pengembangan sistem khusus yang canggih namun sangat mudah dioperasikan, bahkan untuk Anda yang tidak mengerti teknis sekalipun.",
-    href: "#biaya",
   },
   {
     id: "03",
     title: "Company Profile",
     description: "Website perusahaan lengkap untuk menunjukkan kredibilitas bisnis Anda. Sangat mudah dikelola sendiri, semudah menggunakan WhatsApp.",
-    href: "/jasa-pembuatan-company-profile",
   },
 ];
 
@@ -77,19 +73,13 @@ const Services = () => {
                 <p className="font-mono text-[10px] md:text-sm tracking-wide leading-relaxed opacity-50 group-hover:opacity-100 transition-opacity">
                   {service.description}
                 </p>
-                <Link
-                  href={service.href}
-                  aria-label={
-                    service.href.startsWith("/")
-                      ? `Pelajari layanan ${service.title}`
-                      : `Konsultasi gratis untuk layanan ${service.title}`
-                  }
+                <a
+                  href="#biaya"
+                  aria-label={`Konsultasi gratis untuk layanan ${service.title}`}
                   className="block pt-8 border-t border-foreground/5 group-hover:border-background/20 font-mono text-[10px] uppercase tracking-widest text-accent font-bold cursor-pointer opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0"
                 >
-                  {service.href.startsWith("/")
-                    ? "[ SELENGKAPNYA ] ↗"
-                    : "[ KONSULTASI GRATIS ] ↗"}
-                </Link>
+                  [ KONSULTASI GRATIS ] ↗
+                </a>
               </div>
             </motion.div>
           ))}
