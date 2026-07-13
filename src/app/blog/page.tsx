@@ -1,5 +1,7 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import BlogListing from "@/components/sections/BlogListing";
+import { blogPosts } from "@/lib/blog-data";
 
 export const metadata: Metadata = {
   title: "Blog & Wawasan Digital UMKM Indonesia",
@@ -32,6 +34,39 @@ export default function BlogPage() {
         </header>
 
         <BlogListing />
+
+        {/* Server-rendered article archive — ensures all blog links are 
+            in the initial HTML for SEO crawlability, since BlogListing 
+            is a client component that only shows 6 posts per page */}
+        <nav className="mt-32 pt-16 border-t border-foreground/10" aria-label="Arsip semua artikel blog">
+          <span className="font-mono text-[10px] uppercase tracking-[0.5em] text-accent block mb-6 font-bold">
+            Arsip Lengkap
+          </span>
+          <h2 className="font-display text-3xl md:text-5xl uppercase tracking-tighter leading-none mb-12">
+            Semua <span className="italic-accent text-accent">Artikel</span>
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 border-t border-l border-foreground/10">
+            {blogPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group flex items-start justify-between gap-4 p-6 md:p-8 border-b border-r border-foreground/10 hover:bg-foreground/[0.03] transition-colors"
+              >
+                <div className="flex-1 min-w-0">
+                  <span className="font-mono text-[9px] uppercase tracking-widest text-accent font-bold block mb-2">
+                    {post.category}
+                  </span>
+                  <h3 className="font-display text-lg md:text-xl uppercase tracking-tighter leading-tight group-hover:text-accent transition-colors">
+                    {post.title}
+                  </h3>
+                </div>
+                <span className="font-mono text-[9px] opacity-30 uppercase tracking-widest shrink-0 pt-1">
+                  {post.date}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </nav>
       </div>
     </div>
   );
